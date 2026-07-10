@@ -1,0 +1,2 @@
+﻿Accuracy,Precision,Recall,F1,ROC_AUC,PR_AUC,threshold
+0.7872,0.2623,0.5353,0.352,0.7767,0.3102,0.61

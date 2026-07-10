@@ -1,0 +1,5 @@
+﻿step,dropped,kept,cramers_v_pair,reason
+collinearity,주야구분,조명시설,0.7103,"V=0.710 ≥ 0.6, 타겟 연관성 낮은 쪽 제거"
+low_explanatory,주말여부,,0.02,타겟 연관성 하위 (V=0.0200)
+low_explanatory,포장구분,,0.0104,타겟 연관성 하위 (V=0.0104)
+low_explanatory,성별,,0.0086,타겟 연관성 하위 (V=0.0086)
