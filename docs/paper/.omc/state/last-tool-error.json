@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"cd \\\"/Users/leeseungbo/Desktop/학회/APTE/APTE-workspace/docs/paper\\\" && pandoc \\\"APTE_2026_논문초안.docx\\\" -t markdown 2>/dev/null | grep -cE \\\"^#|^\\\\|\\\" && osascript -e '\\ntell application \\\"Mi...",
-  "error": "Exit code 1\n0\n(eval):7: no matches found: *.pdf",
-  "timestamp": "2026-07-15T12:48:24.141Z",
-  "retry_count": 2
-}
