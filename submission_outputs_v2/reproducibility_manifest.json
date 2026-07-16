@@ -1,0 +1,143 @@
+{
+  "analysis_name": "APTE independent screening-confirmation reanalysis",
+  "seed": 20260716,
+  "split": {
+    "train": 0.5,
+    "validation": 0.15,
+    "screening": 0.15,
+    "confirmation_test": 0.2
+  },
+  "selection_primary_metric": "validation PR-AUC",
+  "threshold_selection": "validation-set maximum F1, then frozen",
+  "interaction_screening_rules": {
+    "exclude_categories": [
+      "-",
+      "기타",
+      "미상"
+    ],
+    "minimum_screening_joint_n": 25,
+    "minimum_confirmation_joint_n": 100,
+    "minimum_confirmation_events": 10,
+    "minimum_confirmation_non_events": 10,
+    "fdr_family": "all candidates satisfying confirmation stability rules"
+  },
+  "selected_model": "XGB_natural",
+  "final_variables": [
+    "주사고원인",
+    "교통장애요인",
+    "발생지점",
+    "운전자상태",
+    "사고시도로환경",
+    "원인차차종",
+    "날씨",
+    "조명시설",
+    "노면상태",
+    "연령구분",
+    "사고직전차량조작",
+    "차종구분",
+    "절성토구분",
+    "평면선형",
+    "주말여부",
+    "포장구분",
+    "성별"
+  ],
+  "excluded_a_priori": {
+    "주야구분": "structural redundancy with lighting variable containing '해당없음(주간)' category; outcome not used"
+  },
+  "provenance": {
+    "n_rows": 83297,
+    "n_predictors": 17,
+    "target_positive": 8993,
+    "target_prevalence": 0.10796307189934812,
+    "partial_raw_target_alignment": 1.0,
+    "processed_sha256": "c931e4c92be17c4fff3b0959794525d082569aed34a68c8da81c0d7428f2798e",
+    "partial_raw_sha256": "db671c0d5e5f5d4d9a12358ba08d9866601ba29f558e85c6911d49510c7ba37f",
+    "note": "analysis_id is deterministic for reproduction but is not the source-system accident identifier. Three restored variables are joined by preserved row position after exact target-vector and row-count checks; this remains a provenance limitation."
+  },
+  "versions": {
+    "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pandas": "3.0.1",
+    "numpy": "2.3.5",
+    "scipy": "1.18.0",
+    "scikit_learn": "1.9.0",
+    "xgboost": "3.3.0",
+    "shap": "0.52.0",
+    "statsmodels": "0.14.6",
+    "imbalanced_learn": "0.14.2",
+    "matplotlib": "3.11.0",
+    "font": "Malgun Gothic"
+  },
+  "validation_ranking": [
+    {
+      "model": "XGB_natural",
+      "ROC_AUC": 0.7757794102339237,
+      "PR_AUC": 0.3108040137737432,
+      "Accuracy": 0.7732511605570674,
+      "Balanced_Accuracy": 0.6855781379025255,
+      "Precision": 0.2552770448548813,
+      "Recall": 0.5737583395107487,
+      "Specificity": 0.7973979362943023,
+      "F1": 0.3533439853914631,
+      "Brier": 0.08549254387617111,
+      "validation_threshold": 0.1527756154537201,
+      "best_iteration": 149
+    },
+    {
+      "model": "XGB_weighted",
+      "ROC_AUC": 0.7756841965585394,
+      "PR_AUC": 0.3069577048807889,
+      "Accuracy": 0.7998239154794301,
+      "Balanced_Accuracy": 0.6669171887123073,
+      "Precision": 0.2690457097032879,
+      "Recall": 0.49740548554484804,
+      "Specificity": 0.8364288918797667,
+      "F1": 0.3492063492063492,
+      "Brier": 0.08565910160541534,
+      "validation_threshold": 0.17765237390995026,
+      "best_iteration": 133
+    },
+    {
+      "model": "XGB_RUS",
+      "ROC_AUC": 0.7711707424305461,
+      "PR_AUC": 0.2985214293999808,
+      "Accuracy": 0.8161517528413639,
+      "Balanced_Accuracy": 0.660431750617991,
+      "Precision": 0.28395624430264355,
+      "Recall": 0.4618235730170497,
+      "Specificity": 0.8590399282189323,
+      "F1": 0.35167936776742875,
+      "Brier": 0.08616934716701508,
+      "validation_threshold": 0.18703721463680267,
+      "best_iteration": 165
+    },
+    {
+      "model": "Logistic",
+      "ROC_AUC": 0.7693734554383038,
+      "PR_AUC": 0.2912782359491067,
+      "Accuracy": 0.7749319673443252,
+      "Balanced_Accuracy": 0.6783757205460337,
+      "Precision": 0.25295508274231676,
+      "Recall": 0.5552260934025204,
+      "Specificity": 0.8015253476895469,
+      "F1": 0.3475638051044084,
+      "Brier": 0.08640237897634506,
+      "validation_threshold": 0.16257886588573456,
+      "best_iteration": -1
+    },
+    {
+      "model": "XGB_SMOTEN",
+      "ROC_AUC": 0.7101650492314232,
+      "PR_AUC": 0.23483434067696468,
+      "Accuracy": 0.7613254362093805,
+      "Balanced_Accuracy": 0.6270942269517557,
+      "Precision": 0.2148096402375131,
+      "Recall": 0.4558932542624166,
+      "Specificity": 0.7982951996410946,
+      "F1": 0.292022792022792,
+      "Brier": 0.0906519889831543,
+      "validation_threshold": 0.1572226583957672,
+      "best_iteration": 111
+    }
+  ]
+}

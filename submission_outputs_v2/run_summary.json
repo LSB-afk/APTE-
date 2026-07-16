@@ -1,0 +1,10 @@
+{
+  "selected_model": "XGB_natural",
+  "confirmation_n": 16660,
+  "confirmation_prevalence": 0.10798319327731093,
+  "confirmed_main_effects": 27,
+  "interaction_candidates": 13,
+  "interaction_candidates_tested": 6,
+  "confirmed_interactions": 3,
+  "output_dir": "C:\\Users\\user\\Desktop\\APTE\\APTE-repo\\submission_outputs_v2"
+}

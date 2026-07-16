@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-07-16T17:35:11",
+  "target_journal": "Journal of Korean Society of Transportation",
+  "main_pdf_pages": 10,
+  "supplement_pdf_pages": 5,
+  "korean_abstract_characters_with_spaces": 546,
+  "english_abstract_words": 180,
+  "placeholder_hits": [],
+  "key_claims": {
+    "n_total": true,
+    "n_casualty": true,
+    "xgb_roc": true,
+    "xgb_pr": true,
+    "xgb_f1": true,
+    "main_effect_count": true,
+    "interaction_screened": true,
+    "interaction_tested": true,
+    "interaction_confirmed": true,
+    "top_interaction": true,
+    "noncausal_scope": true
+  },
+  "main_korean_table_cells": [],
+  "supplement_korean_table_cells": [],
+  "figure_checks": [
+    {
+      "file": "Figure_1_independent_design.png",
+      "width_px": 3057,
+      "height_px": 726,
+      "adequate_resolution": true
+    },
+    {
+      "file": "Figure_2_confirmation_roc_pr.png",
+      "width_px": 2397,
+      "height_px": 959,
+      "adequate_resolution": true
+    },
+    {
+      "file": "Figure_3_confirmation_calibration.png",
+      "width_px": 1319,
+      "height_px": 1122,
+      "adequate_resolution": true
+    },
+    {
+      "file": "Figure_4_model_metrics.png",
+      "width_px": 2507,
+      "height_px": 1412,
+      "adequate_resolution": true
+    },
+    {
+      "file": "Figure_5_screening_shap.png",
+      "width_px": 1781,
+      "height_px": 1517,
+      "adequate_resolution": true
+    },
+    {
+      "file": "Figure_6_main_effects.png",
+      "width_px": 1892,
+      "height_px": 1694,
+      "adequate_resolution": true
+    },
+    {
+      "file": "Figure_7_interactions.png",
+      "width_px": 2029,
+      "height_px": 1033,
+      "adequate_resolution": true
+    },
+    {
+      "file": "Figure_8_van_large_rates.png",
+      "width_px": 1517,
+      "height_px": 1033,
+      "adequate_resolution": true
+    }
+  ],
+  "checks": {
+    "files_exist": true,
+    "main_pdf_pages_exactly_10": true,
+    "main_within_jkst_10_page_limit": true,
+    "supplement_pdf_pages": 5,
+    "korean_abstract_with_spaces_le_900": true,
+    "english_abstract_words_le_300": true,
+    "main_tables_english_only": true,
+    "supplement_tables_english_only": true,
+    "no_placeholder_text": true,
+    "all_key_claims_present": true,
+    "claim_evidence_rows_all_verified": true,
+    "selected_model_matches": true,
+    "confirmed_main_effects_matches": true,
+    "interaction_counts_match": true,
+    "paired_interpretation_supported": true,
+    "english_figure_count_8": true,
+    "all_figures_adequate_resolution": true,
+    "main_docx_images_7": true,
+    "supplement_docx_images_1": true,
+    "overall_pass": true
+  }
+}

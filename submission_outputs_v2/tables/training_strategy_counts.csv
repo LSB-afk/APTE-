@@ -1,0 +1,5 @@
+﻿strategy,training_n,training_positive
+natural,41648,4496
+weighted,41648,4496
+random_undersampling,8992,4496
+SMOTEN,74304,37152

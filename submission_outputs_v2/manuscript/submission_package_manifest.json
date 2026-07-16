@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-07-16T17:35:11",
+  "overall_qa_pass": true,
+  "files": [
+    {
+      "path": "submission_outputs_v2\\manuscript\\APTE_JKST_anonymous_manuscript.docx",
+      "bytes": 884270,
+      "sha256": "660ec095cea54dc19f9b46925f9cb3c7182816719e5d95a4aaa9353d84f1d4ba"
+    },
+    {
+      "path": "submission_outputs_v2\\manuscript\\APTE_JKST_anonymous_manuscript.pdf",
+      "bytes": 1209588,
+      "sha256": "97fbbd7cc0b6ef45cfb054bec8e472ce47f89fed1223079778f69f8afbc9405b"
+    },
+    {
+      "path": "submission_outputs_v2\\manuscript\\APTE_JKST_supplementary_material.docx",
+      "bytes": 167736,
+      "sha256": "f6fc9dc8db537a4b0ce70a2a8664cdc5a578dc57be7bc3058236c993fb9539f9"
+    },
+    {
+      "path": "submission_outputs_v2\\manuscript\\APTE_JKST_supplementary_material.pdf",
+      "bytes": 603547,
+      "sha256": "9bd3d59a7be1818c42ce505c975b45d7eb4e6add7060c6f663865555eabcad8f"
+    },
+    {
+      "path": "submission_outputs_v2\\APTE_submission_validation_report.md",
+      "bytes": 16989,
+      "sha256": "d41a711f819d5c37782a8804b716ea7433e225eef81ffba3969165ad5659e357"
+    },
+    {
+      "path": "submission_outputs_v2\\reproducibility_manifest.json",
+      "bytes": 4787,
+      "sha256": "b3521b2b2fac086a3586231b7ef7b8af16633159d901579e33a2dcaf64df0b93"
+    },
+    {
+      "path": "submission_outputs_v2\\tables\\claim_evidence_map.csv",
+      "bytes": 919,
+      "sha256": "12f67f11bede54025bebf81a6dd0913468ce47b293661007ca46e54e230be213"
+    },
+    {
+      "path": "submission_outputs_v2\\manuscript\\manuscript_qa_report.json",
+      "bytes": 2707,
+      "sha256": "e3aa24ff1f767c673e751bfd6faaeb0b1ea0e4207465d3fa1474a55e6a11146a"
+    },
+    {
+      "path": "submission_outputs_v2\\manuscript\\FINAL_SUBMISSION_QA.md",
+      "bytes": 1521,
+      "sha256": "6dba870d104d307c02ca44d3b3657c92ed57ff404fe80cec71d850ebb5c5b029"
+    },
+    {
+      "path": "analysis_v2\\submission_analysis.py",
+      "bytes": 55219,
+      "sha256": "3ccc0e1eea1cd32db1ca28a8f54b4db28cacef756b8fb8d53b7c5c2050902159"
+    },
+    {
+      "path": "analysis_v2\\submission_figures_en.py",
+      "bytes": 15946,
+      "sha256": "a0d66a9b3ef232ce91a6003af2b2462aa99e3517619c17335ece311ef82dceb1"
+    },
+    {
+      "path": "analysis_v2\\build_submission_manuscript.py",
+      "bytes": 60027,
+      "sha256": "311630871c6ddbbaa388ab55081be003fbfd1d39acae97ce3cd37d49776b4b05"
+    },
+    {
+      "path": "analysis_v2\\finalize_submission_package.py",
+      "bytes": 10331,
+      "sha256": "9827c322672b5b2dee42f8539848ba17cd0bf80933abe5fe56652b344c120d8d"
+    }
+  ]
+}

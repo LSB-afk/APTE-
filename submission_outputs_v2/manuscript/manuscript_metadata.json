@@ -1,0 +1,23 @@
+{
+  "main_docx": "C:\\Users\\user\\Desktop\\APTE\\APTE-repo\\submission_outputs_v2\\manuscript\\APTE_JKST_anonymous_manuscript.docx",
+  "korean_abstract_characters_no_spaces": 432,
+  "korean_abstract_characters_with_spaces": 546,
+  "english_abstract_words": 180,
+  "references": 15,
+  "tables": 5,
+  "figures": 7,
+  "supplement_docx": "C:\\Users\\user\\Desktop\\APTE\\APTE-repo\\submission_outputs_v2\\manuscript\\APTE_JKST_supplementary_material.docx",
+  "supplementary_tables": 5,
+  "supplementary_figures": 1,
+  "title_ko": "독립 표본 탐색–확인 설계를 적용한 고속도로 교통사고 인명피해 발생 요인 분석: XGBoost-SHAP과 강건 로지스틱 회귀의 결합",
+  "title_en": "An Independent-Sample Screening–Confirmation Analysis of Casualty Occurrence in Expressway Crashes: Integrating XGBoost-SHAP with Robust Logistic Regression",
+  "journal_target": "Journal of Korean Society of Transportation",
+  "format_profile": {
+    "base_preset": "narrative_proposal",
+    "named_override": "academic_manuscript_jkst",
+    "page": "A4 portrait",
+    "margins": "16 mm top/bottom; 18 mm left/right",
+    "body": "Malgun Gothic 9.2 pt; 1.15 line spacing",
+    "tables_figures_references": "English"
+  }
+}

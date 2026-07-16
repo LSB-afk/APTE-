@@ -1,0 +1,6 @@
+﻿claim_id,claim,evidence_file,status
+C01,"분석자료는 83,297건이며 인명피해 발생률은 10.80%이다.",submission_outputs_v2/data/analysis_dataset_v2.csv,verified
+C02,자료는 학습·검증·SHAP 탐색·독립 확인으로 분리되었다.,submission_outputs_v2/tables/table01_split_summary.csv,verified
+C03,검증셋에서 선택된 XGB_natural의 독립 확인셋 ROC-AUC는 0.780 (95% CI 0.769-0.790)이다.,submission_outputs_v2/tables/table03_confirmation_performance_ci.csv,verified
+C04,독립 확인셋에서 BH q<0.05인 주효과 더미는 27개이다.,submission_outputs_v2/tables/table05_confirmation_main_effects.csv,verified
+C05,SHAP으로 사전 선별한 13개 후보 중 안정성 기준을 충족해 독립 확인셋에서 검정한 6개 후보에서 BH q<0.05인 상호작용은 3개이다.,submission_outputs_v2/tables/table07_independent_interaction_confirmation.csv,verified
