@@ -219,16 +219,18 @@ def main():
     r_no = [df.loc[~tg & (df["원인차차종"] == v), "injury"].mean() for v in vehs]
     xp = np.arange(len(vehs))
     fig, ax = plt.subplots(figsize=(7.5, 5))
-    b1 = ax.bar(xp - 0.2, r_no, width=0.4, label="TG 외 구간", color="#C0392B")
-    b2 = ax.bar(xp + 0.2, r_tg, width=0.4, label="영업소(TG)", color="#2471A3")
+    b1 = ax.bar(xp - 0.2, r_no, width=0.4, label="일반 구간(TG 외)",
+                color="#C0392B")
+    b2 = ax.bar(xp + 0.2, r_tg, width=0.4, label="영업소(TG) 구간",
+                color="#2471A3")
     for b in list(b1) + list(b2):
         ax.text(b.get_x() + b.get_width() / 2, b.get_height() + 0.003,
                 f"{b.get_height():.1%}", ha="center", fontsize=9)
     ax.set_xticks(xp)
     ax.set_xticklabels(vehs)
-    ax.set_ylabel("부상발생률")
-    ax.set_title("사례연구: 영업소(TG)의 보호효과는 차종별로 다르다\n"
-                 "(화물·트레일러에서 감소폭이 훨씬 큼 — 상호작용의 실체)")
+    ax.set_ylabel("인명피해 발생률")
+    ax.set_title("차종별 인명피해 발생률: 영업소(TG) 구간과 일반 구간의 비교",
+                 fontsize=11)
     ax.legend()
     fig.tight_layout()
     fig.savefig(os.path.join(OUT_FIG, "fig11_tg_vehicle_casestudy.png"),
