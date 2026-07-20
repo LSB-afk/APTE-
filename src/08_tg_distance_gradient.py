@@ -112,26 +112,48 @@ def main():
           f"{overall:.3f})")
     print(tab.round(4).to_string(index=False))
 
-    # ── 5. 그림 ────────────────────────────────────────────────
+    # ── 5. 그림: 막대(사고수) + 선(인명피해율·95% CI) 이중축 ──
     xs = np.arange(len(BIN_LABELS))
-    fig, ax = plt.subplots(figsize=(8.5, 5))
+    fig, ax = plt.subplots(figsize=(9, 5.2))
+
+    # 배경 막대: 구간별 사고 건수 (오른쪽 축)
+    ax2 = ax.twinx()
+    bars = ax2.bar(xs, tab["사고수"], width=0.62, color="#D6DCE5",
+                   edgecolor="#B0B8C4", zorder=1, label="사고 건수(우측 축)")
+    for b, n in zip(bars, tab["사고수"]):
+        ax2.text(b.get_x() + b.get_width() / 2, b.get_height() / 2,
+                 f"{n:,}", ha="center", va="center", fontsize=8,
+                 color="#5A6270")
+    ax2.set_ylabel("사고 건수", color="#7F8794")
+    ax2.tick_params(axis="y", colors="#7F8794")
+    ax2.set_ylim(0, tab["사고수"].max() * 1.9)  # 막대를 아래쪽에 깔기
+
+    # 전면 선: 인명피해율 + 95% CI (왼쪽 축)
     ax.errorbar(xs, tab["인명피해율"],
                 yerr=[tab["인명피해율"] - tab["CI하한"],
                       tab["CI상한"] - tab["인명피해율"]],
-                fmt="o-", color="#C00000", lw=2, ms=6, capsize=3,
-                label="구간별 인명피해율 (95% CI)")
-    ax.axhline(overall, color="#555555", ls="--", lw=1,
-               label=f"본선 전체 평균 ({overall:.1%})")
+                fmt="o-", color="#C00000", lw=2.2, ms=6.5, capsize=3.5,
+                zorder=5, label="인명피해율 (95% CI)")
     for x, r in zip(xs, rows):
-        ax.annotate(f"n={r['사고수']:,}", (x, r["CI하한"]),
-                    textcoords="offset points", xytext=(0, -14),
-                    ha="center", fontsize=8, color="#555555")
+        ax.annotate(f"{r['인명피해율']:.1%}", (x, r["CI상한"]),
+                    textcoords="offset points", xytext=(0, 6),
+                    ha="center", fontsize=9, color="#C00000",
+                    fontweight="bold", zorder=6)
+    ax.axhline(overall, color="#555555", ls="--", lw=1, zorder=4,
+               label=f"본선 전체 평균 ({overall:.1%})")
     ax.set_xticks(xs)
     ax.set_xticklabels(BIN_LABELS)
     ax.set_xlabel("가장 가까운 영업소(TG)까지의 거리 (km)")
-    ax.set_ylabel("인명피해 발생률")
+    ax.set_ylabel("인명피해 발생률", color="#C00000")
+    ax.tick_params(axis="y", colors="#C00000")
+    ax.set_ylim(0.10, 0.16)
     ax.set_title("영업소(TG) 인접도에 따른 본선 사고의 인명피해율 변화")
-    ax.legend(loc="lower right")
+    ax.set_zorder(ax2.get_zorder() + 1)  # 선을 막대 위로
+    ax.patch.set_visible(False)
+
+    h1, l1 = ax.get_legend_handles_labels()
+    h2, l2 = ax2.get_legend_handles_labels()
+    ax.legend(h1 + h2, l1 + l2, loc="upper right", fontsize=9)
     ax.grid(axis="y", alpha=0.25)
     fig.tight_layout()
     fig.savefig(OUT_FIG, dpi=200)
