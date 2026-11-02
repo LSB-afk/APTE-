@@ -1,0 +1,106 @@
+[
+  {
+    "number": 1,
+    "author": "user",
+    "created": "2026-08-31T18:57:30Z",
+    "text": "기존 학술대회 낸 논문 제목과 유사해서 차별성 있게 몇 가지 고민해서 우선순위 정하여 알려주세요. 영문 제목도 수정",
+    "anchor": "자동차안전학회지 제??권 제?호 20??년, pp. ??∼??http://data.doi.or.kr/10.22680/kasa202?.??.?.???   * 한남대학교 경영정보학과, 학사과정 (20212007@m365.hnu.ac.kr)*** 국토연구원, 부연구위원**     한남대학교 AI데이터사이언스학과, 석사과정 **** 한남대학교 빅데이터응용학과, 조교수          (eunjeong.ko@hnu.kr) ",
+    "xpath": "/hs:sec/hp:p[1]"
+  },
+  {
+    "number": 2,
+    "author": "user",
+    "created": "2026-09-01T22:53:13Z",
+    "text": "여기 다시\n우선 승보가 마지막에 준 파일은 Description 영문이 이상해서, 이거 버전으로 \nNumber 값 기준으로 순서대로 변경해주시고, 기타 등은 수치가 높더라도 제일 뒤로 빼주세요. ",
+    "anchor": "Table 1. Variable definitions and descriptive statisticsCategoryVariableDescriptionNumber (Count)Percentage (%)Dependent variableCasualty occurrenceCasualty8,99310.80Property-damage-only74,30489.20Independent variablesPrimary causeSpeeding20,95225.15Inattention18,40522.10Other11,20013.45Drowsy driving10,65312.79Road debris 8,3089.97Tire failure3,0783.70Single-vehicle fire1,8842.26Insufficient safe distance1,8112.17Improper overtaking1,4521.74Road condition1,1141.34Pothole9861.18Improper loading9791.18Animal intrusion9601.15Vehicle, other5410.65Vehicle defect, other5090.61Unspecified4650.56Traffic obstructionNo obstruction80,49296.63Stopped vehicle1,5061.81Congestion8871.06Other4120.49Crash locationMainline57,38168.89Ramp12,28514.75Tollgate8,94610.74Tunnel3,3884.07Rest area1,1771.41Other1200.14Driver conditionNormal75,93091.16Fatigue4,4345.32Drinking2,0662.48Other8671.04Road condition at crashNormal66,53479.88Slippery surface11,11713.35Fallen object2,2912.75Pothole1,3171.58Other1,1861.42Sight obstruction8521.02At-fault vehicle typePassenger car53,06663.71Truck20,28024.35Trailer4,6725.61Van/bus4,3735.25Special vehicle5500.66Other3560.43WeatherClear51,75262.13Rain17,09020.52Cloudy11,13513.37Snow2,9263.51Other3940.47Lighting facilityNot applicable (daytime)43,21551.88On24,56029.48None12,68215.23Off2,8403.41Road surfaceDry61,32373.62Wet21,38225.67Snow-covered4690.56Other1230.15Driver ageUnknown18,79222.5640~4916,29019.5650~5915,16518.2130~3913,37016.0520~298,2679.9260 and above6,7058.05Under 204,7085.65Pre-crash maneuverDriving in lane68,09081.74Excessive steering10,22612.28Other3,3324.00Lane change1,6491.98Vehicle classMedium28,10333.74Small18,89622.69Large10,92213.11SUV9,77011.73Unknown7,5399.05Mini3,4524.14General freight3,4064.09Box truck1,0281.23Other1810.22Cut/fill sectionFlat41,48449.80Fill 2~5 m9,85411.83Fill 15 m or more9,45611.35Unknown8,2339.88Cut under 10 m5,7656.92Cut 10 m or more4,3065.17Fill under 2 m4,1995.04Horizontal alignmentStraight56,95668.38Left curve11,07713.30Right curve10,80712.97Unknown4,4575.35",
+    "xpath": "/hs:sec/hp:p[25]"
+  },
+  {
+    "number": 3,
+    "author": "user",
+    "created": "2026-10-07T19:01:26Z",
+    "text": "절대 틀리면 안됨!  \n중간부터 12번 이후 번호 누락된거 같은데, 논문 내에서 전체적으로 문헌 참조가 제대로 들어갔는지 확인해주세요. 지금 문장과 참고문헌이 일치하는지 애매한 것들이 있어서 이것도 확인 필요.\n전체 다 꼼꼼하게 확인해주세요.  ",
+    "anchor": "　이에 본 연구에서는 기계학습의 탐색 능력과 통계모형의 검정 기능을 순차적으로 연계한 탐색-확인(Screening-Confirmation) 절차를 적용하여, 고속도로 교통사고에서의 인명피해 발생과 연관된 영향 요인을 밝히고자 하였다. 기존 연구들이 통계모형과 기계학습을 각각 적용한 후 결과를 비교하거나 병렬적으로 제시하는 데 주로 초점을 둔 데 비해15, 본 연구는 기계학습을 통해 사전에 특정하기 어려운 잠재적 위험요인과 변수 간 상호작용을 탐색하고, 이를 통계모형을 통해 검증하는 순차적 분석체계를 적용한다는 점에서 차별성을 가진다. 분석에는 2011년부터 2019년까지 전국 고속도로에서 발생한 교통사고 자료를 활용하였으며, 사고 이전에 관찰 가능한 정보들을 중심으로 독립변수를 구성하였다. 분석에는 XGBoost와 SHAP을 적용하여 인명피해 발생에 기여하는 주요 요인 및 상호작용 후보를 탐색하였으며10,16, 이후 다변량 로지스틱 회귀모형을 통해 요인들의 통계적 유의성을 검증하였다17. 마지막으로 음이항 회귀모형을 적용하여 주요 영향 요인의 효과에 대한 일관성을 검토하였다. ",
+    "xpath": "/hs:sec/hp:p[19]"
+  },
+  {
+    "number": 4,
+    "author": "user",
+    "created": "2026-10-07T20:38:19Z",
+    "text": "내용에 맞춰서 전반적으로 확인 및 정확하게 수정 ",
+    "anchor": "참고문헌",
+    "section": "Contents/section1.xml"
+  },
+  {
+    "number": 5,
+    "author": "user",
+    "created": "2026-10-14T15:41:36Z",
+    "text": "아래 그림에서 이 값들을 어떻게 확인할 수 있을까요?  ",
+    "anchor": "　이러한 결과를 바탕으로 개별 요인의 기여뿐만 아니라 두 요인이 결합할 때 나타나는 상호작용을 파악하기 위해 SHAP 상호작용 값을 분석하였다. 전체 사고를 기준으로 영업소-승용(0.025), 주시태만-승용(0.022), 주시태만-본선(0.019)이 높은 상호작용 기여도를 보였으며, 두 조건이 동시에 관측된 사고를 기준으로는 영업소-승용(0.286), 노면잡물-조명시설 없음(0.193), 주시태만-영업소(0.170) 등이 높게 나타났다. 특히 영업소–승용 조합은 두 기준 모두에서 높은 상호작용 기여도를 보여 주요 상호작용 후보로 확인되었다. 최종적으로 이러한 분석 결과를 바탕으로 24개의 상호작용 후보를 선정하고, 후속 통계적 검정에 활용하였다. ",
+    "xpath": "/hs:sec/hp:p[71]"
+  },
+  {
+    "number": 6,
+    "author": "user",
+    "created": "2026-10-14T15:42:23Z",
+    "text": "위 설명을 기반으로 했을 때 값이 24개가 아닌거 같은데, 설명 보완 필요(너무 길게 말고 간결하게) ",
+    "anchor": "　이러한 결과를 바탕으로 개별 요인의 기여뿐만 아니라 두 요인이 결합할 때 나타나는 상호작용을 파악하기 위해 SHAP 상호작용 값을 분석하였다. 전체 사고를 기준으로 영업소-승용(0.025), 주시태만-승용(0.022), 주시태만-본선(0.019)이 높은 상호작용 기여도를 보였으며, 두 조건이 동시에 관측된 사고를 기준으로는 영업소-승용(0.286), 노면잡물-조명시설 없음(0.193), 주시태만-영업소(0.170) 등이 높게 나타났다. 특히 영업소–승용 조합은 두 기준 모두에서 높은 상호작용 기여도를 보여 주요 상호작용 후보로 확인되었다. 최종적으로 이러한 분석 결과를 바탕으로 24개의 상호작용 후보를 선정하고, 후속 통계적 검정에 활용하였다. ",
+    "xpath": "/hs:sec/hp:p[71]"
+  },
+  {
+    "number": 7,
+    "author": "skr51",
+    "created": "2026-10-20T20:15:32Z",
+    "text": "이거 붙일 위치 확인해주세요. ",
+    "anchor": "　구체적으로, 기준범주 대비 인명피해 발생 오즈가 높게 나타난 주요 범주는 정차차량(3.45), 트레일러(2.70), 안전거리 미확보(2.07)였으며, 승합(1.89), 화물(1.72), 차로변경(1.63), 졸음(1.57), 주시태만(1.54)에서도 높은 오즈가 확인되었다 (Fig. 3). 반면, 단독차량화재(0.05), 노면잡물(0.10), 영업소(0.12), 램프(0.30)는 기준범주 대비 낮은 오즈를 보였으며, 눈(0.51)과 습기(0.82)에서도 유사한 경향이 나타났다. 조명시설이 없는 경우에는 주간 대비 인명피해 발생 오즈가 높게 나타났다(1.24). ",
+    "xpath": "/hs:sec/hp:p[78]"
+  },
+  {
+    "number": 8,
+    "author": "skr51",
+    "created": "2026-10-20T20:19:45Z",
+    "text": "여기 제목에서 (d) 변수의 의미가 뭔가요? tollgate dummy??",
+    "anchor": "Fig 2. Distribution of SHAP values for categorical variables: (a) Primary cause, (b) Crash location, (c) Driver age and (d) Tollgate dummy by vehicle type",
+    "xpath": "/hs:sec/hp:p[73]"
+  },
+  {
+    "number": 9,
+    "author": "skr51",
+    "created": "2026-10-20T20:34:57Z",
+    "text": "이 내용들은 어디서 확인할 수 있을까요? \n여기 아직 못고친 파트라 메모 남겨두세요. ",
+    "anchor": "　SHAP의 기여 방향과 로지스틱 회귀계수의 부호를 비교한 결과, 56개 더미변수 중 46개(82.1%)에서 방향이 일치하였다. 로지스틱 회귀에서 통계적으로 유의한 41개 더미변수로 한정한 경우에는 34개(82.9%)가 일치하였다. 방향의 불일치는 대부분 효과의 크기가 작은 변수에서 나타났다. 이는 SHAP이 모형의 기준 예측값을, 오즈비가 변수별 기준범주를 비교 기준으로 사용한다는 차이에서 비롯되었을 가능성이 있다. 다만 이러한 일치 여부는 방향에 관한 것으로, 효과의 크기나 관계의 형태까지 동일함을 의미하지는 않는다.",
+    "xpath": "/hs:sec/hp:p[99]"
+  },
+  {
+    "number": 10,
+    "author": "skr51",
+    "created": "2026-10-20T20:38:00Z",
+    "text": "위 제목이 해석이 애매한데...\nMainline casualty occurrence rates and crash counts by distance to the nearest tollgate 이걸 의미하는 걸까요? 아님 다른?? ",
+    "anchor": "Fig 5.  Casualty occurrence rate and number of mainline crashes by distance to the nearest tollgate ",
+    "xpath": "/hs:sec/hp:p[96]"
+  },
+  {
+    "number": 11,
+    "author": "skr51",
+    "created": "2026-10-20T20:59:52Z",
+    "text": "(아주 중요) 많이 이상\n3장 연구방법론과 4장 분석 결과를 전체적으로 비교해 보면, 방법론에 설명되지 않은 분석이 결과에 등장하거나 방법론에서 제시한 분석이 결과에서 충분히 보고되지 않은 부분이 있습니다. \n현재 논문의 기본 구조? \n- 3.2절 → 4.1절: 변수 선별 및 다중공선성 검토\n- 3.3절 → 4.1~4.2절: XGBoost 예측 성능, SHAP 기여도 및 상호작용 탐색\n- 3.4절 → 4.3절: 카이제곱 검정, 로지스틱 회귀 및 상호작용 유의성 검정\n- ? → 4.4절: 영업소 인접 본선의 거리별 인명피해 발생률 분석(왜 갑자기 나왔는지, 설명 필요) \n- 3.4절 → 4.5절: 음이항 회귀, 분석 방법 간 일치율은 여기서 나오나요? ",
+    "anchor": "",
+    "xpath": "/hs:sec/hp:p[102]"
+  },
+  {
+    "number": 12,
+    "author": "skr51",
+    "created": "2026-10-20T21:08:39Z",
+    "text": "승보가 수정하는 모든 부분들은 변경내용 추적으로 작업해주세요. ",
+    "anchor": "고속도로 교통사고 인명피해 발생 관련 요인 분석: XGBoost-SHAP과 통계적 검정을 기반으로",
+    "xpath": "/hs:sec/hp:p[2]"
+  },
+  {
+    "number": 13,
+    "author": "skr51",
+    "created": "2026-10-20T21:16:25Z",
+    "text": "제가 여기를 다시 썼는데, 승보가 생각하는 위 연구 방향성 및 연구 결과가 맞는지 확인 필요합니다. ",
+    "anchor": "5. 결 론",
+    "xpath": "/hs:sec/hp:p[103]"
+  }
+]

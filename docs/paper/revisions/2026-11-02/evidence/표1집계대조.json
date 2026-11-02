@@ -1,0 +1,634 @@
+{
+  "paper_table": "Table1",
+  "data_rows": 83297,
+  "verified_descriptive_rows": 88,
+  "numeric_cells_checked": 176,
+  "groups_totaling_83297": 15,
+  "mismatches": [],
+  "processed_sha256": "f76cec85b2e6b2f34402bf21aef9d12c86a430b545e0292b146cd364dca77b0b",
+  "raw_fill_category_counts": {
+    "성토고 2M 이상 5M 미만": 9854,
+    "성토고 5M 이상 15M 미만": 8164,
+    "성토고 2M 미만": 4199,
+    "성토고 15M 이상": 1292
+  },
+  "table1_comparisons": [
+    {
+      "row": 1,
+      "variable": "injury",
+      "category": 1,
+      "count": 8993,
+      "percent": "10.80"
+    },
+    {
+      "row": 2,
+      "variable": "injury",
+      "category": 0,
+      "count": 74304,
+      "percent": "89.20"
+    },
+    {
+      "row": 3,
+      "variable": "주사고원인",
+      "category": "과속",
+      "count": 20952,
+      "percent": "25.15"
+    },
+    {
+      "row": 4,
+      "variable": "주사고원인",
+      "category": "주시태만",
+      "count": 18405,
+      "percent": "22.10"
+    },
+    {
+      "row": 5,
+      "variable": "주사고원인",
+      "category": "기타",
+      "count": 11200,
+      "percent": "13.45"
+    },
+    {
+      "row": 6,
+      "variable": "주사고원인",
+      "category": "졸음",
+      "count": 10653,
+      "percent": "12.79"
+    },
+    {
+      "row": 7,
+      "variable": "주사고원인",
+      "category": "노면잡물",
+      "count": 8308,
+      "percent": "9.97"
+    },
+    {
+      "row": 8,
+      "variable": "주사고원인",
+      "category": "타이어파손",
+      "count": 3078,
+      "percent": "3.70"
+    },
+    {
+      "row": 9,
+      "variable": "주사고원인",
+      "category": "단독차량화재",
+      "count": 1884,
+      "percent": "2.26"
+    },
+    {
+      "row": 10,
+      "variable": "주사고원인",
+      "category": "안전거리미확보",
+      "count": 1811,
+      "percent": "2.17"
+    },
+    {
+      "row": 11,
+      "variable": "주사고원인",
+      "category": "추월불량",
+      "count": 1452,
+      "percent": "1.74"
+    },
+    {
+      "row": 12,
+      "variable": "주사고원인",
+      "category": "도로사정",
+      "count": 1114,
+      "percent": "1.34"
+    },
+    {
+      "row": 13,
+      "variable": "주사고원인",
+      "category": "포트홀",
+      "count": 986,
+      "percent": "1.18"
+    },
+    {
+      "row": 14,
+      "variable": "주사고원인",
+      "category": "적재불량",
+      "count": 979,
+      "percent": "1.18"
+    },
+    {
+      "row": 15,
+      "variable": "주사고원인",
+      "category": "동물침입",
+      "count": 960,
+      "percent": "1.15"
+    },
+    {
+      "row": 16,
+      "variable": "주사고원인",
+      "category": "차량기타",
+      "count": 541,
+      "percent": "0.65"
+    },
+    {
+      "row": 17,
+      "variable": "주사고원인",
+      "category": "차량결함기타",
+      "count": 509,
+      "percent": "0.61"
+    },
+    {
+      "row": 18,
+      "variable": "주사고원인",
+      "category": "-",
+      "count": 465,
+      "percent": "0.56"
+    },
+    {
+      "row": 19,
+      "variable": "교통장애요인",
+      "category": "장애없음",
+      "count": 80492,
+      "percent": "96.63"
+    },
+    {
+      "row": 20,
+      "variable": "교통장애요인",
+      "category": "정차차량",
+      "count": 1506,
+      "percent": "1.81"
+    },
+    {
+      "row": 21,
+      "variable": "교통장애요인",
+      "category": "정체",
+      "count": 887,
+      "percent": "1.06"
+    },
+    {
+      "row": 22,
+      "variable": "교통장애요인",
+      "category": "기타",
+      "count": 412,
+      "percent": "0.49"
+    },
+    {
+      "row": 23,
+      "variable": "발생지점",
+      "category": "본선",
+      "count": 57381,
+      "percent": "68.89"
+    },
+    {
+      "row": 24,
+      "variable": "발생지점",
+      "category": "램프",
+      "count": 12285,
+      "percent": "14.75"
+    },
+    {
+      "row": 25,
+      "variable": "발생지점",
+      "category": "영업소(TG)",
+      "count": 8946,
+      "percent": "10.74"
+    },
+    {
+      "row": 26,
+      "variable": "발생지점",
+      "category": "터널",
+      "count": 3388,
+      "percent": "4.07"
+    },
+    {
+      "row": 27,
+      "variable": "발생지점",
+      "category": "휴게소",
+      "count": 1177,
+      "percent": "1.41"
+    },
+    {
+      "row": 28,
+      "variable": "발생지점",
+      "category": "기타",
+      "count": 120,
+      "percent": "0.14"
+    },
+    {
+      "row": 29,
+      "variable": "운전자상태",
+      "category": "정상",
+      "count": 75930,
+      "percent": "91.16"
+    },
+    {
+      "row": 30,
+      "variable": "운전자상태",
+      "category": "피로",
+      "count": 4434,
+      "percent": "5.32"
+    },
+    {
+      "row": 31,
+      "variable": "운전자상태",
+      "category": "음주",
+      "count": 2066,
+      "percent": "2.48"
+    },
+    {
+      "row": 32,
+      "variable": "운전자상태",
+      "category": "기타",
+      "count": 867,
+      "percent": "1.04"
+    },
+    {
+      "row": 33,
+      "variable": "사고시도로환경",
+      "category": "정상",
+      "count": 66534,
+      "percent": "79.88"
+    },
+    {
+      "row": 34,
+      "variable": "사고시도로환경",
+      "category": "미끄러운노면",
+      "count": 11117,
+      "percent": "13.35"
+    },
+    {
+      "row": 35,
+      "variable": "사고시도로환경",
+      "category": "낙하물",
+      "count": 2291,
+      "percent": "2.75"
+    },
+    {
+      "row": 36,
+      "variable": "사고시도로환경",
+      "category": "포트홀",
+      "count": 1317,
+      "percent": "1.58"
+    },
+    {
+      "row": 37,
+      "variable": "사고시도로환경",
+      "category": "기타",
+      "count": 1186,
+      "percent": "1.42"
+    },
+    {
+      "row": 38,
+      "variable": "사고시도로환경",
+      "category": "시거장애",
+      "count": 852,
+      "percent": "1.02"
+    },
+    {
+      "row": 39,
+      "variable": "원인차차종",
+      "category": "승용",
+      "count": 53066,
+      "percent": "63.71"
+    },
+    {
+      "row": 40,
+      "variable": "원인차차종",
+      "category": "화물",
+      "count": 20280,
+      "percent": "24.35"
+    },
+    {
+      "row": 41,
+      "variable": "원인차차종",
+      "category": "트레일러",
+      "count": 4672,
+      "percent": "5.61"
+    },
+    {
+      "row": 42,
+      "variable": "원인차차종",
+      "category": "승합",
+      "count": 4373,
+      "percent": "5.25"
+    },
+    {
+      "row": 43,
+      "variable": "원인차차종",
+      "category": "특수",
+      "count": 550,
+      "percent": "0.66"
+    },
+    {
+      "row": 44,
+      "variable": "원인차차종",
+      "category": "기타",
+      "count": 356,
+      "percent": "0.43"
+    },
+    {
+      "row": 45,
+      "variable": "날씨",
+      "category": "맑음",
+      "count": 51752,
+      "percent": "62.13"
+    },
+    {
+      "row": 46,
+      "variable": "날씨",
+      "category": "비",
+      "count": 17090,
+      "percent": "20.52"
+    },
+    {
+      "row": 47,
+      "variable": "날씨",
+      "category": "흐림",
+      "count": 11135,
+      "percent": "13.37"
+    },
+    {
+      "row": 48,
+      "variable": "날씨",
+      "category": "눈",
+      "count": 2926,
+      "percent": "3.51"
+    },
+    {
+      "row": 49,
+      "variable": "날씨",
+      "category": "기타",
+      "count": 394,
+      "percent": "0.47"
+    },
+    {
+      "row": 50,
+      "variable": "조명시설",
+      "category": "해당없음(주간)",
+      "count": 43215,
+      "percent": "51.88"
+    },
+    {
+      "row": 51,
+      "variable": "조명시설",
+      "category": "작동",
+      "count": 24560,
+      "percent": "29.48"
+    },
+    {
+      "row": 52,
+      "variable": "조명시설",
+      "category": "없음",
+      "count": 12682,
+      "percent": "15.23"
+    },
+    {
+      "row": 53,
+      "variable": "조명시설",
+      "category": "미작동",
+      "count": 2840,
+      "percent": "3.41"
+    },
+    {
+      "row": 54,
+      "variable": "노면상태",
+      "category": "건조",
+      "count": 61323,
+      "percent": "73.62"
+    },
+    {
+      "row": 55,
+      "variable": "노면상태",
+      "category": "습기",
+      "count": 21382,
+      "percent": "25.67"
+    },
+    {
+      "row": 56,
+      "variable": "노면상태",
+      "category": "적설",
+      "count": 469,
+      "percent": "0.56"
+    },
+    {
+      "row": 57,
+      "variable": "노면상태",
+      "category": "기타",
+      "count": 123,
+      "percent": "0.15"
+    },
+    {
+      "row": 58,
+      "variable": "연령구분",
+      "category": "미상",
+      "count": 18792,
+      "percent": "22.56"
+    },
+    {
+      "row": 59,
+      "variable": "연령구분",
+      "category": "40대",
+      "count": 16290,
+      "percent": "19.56"
+    },
+    {
+      "row": 60,
+      "variable": "연령구분",
+      "category": "50대",
+      "count": 15165,
+      "percent": "18.21"
+    },
+    {
+      "row": 61,
+      "variable": "연령구분",
+      "category": "30대",
+      "count": 13370,
+      "percent": "16.05"
+    },
+    {
+      "row": 62,
+      "variable": "연령구분",
+      "category": "20대",
+      "count": 8267,
+      "percent": "9.92"
+    },
+    {
+      "row": 63,
+      "variable": "연령구분",
+      "category": "60세이상",
+      "count": 6705,
+      "percent": "8.05"
+    },
+    {
+      "row": 64,
+      "variable": "연령구분",
+      "category": "20세미만",
+      "count": 4708,
+      "percent": "5.65"
+    },
+    {
+      "row": 65,
+      "variable": "사고직전차량조작",
+      "category": "운행차로주행",
+      "count": 68090,
+      "percent": "81.74"
+    },
+    {
+      "row": 66,
+      "variable": "사고직전차량조작",
+      "category": "핸들과대조작",
+      "count": 10226,
+      "percent": "12.28"
+    },
+    {
+      "row": 67,
+      "variable": "사고직전차량조작",
+      "category": "기타",
+      "count": 3332,
+      "percent": "4.00"
+    },
+    {
+      "row": 68,
+      "variable": "사고직전차량조작",
+      "category": "차로변경",
+      "count": 1649,
+      "percent": "1.98"
+    },
+    {
+      "row": 69,
+      "variable": "차종구분",
+      "category": "중형",
+      "count": 28103,
+      "percent": "33.74"
+    },
+    {
+      "row": 70,
+      "variable": "차종구분",
+      "category": "소형",
+      "count": 18896,
+      "percent": "22.69"
+    },
+    {
+      "row": 71,
+      "variable": "차종구분",
+      "category": "대형",
+      "count": 10922,
+      "percent": "13.11"
+    },
+    {
+      "row": 72,
+      "variable": "차종구분",
+      "category": "SUV형",
+      "count": 9770,
+      "percent": "11.73"
+    },
+    {
+      "row": 73,
+      "variable": "차종구분",
+      "category": "미상",
+      "count": 7539,
+      "percent": "9.05"
+    },
+    {
+      "row": 74,
+      "variable": "차종구분",
+      "category": "경형",
+      "count": 3452,
+      "percent": "4.14"
+    },
+    {
+      "row": 75,
+      "variable": "차종구분",
+      "category": "일반화물",
+      "count": 3406,
+      "percent": "4.09"
+    },
+    {
+      "row": 76,
+      "variable": "차종구분",
+      "category": "탑차",
+      "count": 1028,
+      "percent": "1.23"
+    },
+    {
+      "row": 77,
+      "variable": "차종구분",
+      "category": "기타",
+      "count": 181,
+      "percent": "0.22"
+    },
+    {
+      "row": 78,
+      "variable": "절성토구분",
+      "category": "평지",
+      "count": 41484,
+      "percent": "49.80"
+    },
+    {
+      "row": 79,
+      "variable": "절성토구분",
+      "category": "성토고 2M 이상 5M 미만",
+      "count": 9854,
+      "percent": "11.83"
+    },
+    {
+      "row": 80,
+      "variable": "절성토구분",
+      "category": "성토고 15M 이상",
+      "count": 9456,
+      "percent": "11.35"
+    },
+    {
+      "row": 81,
+      "variable": "절성토구분",
+      "category": "미상",
+      "count": 8233,
+      "percent": "9.88"
+    },
+    {
+      "row": 82,
+      "variable": "절성토구분",
+      "category": "절토부 10M 미만",
+      "count": 5765,
+      "percent": "6.92"
+    },
+    {
+      "row": 83,
+      "variable": "절성토구분",
+      "category": "절토부 10M 이상",
+      "count": 4306,
+      "percent": "5.17"
+    },
+    {
+      "row": 84,
+      "variable": "절성토구분",
+      "category": "성토고 2M 미만",
+      "count": 4199,
+      "percent": "5.04"
+    },
+    {
+      "row": 85,
+      "variable": "평면선형",
+      "category": "직선",
+      "count": 56956,
+      "percent": "68.38"
+    },
+    {
+      "row": 86,
+      "variable": "평면선형",
+      "category": "좌커브",
+      "count": 11077,
+      "percent": "13.30"
+    },
+    {
+      "row": 87,
+      "variable": "평면선형",
+      "category": "우커브",
+      "count": 10807,
+      "percent": "12.97"
+    },
+    {
+      "row": 88,
+      "variable": "평면선형",
+      "category": "미상",
+      "count": 4457,
+      "percent": "5.35"
+    }
+  ],
+  "note": "Original category-label comparison. The final HWPX relabels the merged fill category as Fill 5 m or more (combined) and reorders rows; counts and percentages are unchanged."
+}

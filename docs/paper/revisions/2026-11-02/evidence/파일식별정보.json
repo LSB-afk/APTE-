@@ -1,0 +1,50 @@
+{
+  "tracks": 592,
+  "logical_changes": 205,
+  "original_sha256": "152c7f1c95497d62ee5eb6e731e9087b3386349a8e935de2f77323b8c1e783c7",
+  "output_sha256": "1ac7621aa5ea69cc1572a24c4906021a110a77ad79cd1aa45828fb2c5754a965",
+  "reference_mapping": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7,
+    "9": 8,
+    "8": 9,
+    "10": 10,
+    "11": 11,
+    "12": 12,
+    "13": 13,
+    "16": 14,
+    "14": 15,
+    "15": 16,
+    "18": 17,
+    "25": 18,
+    "26": 19,
+    "28": 20,
+    "17": 21,
+    "29": 22
+  },
+  "date": "2026-11-02T11:18:36Z",
+  "preview_cache_refresh": {
+    "parts": [
+      "Contents/content.hpf",
+      "Preview/PrvText.txt",
+      "Preview/PrvImage.png"
+    ],
+    "body_xml_hashes_unchanged": true,
+    "source": "Hancom native output revised-vif-verified.pdf, page 1; accepted-text projection",
+    "first_page_png_size": [
+      724,
+      1024
+    ]
+  },
+  "output": "APTE_교수메모반영_변경내용추적.hwpx",
+  "source_filename": "자동차모빌리티안전연구_논문_최종 수정본_EJ검토_마지막.hwpx",
+  "track_types": {
+    "Delete": 318,
+    "Insert": 274
+  }
+}

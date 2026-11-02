@@ -1,0 +1,160 @@
+{
+  "created_at_utc": "2026-11-02T10:51:43.152992+00:00",
+  "scope": "Existing-result verification only; no source/output/raw modifications; no model selection or XGBoost training.",
+  "software": {
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "statsmodels": "0.14.4"
+  },
+  "sample": {
+    "n": 83297,
+    "positive": 8993,
+    "total_casualties": 14239,
+    "predictor_variables": 14,
+    "nonreference_dummies_before_separation": 72,
+    "excluded_columns": [
+      "주사고원인_포트홀"
+    ],
+    "main_effect_dummies": 71,
+    "columns_including_intercept": 72,
+    "reference_categories": {
+      "주사고원인": "과속",
+      "교통장애요인": "장애없음",
+      "발생지점": "본선",
+      "운전자상태": "정상",
+      "사고시도로환경": "정상",
+      "원인차차종": "승용",
+      "날씨": "맑음",
+      "조명시설": "해당없음(주간)",
+      "노면상태": "건조",
+      "연령구분": "미상",
+      "사고직전차량조작": "운행차로주행",
+      "차종구분": "중형",
+      "절성토구분": "평지",
+      "평면선형": "직선"
+    }
+  },
+  "warnings": [],
+  "logistic": {
+    "converged": true,
+    "mle_retvals": {
+      "fopt": 0.291425757732798,
+      "fcalls": 78,
+      "warnflag": 0,
+      "converged": true,
+      "iterations": 71,
+      "gradient_max_abs": 8.206180461908445e-06
+    },
+    "llf": -24274.891341868875,
+    "llnull": -28507.177246809762,
+    "mcfadden_pseudo_r2": 0.14846387168741948,
+    "round_3_decimals": "0.148",
+    "round_4_decimals": "0.1485",
+    "significant_dummies_p_lt_05": 51,
+    "stored_csv_max_abs_difference": {
+      "coef": 4.9907979920549295e-05,
+      "OR": 4.936229616681054e-05,
+      "OR_CI_low": 4.967612012274358e-05,
+      "OR_CI_high": 4.866236405431934e-05,
+      "p_value": 4.748772171636606e-05,
+      "formatted_coef": 4.9907979920549295e-05
+    }
+  },
+  "negative_binomial": {
+    "converged": true,
+    "poisson_converged": true,
+    "alpha": 3.4338328130082534,
+    "alpha_formula": "max(0.01, sum((y_cnt-mu_P)^2-mu_P)/sum(mu_P^2))",
+    "alpha_is_fixed_for_nb_inference": true,
+    "llf": -33830.8629450859,
+    "significant_dummies_p_lt_05": 54,
+    "stored_csv_max_abs_difference": {
+      "coef": 4.991725964531568e-05,
+      "IRR": 4.984646369643464e-05,
+      "CI_low": 4.980099700846452e-05,
+      "CI_high": 4.821407152327817e-05,
+      "p_value": 4.9635287454337373e-05
+    },
+    "selected_effects": [
+      {
+        "dummy": "교통장애요인_정차차량",
+        "coef": 1.0734253585764866,
+        "IRR": 2.925382842888339,
+        "CI_low": 2.596846182952119,
+        "CI_high": 3.295483896445803,
+        "p_value": 8.422363255225496e-70,
+        "stored_csv_line": 17
+      },
+      {
+        "dummy": "원인차차종_트레일러",
+        "coef": 0.955429336388546,
+        "IRR": 2.5997865263030224,
+        "CI_low": 2.0945590591452827,
+        "CI_high": 3.226879639815363,
+        "p_value": 4.4750508940592786e-18,
+        "stored_csv_line": 34
+      },
+      {
+        "dummy": "발생지점_영업소(TG)",
+        "coef": -1.9481733276602373,
+        "IRR": 0.1425341972075537,
+        "CI_low": 0.1259948521497715,
+        "CI_high": 0.16124466219819805,
+        "p_value": 2.0018802654433676e-210,
+        "stored_csv_line": 21
+      },
+      {
+        "dummy": "원인차차종_승합",
+        "coef": 1.003671026974119,
+        "IRR": 2.7282790531881527,
+        "CI_low": 2.489409549725996,
+        "CI_high": 2.990069108108199,
+        "p_value": 2.998105357156615e-102,
+        "stored_csv_line": 33
+      },
+      {
+        "dummy": "주사고원인_안전거리미확보",
+        "coef": 0.7565942488671679,
+        "IRR": 2.13100617085365,
+        "CI_low": 1.8663533630516855,
+        "CI_high": 2.4331872999607183,
+        "p_value": 4.96250870798005e-29,
+        "stored_csv_line": 8
+      }
+    ],
+    "pseudo_r2_not_reported": "The saved NB result table and script do not provide a NB pseudo-R2; logistic McFadden R2 is not reused."
+  },
+  "lr_nb_direction": {
+    "common_significant": 47,
+    "same_sign": 47
+  },
+  "inattention_x_tollgate": {
+    "features": [
+      "주사고원인_주시태만",
+      "발생지점_영업소(TG)"
+    ],
+    "n_both": 4311,
+    "design_columns": 73,
+    "converged": true,
+    "coef_unrounded": -0.934500879536082,
+    "p_value": 1.0204045747434181e-11,
+    "stored_coef": -0.9345,
+    "coefficient_abs_difference": 8.795360819657816e-07,
+    "direct_round_3_decimals": "-0.935",
+    "direct_round_4_decimals": "-0.9345",
+    "stored_csv_line": 11,
+    "note": "One selected interaction refitted; BH q-values were not recomputed across 24 hypotheses."
+  },
+  "input_sha256": {
+    "data/processed/analysis_dataset.csv": "f76cec85b2e6b2f34402bf21aef9d12c86a430b545e0292b146cd364dca77b0b",
+    "local_raw/2011~2019 교통사고 통합 데이터.csv": "38ddf2800a35805894b79af4c57db217cc353bc4abb4151ef83e9ce888af256b",
+    "src/04_confirmatory_stats.py": "b4a2b40d6f49e78e11a4b54b77a323350b420bfc95386f90fd6cbc08c07cad63",
+    "src/05_interaction_deep.py": "f7d8287c18ff096f95a7d6324c250313576af312c21b3c03e1332df46c00ff23",
+    "src/06_regression_tables.py": "241fc6ceccdf68ee0142267d03791ffc3d5a57a115f1788284f0e443840534bc",
+    "outputs/tables/logistic_or_table.csv": "024c1672795ec75552689e08c4ad20d67d1683d8518658a379627e449721a970",
+    "outputs/tables/table_logistic_formatted.csv": "00a7524e7775cbb097a8a70a2306f46395c930347e8cf3c9050d3fdd5ea036e3",
+    "outputs/tables/table_negbin_formatted.csv": "ee16aedb3da24a9e94fcb2d8ee148b635f9595a271a82b3b97989faec2a47aaa",
+    "outputs/tables/interaction_profile.csv": "e5717b9fc47627cf4ed6f21bd472e95466f8db8fcb65fae72bdf00259fdde53d"
+  },
+  "watched_files_unchanged": true
+}

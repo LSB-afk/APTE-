@@ -1,0 +1,17 @@
+{
+  "pages": 17,
+  "previous_pages": 17,
+  "changed_pages": [
+    {
+      "page": 5,
+      "bbox": [
+        121,
+        1188,
+        891,
+        1236
+      ]
+    }
+  ],
+  "reference_pdf": "revised-verified.pdf",
+  "final_pdf": "revised-vif-verified.pdf"
+}
