@@ -35,23 +35,30 @@
 | 분석 방법과 전체 결과 | [분석 보고서](docs/analysis_report.md) |
 | 논문 방법론·결과 초안 | [방법론](docs/paper/04_draft_methods.md), [결과](docs/paper/05_draft_results.md) |
 | 집필 계획·분석 근거·초록·서론 | [논문 작업 폴더](docs/paper/) |
-| 전체 원고·개요·감사보고서 | [전체 원고](APTE_논문_전체원고_v1.md), [상세 개요](APTE_논문_상세개요.md), [근거 기반 감사보고서](APTE_논문_근거기반_감사보고서.md) |
-| 편집용 논문 파일 | [DOCX 초안](docs/paper/APTE_2026_논문초안.docx), [HWPX 원본](APTE논문.hwpx), [v2](APTE논문_v2.hwpx), [v3](APTE논문_v3.hwpx) |
-| 저장 결과 | [그림 15개](outputs/figures/), [결과표 21개](outputs/tables/), [모델·분할·SHAP](outputs/model/) |
-| 자료와 분석 코드 | [원자료](data/raw/), [가공자료](data/processed/), [분석 코드](src/) |
+| 전체 원고·개요·감사보고서 | [전체 원고](docs/paper/manuscripts/APTE_논문_전체원고_v1.md), [상세 개요](docs/paper/manuscripts/APTE_논문_상세개요.md), [근거 기반 감사보고서](docs/reviews/APTE_논문_근거기반_감사보고서.md) |
+| 편집용 논문 파일 | [DOCX 초안](docs/paper/APTE_2026_논문초안.docx), [HWPX 원본](docs/paper/manuscripts/APTE논문.hwpx), [v2](docs/paper/manuscripts/APTE논문_v2.hwpx), [v3](docs/paper/manuscripts/APTE논문_v3.hwpx) |
+| 초록·제출용 원고 | [최종 초록](docs/abstracts/APTE_2026_Abstract_sb_sj_final.doc), [별도 전체 논문 초안](docs/paper/submissions/APTE_2026_full_paper_draft.docx) |
+| 저장 결과 | [그림 15개](outputs/figures/), [결과표 21개](outputs/tables/), [학습 모델·설정](outputs/model/) |
+| 분석 코드·탐색 노트북 | [분석 코드](src/), [탐색 노트북](notebooks/exploratory/) |
+| 학회 발표·포스터 | [포스터·발표 파일과 제작 코드](projects/traffic-accident-poster/) |
+| 참고문헌 | [참고논문·보고서 PDF](references/papers/) |
+| 자료 정리 기준 | [폴더 대응표·중복 처리·데이터 제외 범위](docs/repository_guide.md) |
 | 2026-10-01 검토 기록 | [PDF·메모·실제 분석 대조](docs/reviews/APTE_10_01_대조검토.md), [수정 실행안](docs/reviews/APTE_10_01_수정실행안.md) |
 
 현재 수치와 산출물은 기존 분석 결과다. 2026-10-01 검토에서 성토 범주 병합,
 포트홀 기준집단, 예측 평가 절차 등의 수정 필요 사항을 기록했다.
 수정 실행안은 향후 작업 계획이며, 해당 재분석이 완료됐다는 뜻은 아니다.
-검토 문서가 참조하는 Downloads·상위 폴더의 외부 자료는 이 저장소에 포함되지 않는다.
+검토 문서가 참조하는 Downloads 등 외부 경로의 자료가 모두 포함된 것은 아니다.
+이번 정리는 로컬 APTE 폴더에 있는 비데이터 자료를 대상으로 하며, 새 분석을 수행하지 않았다.
+
+원본·전처리 데이터, 학습/평가 분할, 관측치별 예측값과 SHAP 배열은 공개 파일 목록에서
+제외했다. 기존 로컬 파일은 유지하며, 집계 결과표·그림·모델 설정과 가중치는 보존한다.
+노트북은 코드·설명만 공유하고 저장된 실행 출력과 실행 횟수는 제거했다.
+이 제외 기준은 현재 버전에 적용되며, 과거 Git 커밋 이력을 삭제한 것은 아니다.
 
 ## 저장소 구조
 
 ```
-├── data/
-│   ├── raw/                  # 5차 전처리 데이터 (팀 공유 원본)
-│   └── processed/            # analysis_dataset.csv (최종 14개 변수 + injury)
 ├── src/
 │   ├── 01_preprocess.py         # 전처리 + Cramér's V/VIF 공선성 진단 + 변수 선별
 │   ├── 02_model_xgboost.py      # 균형/불균형 설계 XGBoost + LR 베이스라인
@@ -64,14 +71,29 @@
 ├── outputs/
 │   ├── figures/              # fig01~fig15 (히트맵, ROC/PR, SHAP, 회귀·TG 등)
 │   ├── tables/               # 성능표, 중요도, 상호작용, 선별 로그
-│   └── model/                # 학습된 모델(json), 데이터 분할, SHAP 값
-└── docs/
-    ├── analysis_report.md    # 분석 리포트 (방법론·결과·기존 분석과의 차이)
-    ├── paper/                # 논문 초안·DOCX 생성 코드·의존성 파일
-    └── reviews/              # 실제 분석 대조 검토·수정 실행안
+│   └── model/                # 학습된 모델(json)·모델 설정만 공개
+├── docs/
+│   ├── analysis_report.md    # 분석 리포트 (방법론·결과·기존 분석과의 차이)
+│   ├── abstracts/            # 최종 초록
+│   ├── paper/                # 논문 초안·DOCX 생성 코드·의존성 파일
+│   │   ├── manuscripts/      # 전체 원고·상세 개요·HWPX 버전별 파일
+│   │   └── submissions/      # 별도로 작성한 전체 논문 초안
+│   ├── reviews/              # 감사보고서·대조 검토·수정 실행안
+│   └── repository_guide.md   # 자료 정리 및 데이터 제외 기준
+├── notebooks/exploratory/    # 기존 탐색·방법론 노트북 (실행 출력 제거)
+├── references/papers/        # 참고논문·보고서 PDF 11개
+└── projects/traffic-accident-poster/
+    ├── *.pptx, *.pdf, *.svg  # 학회 발표·포스터와 편집용 파일
+    ├── *.py                  # 기존 포스터·표·그림 제작 코드
+    ├── notebooks/            # 기존 학습 노트북 (실행 출력 제거)
+    ├── charts_en/            # 영문 포스터 그림
+    └── outputs/              # 기존 분석의 그림·집계표·변수 메타데이터
 ```
 
 ## 실행
+
+데이터는 포함되어 있지 않으므로 분석 재실행에는 로컬 원자료와 중간 산출물이 필요하다.
+집계표·그림·문서 열람은 데이터 없이 가능하다.
 
 ```bash
 pip install -r requirements.txt
@@ -83,6 +105,9 @@ python3 src/03_shap_analysis.py
 `01_preprocess.py`, `06_regression_tables.py`, `08_tg_distance_gradient.py`는
 저장소 밖의 통합 원자료를 참조한다. 재실행할 때 각 스크립트의 원자료·출력 경로를
 실행 환경에 맞춰 확인해야 한다.
+
+포스터 제작 코드는 [별도 안내](projects/traffic-accident-poster/README.md)를 참고한다.
+기존 코드의 분석 방식과 경로 설정은 이번 자료 정리에서 변경하지 않았다.
 
 논문 DOCX 생성:
 

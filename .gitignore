@@ -4,5 +4,27 @@ __pycache__/
 .ipynb_checkpoints/
 node_modules/
 .omc/
+.omx/
 APTE-repo/
 tmp/
+
+# Local datasets and per-record analysis artifacts are not published.
+/data/
+**/DATA/
+*.npy
+*.npz
+*.parquet
+*_prediction_results.csv
+X_train*.csv
+X_test*.csv
+y_train*.csv
+y_test*.csv
+preprocessed_all_in_one.csv
+
+# Office lock files and local credentials.
+~$*
+.env
+.env.*
+!.env.example
+*.pem
+*.key

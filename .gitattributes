@@ -1,0 +1,10 @@
+# Keep research documents as binary files in Git diffs.
+*.pdf binary
+*.doc binary
+*.docx binary
+*.pptx binary
+*.hwpx binary
+*.png binary
+
+# Preserve the original encoding and line endings of result tables.
+*.csv -text
