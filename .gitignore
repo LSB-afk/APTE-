@@ -3,7 +3,6 @@ __pycache__/
 .DS_Store
 .ipynb_checkpoints/
 node_modules/
-package*.json
 .omc/
 APTE-repo/
 tmp/
