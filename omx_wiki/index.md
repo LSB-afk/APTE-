@@ -1,6 +1,6 @@
 # Wiki Index
 
-> 22 pages | Last updated: 2026-11-03T05:23:48.444Z
+> 23 pages | Last updated: 2026-11-03T05:46:34.244Z
 
 ## debugging
 
@@ -34,4 +34,5 @@
 
 ## session-log
 
+- [APTE Full Rereview](apte-full-rereview.md) — # APTE Full Rereview
 - [APTE Validation Log](apte-validation-log.md) — # APTE Validation Log

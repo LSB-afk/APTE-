@@ -1,0 +1,123 @@
+{
+  "scope": "Parent-authorized precision verification: existing-design main-effects LR and three interaction terms only; saved XGBoost inference only; no XGBoost training, SHAP calculation, selection change, or public output modifications.",
+  "created_at_utc": "2026-11-03T05:35:44.721931+00:00",
+  "input_sha256_before": {
+    "data/processed/analysis_dataset.csv": "f76cec85b2e6b2f34402bf21aef9d12c86a430b545e0292b146cd364dca77b0b",
+    "outputs/tables/logistic_or_table.csv": "024c1672795ec75552689e08c4ad20d67d1683d8518658a379627e449721a970",
+    "outputs/tables/interaction_profile.csv": "e5717b9fc47627cf4ed6f21bd472e95466f8db8fcb65fae72bdf00259fdde53d",
+    "outputs/tables/model_comparison.csv": "9e9da688071b9b5eb955698db2c5f06b17cf6645fd71e0ee58fd603add712e63",
+    "outputs/model/xgb_injury_balanced.json": "3e6dce2b53dea44a66d50e9d27025724469a5f38def71c57ad317975822d2412",
+    "outputs/model/X_test_balanced.parquet": "ac7b7b762a82d5a5db650d998185bc4571db386b131d8df619889946533b8ebf",
+    "outputs/model/y_test_balanced.npy": "b8d2036ee769ace86b4a58cf14c168d14767f8c450d5f0874f92a030e6dbe9fa"
+  },
+  "representative_xgboost_inference": {
+    "n": 3598,
+    "threshold": 0.5,
+    "metrics_unrounded": {
+      "Accuracy": 0.7134519177320734,
+      "Precision": 0.6955193482688391,
+      "Recall": 0.7593107281823235,
+      "F1": 0.7260164762157852,
+      "ROC_AUC": 0.7896030189089671,
+      "PR_AUC": 0.7734126075776447
+    },
+    "metrics_display_3dp": {
+      "Accuracy": "0.713",
+      "Precision": "0.696",
+      "Recall": "0.759",
+      "F1": "0.726",
+      "ROC_AUC": "0.790",
+      "PR_AUC": "0.773"
+    },
+    "stored_csv_4dp_match": true,
+    "stored_csv": {
+      "Accuracy": 0.7135,
+      "Precision": 0.6955,
+      "Recall": 0.7593,
+      "F1": 0.726,
+      "ROC_AUC": 0.7896,
+      "PR_AUC": 0.7734
+    },
+    "training_performed": false
+  },
+  "design": {
+    "n": 83297,
+    "main_effect_dummies": 71,
+    "columns_with_intercept": 72,
+    "separated_columns_dropped_rows_retained": [
+      "주사고원인_포트홀"
+    ]
+  },
+  "main_effect_logistic": {
+    "converged": true,
+    "warnflag": 0,
+    "iterations": 71,
+    "warnings": [],
+    "mcfadden_pseudo_r2": 0.14846387168741948,
+    "fire_effect": {
+      "dummy": "주사고원인_단독차량화재",
+      "coef_unrounded": -3.0813435904902193,
+      "OR_unrounded": 0.04589754769393889,
+      "CI_low_unrounded": 0.028094351854978845,
+      "CI_high_unrounded": 0.07498250520928351,
+      "OR_2dp": "0.05",
+      "CI_low_2dp": "0.03",
+      "CI_high_2dp": "0.07"
+    }
+  },
+  "three_interactions": [
+    {
+      "features": [
+        "발생지점_영업소(TG)",
+        "조명시설_작동"
+      ],
+      "n_both": 3531,
+      "coef_unrounded": -0.40450427481040035,
+      "direct_round_3dp": "-0.405",
+      "p_value_unrounded": 0.00433383634480864,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 71,
+      "warnings": []
+    },
+    {
+      "features": [
+        "주사고원인_안전거리미확보",
+        "원인차차종_승용"
+      ],
+      "n_both": 1084,
+      "coef_unrounded": -0.4015192692569664,
+      "direct_round_3dp": "-0.402",
+      "p_value_unrounded": 0.0006609147566897312,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 76,
+      "warnings": []
+    },
+    {
+      "features": [
+        "주사고원인_과속",
+        "발생지점_본선"
+      ],
+      "n_both": 13022,
+      "coef_unrounded": -0.2554921005942122,
+      "direct_round_3dp": "-0.255",
+      "p_value_unrounded": 0.0009957056250889525,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 68,
+      "warnings": []
+    }
+  ],
+  "input_sha256_after": {
+    "data/processed/analysis_dataset.csv": "f76cec85b2e6b2f34402bf21aef9d12c86a430b545e0292b146cd364dca77b0b",
+    "outputs/tables/logistic_or_table.csv": "024c1672795ec75552689e08c4ad20d67d1683d8518658a379627e449721a970",
+    "outputs/tables/interaction_profile.csv": "e5717b9fc47627cf4ed6f21bd472e95466f8db8fcb65fae72bdf00259fdde53d",
+    "outputs/tables/model_comparison.csv": "9e9da688071b9b5eb955698db2c5f06b17cf6645fd71e0ee58fd603add712e63",
+    "outputs/model/xgb_injury_balanced.json": "3e6dce2b53dea44a66d50e9d27025724469a5f38def71c57ad317975822d2412",
+    "outputs/model/X_test_balanced.parquet": "ac7b7b762a82d5a5db650d998185bc4571db386b131d8df619889946533b8ebf",
+    "outputs/model/y_test_balanced.npy": "b8d2036ee769ace86b4a58cf14c168d14767f8c450d5f0874f92a030e6dbe9fa"
+  },
+  "watched_files_unchanged": true,
+  "no_full_interaction_refit_or_bh_recalculation": true
+}

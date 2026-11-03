@@ -1,0 +1,190 @@
+{
+  "hwpx_sha256": "895e3c4e3b9847512115e9079f747f89581575816b756e627f7006a4648ec8ef",
+  "citation_occurrences": [
+    {
+      "location": "S0.P014",
+      "numbers": [
+        1
+      ]
+    },
+    {
+      "location": "S0.P014",
+      "numbers": [
+        2
+      ]
+    },
+    {
+      "location": "S0.P014",
+      "numbers": [
+        3,
+        4
+      ]
+    },
+    {
+      "location": "S0.P014",
+      "numbers": [
+        5
+      ]
+    },
+    {
+      "location": "S0.P015",
+      "numbers": [
+        6,
+        7
+      ]
+    },
+    {
+      "location": "S0.P015",
+      "numbers": [
+        8
+      ]
+    },
+    {
+      "location": "S0.P016",
+      "numbers": [
+        7,
+        9
+      ]
+    },
+    {
+      "location": "S0.P017",
+      "numbers": [
+        10
+      ]
+    },
+    {
+      "location": "S0.P017",
+      "numbers": [
+        11,
+        12
+      ]
+    },
+    {
+      "location": "S0.P017",
+      "numbers": [
+        13
+      ]
+    },
+    {
+      "location": "S0.P017",
+      "numbers": [
+        14
+      ]
+    },
+    {
+      "location": "S0.P017",
+      "numbers": [
+        15
+      ]
+    },
+    {
+      "location": "S0.P018",
+      "numbers": [
+        16
+      ]
+    },
+    {
+      "location": "S0.P032",
+      "numbers": [
+        17
+      ]
+    },
+    {
+      "location": "S0.P036",
+      "numbers": [
+        10
+      ]
+    },
+    {
+      "location": "S0.P037",
+      "numbers": [
+        18
+      ]
+    },
+    {
+      "location": "S0.P038",
+      "numbers": [
+        13
+      ]
+    },
+    {
+      "location": "S0.P052",
+      "numbers": [
+        19
+      ]
+    },
+    {
+      "location": "S0.P053",
+      "numbers": [
+        20
+      ]
+    },
+    {
+      "location": "S0.P060",
+      "numbers": [
+        21
+      ]
+    },
+    {
+      "location": "S0.P076",
+      "numbers": [
+        22
+      ]
+    }
+  ],
+  "first_appearance_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "defined_reference_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "undefined": [],
+  "uncited": [],
+  "table1_88_rows_176_numbers_15_totals": true,
+  "table2_recomputed_representative_row": true,
+  "stale_claims_and_duplicate_particle_absent": true,
+  "BH_criterion_q": true,
+  "status": "passed"
+}

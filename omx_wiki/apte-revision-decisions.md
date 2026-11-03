@@ -2,7 +2,7 @@
 title: "APTE Revision Decisions"
 tags: ["편집결정", "추적수정원칙"]
 created: 2026-11-02T10:42:46.693Z
-updated: 2026-11-02T11:25:35.428Z
+updated: 2026-11-03T05:46:34Z
 sources: ["../docs/paper/revisions/2026-11-02/evidence/파일식별정보.json", "../docs/paper/revisions/2026-11-02/evidence/변경대조목록.json", "../docs/paper/revisions/2026-11-02/evidence/문서검증결과.json", "../docs/paper/revisions/2026-11-02/수정검토보고서.md", "../docs/paper/revisions/2026-11-02/구조검증기록.md"]
 links: ["apte-revision-hub.md", "apte-professor-memos.md", "apte-validation-log.md", "apte-memo-12.md"]
 category: decision
@@ -11,6 +11,9 @@ schemaVersion: 1
 ---
 
 # APTE Revision Decisions
+
+> **2026-11-03 전수 재검토 우선 기록:** 현재 판정·파일·인용 매핑은 [[apte-full-rereview]]와 [최신 검토 보고서](../docs/paper/revisions/2026-11-02/전수재검토보고서.md)를 따른다. 아래 이전 날짜의592범위·SMOTEN보존·특정출전보류 기록은 당시 스냅샷이다.
+
 
 # 수정 결정 기록
 

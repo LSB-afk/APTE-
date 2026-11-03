@@ -1,0 +1,2172 @@
+{
+  "started_at_utc": "2026-11-03T05:43:38.376247+00:00",
+  "status": "passed",
+  "scope": "Saved representative XGBoost + exact persisted 86-column order. Recompute full17986 ordinary SHAP, heldout3598 ordinary SHAP and seed42 heldout2000 interactions. Only aggregates are saved; no observation-level SHAP is written or disclosed. No training or model-selection changes.",
+  "software": {
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "shap": "0.50.0",
+    "xgboost": "3.1.3"
+  },
+  "input_sha256_before": {
+    "src/03_shap_analysis.py": "30aa83b7ef4467a7d64065088199163bd433d46cd73cc2a0d2d5c0089cf70ad0",
+    "src/05_interaction_deep.py": "f7d8287c18ff096f95a7d6324c250313576af312c21b3c03e1332df46c00ff23",
+    "src/07_paper_figures.py": "9d5f068b12399b37d1152b83867b80104c653484b0eb14e451adc749206fc706",
+    "data/processed/analysis_dataset.csv": "f76cec85b2e6b2f34402bf21aef9d12c86a430b545e0292b146cd364dca77b0b",
+    "outputs/model/xgb_injury_balanced.json": "3e6dce2b53dea44a66d50e9d27025724469a5f38def71c57ad317975822d2412",
+    "outputs/model/X_train_balanced.parquet": "12fca964187466c10454730b9f8046ae672755b3a2398a1a1984449a42913e6e",
+    "outputs/model/X_test_balanced.parquet": "ac7b7b762a82d5a5db650d998185bc4571db386b131d8df619889946533b8ebf",
+    "outputs/model/shap_values_test.npy": "d7900173c6bbd3c5ca0089ade74f8ccf206187551fcc922a6753fa911e103591",
+    "outputs/tables/shap_importance.csv": "1fd0c84480ddb6cfb3e035ca134ca08e4e2ee60cbcc211ac7f64e3a532d2b21f",
+    "outputs/tables/shap_lr_direction_agreement.csv": "86f685d27477e92c94e43df5e99152d232a5605653210391446b2bc63dcca72b",
+    "outputs/tables/interaction_profile.csv": "e5717b9fc47627cf4ed6f21bd472e95466f8db8fcb65fae72bdf00259fdde53d",
+    "outputs/tables/logistic_or_table.csv": "024c1672795ec75552689e08c4ad20d67d1683d8518658a379627e449721a970",
+    "outputs/figures/fig01_cramers_v_heatmap.png": "b518509bdee57d9fbe4c8d3a752e213be7524faad0ecbaff5ef6a8915f3d02f0",
+    "outputs/figures/fig02_roc_pr_curves.png": "41d9b442cf7c650e1b17fb9906991b089817a8275e17a27a07d1e137e449baab",
+    "outputs/figures/fig03_confusion_matrix.png": "a8e28908b99fc9fb6ca91d29371080e893dad482c1fc572826041da157da84ba",
+    "outputs/figures/fig04_shap_beeswarm.png": "f8220a4ab7cd0b80a62b38cffcf0a97c4a96470645b56a30af478fa009c90ecd",
+    "outputs/figures/fig05_shap_bar.png": "af77adac31e46eee70f31c209a4da4c6c9a806c600ac4ab94c8e7c22f9b7d213",
+    "outputs/figures/fig06_shap_direction.png": "8a91eb8d936c35dc672bdc3cc165ef067d1e93cbf39086646cc4f8362f3f7f9e",
+    "outputs/figures/fig07_interaction_heatmap.png": "aededc3ad27999bfeab6ca3aa4c04905f746a5e94460fae3e4b4f0218fa04d68",
+    "outputs/figures/fig08_interaction_pairs.png": "b1ad0c2a51edde1f91196a9937064006f08d6af1f1ba9932cf0ce9adeead0ec1",
+    "outputs/figures/fig09_or_forest.png": "81732e3a49a87967789d7c10ce7e4d4585e40dfd54eb146e02eab6e0b417c670",
+    "outputs/figures/fig10_interaction_rankB.png": "ddbc52b708f5f6c4ebb40f1ff9e0736917ae31fd9a201d8bb2e92c53f06fefd2",
+    "outputs/figures/fig11_tg_vehicle_casestudy.png": "126fa3447b74e073eeab94d0983b67073ca34ad613d70412860a78728047e753",
+    "outputs/figures/fig12_logistic_table.png": "869b2a3bd42b587e315aa4004b1cf03226e8aa09a1f8f42f75a0c2fe4570eeb1",
+    "outputs/figures/fig13_negbin_table.png": "842bc39d3bf2a3fa38664a465a9bf2e50fff2a4692a9ebee6f81b774c77d4a11",
+    "outputs/figures/fig14_shap_categorical_dependence.png": "ceea3051887ad46ec6953bf278eeeb55694bcd2aa0b0bee1b4f555e479628488",
+    "outputs/figures/fig15_tg_distance_gradient.png": "47dd24538368466444a4f78dcde8bdefa4dc385c3e2bd4e3ddbc5a7d92892d7f"
+  },
+  "warnings": [],
+  "saved_model_feature_order_exact": true,
+  "shapes": {
+    "train": [
+      14388,
+      86
+    ],
+    "test": [
+      3598,
+      86
+    ],
+    "combined": [
+      17986,
+      86
+    ]
+  },
+  "full_ordinary_seconds": 4.2908639590023085,
+  "full_ordinary_all_finite": true,
+  "full_panel_aggregates": {
+    "a_primary_cause": [
+      {
+        "category": "단독차량화재",
+        "feature": "주사고원인_단독차량화재",
+        "n": 253,
+        "mean_SHAP": -2.300457715988159,
+        "mean_abs_SHAP": 2.300457715988159,
+        "sign": -1
+      },
+      {
+        "category": "노면잡물",
+        "feature": "주사고원인_노면잡물",
+        "n": 1079,
+        "mean_SHAP": -1.8903449773788452,
+        "mean_abs_SHAP": 1.8903449773788452,
+        "sign": -1
+      },
+      {
+        "category": "타이어파손",
+        "feature": "주사고원인_타이어파손",
+        "n": 616,
+        "mean_SHAP": -0.2480042427778244,
+        "mean_abs_SHAP": 0.2480042427778244,
+        "sign": -1
+      },
+      {
+        "category": "과속",
+        "feature": "주사고원인_과속",
+        "n": 3926,
+        "mean_SHAP": 0.03010869212448597,
+        "mean_abs_SHAP": 0.030511368066072464,
+        "sign": 1
+      },
+      {
+        "category": "주시태만",
+        "feature": "주사고원인_주시태만",
+        "n": 4730,
+        "mean_SHAP": 0.29760703444480896,
+        "mean_abs_SHAP": 0.29760703444480896,
+        "sign": 1
+      },
+      {
+        "category": "졸음",
+        "feature": "주사고원인_졸음",
+        "n": 3192,
+        "mean_SHAP": 0.33384257555007935,
+        "mean_abs_SHAP": 0.33384257555007935,
+        "sign": 1
+      },
+      {
+        "category": "추월불량",
+        "feature": "주사고원인_추월불량",
+        "n": 421,
+        "mean_SHAP": 0.4654977023601532,
+        "mean_abs_SHAP": 0.4654977023601532,
+        "sign": 1
+      },
+      {
+        "category": "안전거리미확보",
+        "feature": "주사고원인_안전거리미확보",
+        "n": 622,
+        "mean_SHAP": 0.58815997838974,
+        "mean_abs_SHAP": 0.58815997838974,
+        "sign": 1
+      }
+    ],
+    "b_crash_location": [
+      {
+        "category": "영업소(TG)",
+        "feature": "발생지점_영업소(TG)",
+        "n": 1340,
+        "mean_SHAP": -0.810544490814209,
+        "mean_abs_SHAP": 0.810544490814209,
+        "sign": -1
+      },
+      {
+        "category": "램프",
+        "feature": "발생지점_램프",
+        "n": 1945,
+        "mean_SHAP": -0.273782879114151,
+        "mean_abs_SHAP": 0.273782879114151,
+        "sign": -1
+      },
+      {
+        "category": "휴게소",
+        "feature": "발생지점_휴게소",
+        "n": 276,
+        "mean_SHAP": 0.0032757234293967485,
+        "mean_abs_SHAP": 0.011046001687645912,
+        "sign": 1
+      },
+      {
+        "category": "본선",
+        "feature": "발생지점_본선",
+        "n": 13559,
+        "mean_SHAP": 0.1736072450876236,
+        "mean_abs_SHAP": 0.17362624406814575,
+        "sign": 1
+      },
+      {
+        "category": "터널",
+        "feature": "발생지점_터널",
+        "n": 835,
+        "mean_SHAP": 0.36757418513298035,
+        "mean_abs_SHAP": 0.36757418513298035,
+        "sign": 1
+      }
+    ],
+    "c_driver_age": [
+      {
+        "category": "20세미만",
+        "feature": "연령구분_20세미만",
+        "n": 922,
+        "mean_SHAP": -0.15231762826442719,
+        "mean_abs_SHAP": 0.15235479176044464,
+        "sign": -1
+      },
+      {
+        "category": "20대",
+        "feature": "연령구분_20대",
+        "n": 1817,
+        "mean_SHAP": 0.02084951102733612,
+        "mean_abs_SHAP": 0.04085403308272362,
+        "sign": 1
+      },
+      {
+        "category": "30대",
+        "feature": "연령구분_30대",
+        "n": 2965,
+        "mean_SHAP": -0.019764726981520653,
+        "mean_abs_SHAP": 0.036601122468709946,
+        "sign": -1
+      },
+      {
+        "category": "40대",
+        "feature": "연령구분_40대",
+        "n": 3643,
+        "mean_SHAP": 0.001099762273952365,
+        "mean_abs_SHAP": 0.014473523013293743,
+        "sign": 1
+      },
+      {
+        "category": "50대",
+        "feature": "연령구분_50대",
+        "n": 3545,
+        "mean_SHAP": 0.0919424518942833,
+        "mean_abs_SHAP": 0.0935722291469574,
+        "sign": 1
+      },
+      {
+        "category": "60세이상",
+        "feature": "연령구분_60세이상",
+        "n": 1541,
+        "mean_SHAP": 0.1643376499414444,
+        "mean_abs_SHAP": 0.1643376499414444,
+        "sign": 1
+      }
+    ],
+    "d_tollgate_SHAP_by_vehicle_type": [
+      {
+        "category": "승용",
+        "feature_explained": "발생지점_영업소(TG)",
+        "n": 528,
+        "mean_SHAP": -0.5751152038574219,
+        "mean_abs_SHAP": 0.5751152038574219,
+        "sign": -1
+      },
+      {
+        "category": "화물",
+        "feature_explained": "발생지점_영업소(TG)",
+        "n": 450,
+        "mean_SHAP": -0.9018707871437073,
+        "mean_abs_SHAP": 0.9018707871437073,
+        "sign": -1
+      },
+      {
+        "category": "트레일러",
+        "feature_explained": "발생지점_영업소(TG)",
+        "n": 249,
+        "mean_SHAP": -1.1238012313842773,
+        "mean_abs_SHAP": 1.1238012313842773,
+        "sign": -1
+      },
+      {
+        "category": "승합",
+        "feature_explained": "발생지점_영업소(TG)",
+        "n": 90,
+        "mean_SHAP": -0.8233892917633057,
+        "mean_abs_SHAP": 0.8233892917633057,
+        "sign": -1
+      }
+    ]
+  },
+  "P071_and_Fig2_caption_claims": {
+    "single_vehicle_fire_negative": true,
+    "road_debris_negative": true,
+    "inattention_drowsy_overtaking_distance_positive": true,
+    "tollgate_ramp_negative": true,
+    "mainline_tunnel_positive": true,
+    "four_tollgate_vehicle_means_negative": true,
+    "d_n_match_rendered_figure": true,
+    "d_is_tollgate_indicator_not_vehicle_indicator_or_pairwise_interaction": true
+  },
+  "heldout_ordinary_seconds": 0.8599419589154422,
+  "combined_tail_vs_separate_test_max_abs_difference": 0.0,
+  "stored_heldout_array_vs_recomputed_max_abs_difference": 0.0,
+  "heldout_aggregate_comparison": {
+    "features": [
+      {
+        "feature": "주사고원인_-",
+        "n_present": 17,
+        "mean_abs_SHAP": 0.0036515367683023214,
+        "SHAP_when_present": null,
+        "stored_mean_abs_SHAP": 0.0037,
+        "stored_SHAP_when_present": null,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "주사고원인_과속",
+        "n_present": 771,
+        "mean_abs_SHAP": 0.019221408292651176,
+        "SHAP_when_present": 0.029295774176716805,
+        "stored_mean_abs_SHAP": 0.0192,
+        "stored_SHAP_when_present": 0.0293,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "주사고원인_기타",
+        "n_present": 451,
+        "mean_abs_SHAP": 0.015291803516447544,
+        "SHAP_when_present": 0.035728149116039276,
+        "stored_mean_abs_SHAP": 0.0153,
+        "stored_SHAP_when_present": 0.0357,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "주사고원인_노면잡물",
+        "n_present": 221,
+        "mean_abs_SHAP": 0.1991448551416397,
+        "SHAP_when_present": -1.908867359161377,
+        "stored_mean_abs_SHAP": 0.1991,
+        "stored_SHAP_when_present": -1.9089,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "주사고원인_단독차량화재",
+        "n_present": 60,
+        "mean_abs_SHAP": 0.06380540132522583,
+        "SHAP_when_present": -2.251668691635132,
+        "stored_mean_abs_SHAP": 0.0638,
+        "stored_SHAP_when_present": -2.2517,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "주사고원인_도로사정",
+        "n_present": 28,
+        "mean_abs_SHAP": 0.020656738430261612,
+        "SHAP_when_present": null,
+        "stored_mean_abs_SHAP": 0.0207,
+        "stored_SHAP_when_present": null,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "주사고원인_동물침입",
+        "n_present": 32,
+        "mean_abs_SHAP": 0.015010093338787556,
+        "SHAP_when_present": -0.7154646515846252,
+        "stored_mean_abs_SHAP": 0.015,
+        "stored_SHAP_when_present": -0.7155,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "주사고원인_안전거리미확보",
+        "n_present": 133,
+        "mean_abs_SHAP": 0.044206760823726654,
+        "SHAP_when_present": 0.5944734215736389,
+        "stored_mean_abs_SHAP": 0.0442,
+        "stored_SHAP_when_present": 0.5945,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "주사고원인_적재불량",
+        "n_present": 26,
+        "mean_abs_SHAP": 0.014252069406211376,
+        "SHAP_when_present": null,
+        "stored_mean_abs_SHAP": 0.0143,
+        "stored_SHAP_when_present": null,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "주사고원인_졸음",
+        "n_present": 620,
+        "mean_abs_SHAP": 0.11832671612501144,
+        "SHAP_when_present": 0.33312416076660156,
+        "stored_mean_abs_SHAP": 0.1183,
+        "stored_SHAP_when_present": 0.3331,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "주사고원인_주시태만",
+        "n_present": 983,
+        "mean_abs_SHAP": 0.14585699141025543,
+        "SHAP_when_present": 0.29812636971473694,
+        "stored_mean_abs_SHAP": 0.1459,
+        "stored_SHAP_when_present": 0.2981,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "주사고원인_차량결함기타",
+        "n_present": 25,
+        "mean_abs_SHAP": 0.011610322631895542,
+        "SHAP_when_present": null,
+        "stored_mean_abs_SHAP": 0.0116,
+        "stored_SHAP_when_present": null,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "주사고원인_차량기타",
+        "n_present": 17,
+        "mean_abs_SHAP": 0.005834674928337336,
+        "SHAP_when_present": null,
+        "stored_mean_abs_SHAP": 0.0058,
+        "stored_SHAP_when_present": null,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "주사고원인_추월불량",
+        "n_present": 82,
+        "mean_abs_SHAP": 0.024313582107424736,
+        "SHAP_when_present": 0.4657303988933563,
+        "stored_mean_abs_SHAP": 0.0243,
+        "stored_SHAP_when_present": 0.4657,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "주사고원인_타이어파손",
+        "n_present": 107,
+        "mean_abs_SHAP": 0.018501639366149902,
+        "SHAP_when_present": -0.2573508620262146,
+        "stored_mean_abs_SHAP": 0.0185,
+        "stored_SHAP_when_present": -0.2574,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "주사고원인_포트홀",
+        "n_present": 25,
+        "mean_abs_SHAP": 0.008227192796766758,
+        "SHAP_when_present": null,
+        "stored_mean_abs_SHAP": 0.0082,
+        "stored_SHAP_when_present": null,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "교통장애요인_기타",
+        "n_present": 29,
+        "mean_abs_SHAP": 0.0002296861493960023,
+        "SHAP_when_present": null,
+        "stored_mean_abs_SHAP": 0.0002,
+        "stored_SHAP_when_present": null,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "교통장애요인_장애없음",
+        "n_present": 3342,
+        "mean_abs_SHAP": 0.1388155072927475,
+        "SHAP_when_present": -0.07105907797813416,
+        "stored_mean_abs_SHAP": 0.1388,
+        "stored_SHAP_when_present": -0.0711,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "교통장애요인_정차차량",
+        "n_present": 143,
+        "mean_abs_SHAP": 0.0017196161206811666,
+        "SHAP_when_present": 0.012683908455073833,
+        "stored_mean_abs_SHAP": 0.0017,
+        "stored_SHAP_when_present": 0.0127,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "교통장애요인_정체",
+        "n_present": 84,
+        "mean_abs_SHAP": 0.0024847653694450855,
+        "SHAP_when_present": 0.058756276965141296,
+        "stored_mean_abs_SHAP": 0.0025,
+        "stored_SHAP_when_present": 0.0588,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "발생지점_기타",
+        "n_present": 7,
+        "mean_abs_SHAP": 0.0,
+        "SHAP_when_present": null,
+        "stored_mean_abs_SHAP": 0.0,
+        "stored_SHAP_when_present": null,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "발생지점_램프",
+        "n_present": 405,
+        "mean_abs_SHAP": 0.07120619714260101,
+        "SHAP_when_present": -0.27778393030166626,
+        "stored_mean_abs_SHAP": 0.0712,
+        "stored_SHAP_when_present": -0.2778,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "발생지점_본선",
+        "n_present": 2686,
+        "mean_abs_SHAP": 0.2767767310142517,
+        "SHAP_when_present": 0.173295259475708,
+        "stored_mean_abs_SHAP": 0.2768,
+        "stored_SHAP_when_present": 0.1733,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "발생지점_영업소(TG)",
+        "n_present": 263,
+        "mean_abs_SHAP": 0.11628464609384537,
+        "SHAP_when_present": -0.8199052214622498,
+        "stored_mean_abs_SHAP": 0.1163,
+        "stored_SHAP_when_present": -0.8199,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "발생지점_터널",
+        "n_present": 190,
+        "mean_abs_SHAP": 0.04793849587440491,
+        "SHAP_when_present": 0.36494407057762146,
+        "stored_mean_abs_SHAP": 0.0479,
+        "stored_SHAP_when_present": 0.3649,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "발생지점_휴게소",
+        "n_present": 47,
+        "mean_abs_SHAP": 0.0008970053750090301,
+        "SHAP_when_present": 0.004694139119237661,
+        "stored_mean_abs_SHAP": 0.0009,
+        "stored_SHAP_when_present": 0.0047,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "운전자상태_기타",
+        "n_present": 62,
+        "mean_abs_SHAP": 0.013566343113780022,
+        "SHAP_when_present": 0.377692848443985,
+        "stored_mean_abs_SHAP": 0.0136,
+        "stored_SHAP_when_present": 0.3777,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "운전자상태_음주",
+        "n_present": 127,
+        "mean_abs_SHAP": 0.0030536444392055273,
+        "SHAP_when_present": -0.014034081250429153,
+        "stored_mean_abs_SHAP": 0.0031,
+        "stored_SHAP_when_present": -0.014,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "운전자상태_정상",
+        "n_present": 3132,
+        "mean_abs_SHAP": 0.04939386248588562,
+        "SHAP_when_present": -0.027159584686160088,
+        "stored_mean_abs_SHAP": 0.0494,
+        "stored_SHAP_when_present": -0.0272,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "운전자상태_피로",
+        "n_present": 277,
+        "mean_abs_SHAP": 0.003151054959744215,
+        "SHAP_when_present": -0.002339292550459504,
+        "stored_mean_abs_SHAP": 0.0032,
+        "stored_SHAP_when_present": -0.0023,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "사고시도로환경_기타",
+        "n_present": 38,
+        "mean_abs_SHAP": 0.0007997697102837265,
+        "SHAP_when_present": 0.023911988362669945,
+        "stored_mean_abs_SHAP": 0.0008,
+        "stored_SHAP_when_present": 0.0239,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "사고시도로환경_낙하물",
+        "n_present": 60,
+        "mean_abs_SHAP": 0.017202503979206085,
+        "SHAP_when_present": -0.635804295539856,
+        "stored_mean_abs_SHAP": 0.0172,
+        "stored_SHAP_when_present": -0.6358,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "사고시도로환경_미끄러운노면",
+        "n_present": 434,
+        "mean_abs_SHAP": 0.007807467132806778,
+        "SHAP_when_present": 0.02325172908604145,
+        "stored_mean_abs_SHAP": 0.0078,
+        "stored_SHAP_when_present": 0.0233,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "사고시도로환경_시거장애",
+        "n_present": 27,
+        "mean_abs_SHAP": 0.0006764935678802431,
+        "SHAP_when_present": null,
+        "stored_mean_abs_SHAP": 0.0007,
+        "stored_SHAP_when_present": null,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "사고시도로환경_정상",
+        "n_present": 3010,
+        "mean_abs_SHAP": 0.04673824831843376,
+        "SHAP_when_present": 0.021111326292157173,
+        "stored_mean_abs_SHAP": 0.0467,
+        "stored_SHAP_when_present": 0.0211,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "사고시도로환경_포트홀",
+        "n_present": 29,
+        "mean_abs_SHAP": 0.023037197068333626,
+        "SHAP_when_present": null,
+        "stored_mean_abs_SHAP": 0.023,
+        "stored_SHAP_when_present": null,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "원인차차종_기타",
+        "n_present": 21,
+        "mean_abs_SHAP": 0.0013631751062348485,
+        "SHAP_when_present": null,
+        "stored_mean_abs_SHAP": 0.0014,
+        "stored_SHAP_when_present": null,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "원인차차종_승용",
+        "n_present": 2132,
+        "mean_abs_SHAP": 0.18748502433300018,
+        "SHAP_when_present": -0.15142127871513367,
+        "stored_mean_abs_SHAP": 0.1875,
+        "stored_SHAP_when_present": -0.1514,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "원인차차종_승합",
+        "n_present": 207,
+        "mean_abs_SHAP": 0.012667981907725334,
+        "SHAP_when_present": 0.1127295270562172,
+        "stored_mean_abs_SHAP": 0.0127,
+        "stored_SHAP_when_present": 0.1127,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "원인차차종_트레일러",
+        "n_present": 222,
+        "mean_abs_SHAP": 0.015085581690073013,
+        "SHAP_when_present": 0.11789249628782272,
+        "stored_mean_abs_SHAP": 0.0151,
+        "stored_SHAP_when_present": 0.1179,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "원인차차종_특수",
+        "n_present": 28,
+        "mean_abs_SHAP": 0.0001846915838541463,
+        "SHAP_when_present": null,
+        "stored_mean_abs_SHAP": 0.0002,
+        "stored_SHAP_when_present": null,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "원인차차종_화물",
+        "n_present": 988,
+        "mean_abs_SHAP": 0.010120468214154243,
+        "SHAP_when_present": 0.01761886663734913,
+        "stored_mean_abs_SHAP": 0.0101,
+        "stored_SHAP_when_present": 0.0176,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "날씨_기타",
+        "n_present": 22,
+        "mean_abs_SHAP": 0.004296661354601383,
+        "SHAP_when_present": null,
+        "stored_mean_abs_SHAP": 0.0043,
+        "stored_SHAP_when_present": null,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "날씨_눈",
+        "n_present": 124,
+        "mean_abs_SHAP": 0.01832444779574871,
+        "SHAP_when_present": -0.2702278196811676,
+        "stored_mean_abs_SHAP": 0.0183,
+        "stored_SHAP_when_present": -0.2702,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "날씨_맑음",
+        "n_present": 2360,
+        "mean_abs_SHAP": 0.010681175626814365,
+        "SHAP_when_present": 0.007419039960950613,
+        "stored_mean_abs_SHAP": 0.0107,
+        "stored_SHAP_when_present": 0.0074,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "날씨_비",
+        "n_present": 624,
+        "mean_abs_SHAP": 0.010120521299540997,
+        "SHAP_when_present": -0.03297028690576553,
+        "stored_mean_abs_SHAP": 0.0101,
+        "stored_SHAP_when_present": -0.033,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "날씨_흐림",
+        "n_present": 468,
+        "mean_abs_SHAP": 0.004934441763907671,
+        "SHAP_when_present": 0.004113928414881229,
+        "stored_mean_abs_SHAP": 0.0049,
+        "stored_SHAP_when_present": 0.0041,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "조명시설_미작동",
+        "n_present": 96,
+        "mean_abs_SHAP": 0.0018903668969869614,
+        "SHAP_when_present": 0.005604084115475416,
+        "stored_mean_abs_SHAP": 0.0019,
+        "stored_SHAP_when_present": 0.0056,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "조명시설_없음",
+        "n_present": 678,
+        "mean_abs_SHAP": 0.010534586384892464,
+        "SHAP_when_present": 0.01701849326491356,
+        "stored_mean_abs_SHAP": 0.0105,
+        "stored_SHAP_when_present": 0.017,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "조명시설_작동",
+        "n_present": 1094,
+        "mean_abs_SHAP": 0.02032037265598774,
+        "SHAP_when_present": 0.02766338549554348,
+        "stored_mean_abs_SHAP": 0.0203,
+        "stored_SHAP_when_present": 0.0277,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "조명시설_해당없음(주간)",
+        "n_present": 1730,
+        "mean_abs_SHAP": 0.09603267163038254,
+        "SHAP_when_present": -0.0969185084104538,
+        "stored_mean_abs_SHAP": 0.096,
+        "stored_SHAP_when_present": -0.0969,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "노면상태_건조",
+        "n_present": 2765,
+        "mean_abs_SHAP": 0.02721266821026802,
+        "SHAP_when_present": 0.019672805443406105,
+        "stored_mean_abs_SHAP": 0.0272,
+        "stored_SHAP_when_present": 0.0197,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "노면상태_기타",
+        "n_present": 2,
+        "mean_abs_SHAP": 0.0,
+        "SHAP_when_present": null,
+        "stored_mean_abs_SHAP": 0.0,
+        "stored_SHAP_when_present": null,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "노면상태_습기",
+        "n_present": 816,
+        "mean_abs_SHAP": 0.07269150018692017,
+        "SHAP_when_present": -0.14559921622276306,
+        "stored_mean_abs_SHAP": 0.0727,
+        "stored_SHAP_when_present": -0.1456,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "노면상태_적설",
+        "n_present": 15,
+        "mean_abs_SHAP": 0.0008738752803765237,
+        "SHAP_when_present": null,
+        "stored_mean_abs_SHAP": 0.0009,
+        "stored_SHAP_when_present": null,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "연령구분_20대",
+        "n_present": 347,
+        "mean_abs_SHAP": 0.008753994479775429,
+        "SHAP_when_present": 0.019332971423864365,
+        "stored_mean_abs_SHAP": 0.0088,
+        "stored_SHAP_when_present": 0.0193,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "연령구분_20세미만",
+        "n_present": 198,
+        "mean_abs_SHAP": 0.015921831130981445,
+        "SHAP_when_present": -0.15109364688396454,
+        "stored_mean_abs_SHAP": 0.0159,
+        "stored_SHAP_when_present": -0.1511,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "연령구분_30대",
+        "n_present": 605,
+        "mean_abs_SHAP": 0.01256375852972269,
+        "SHAP_when_present": -0.020938947796821594,
+        "stored_mean_abs_SHAP": 0.0126,
+        "stored_SHAP_when_present": -0.0209,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "연령구분_40대",
+        "n_present": 728,
+        "mean_abs_SHAP": 0.006257290951907635,
+        "SHAP_when_present": 0.003248522523790598,
+        "stored_mean_abs_SHAP": 0.0063,
+        "stored_SHAP_when_present": 0.0032,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "연령구분_50대",
+        "n_present": 697,
+        "mean_abs_SHAP": 0.0355406254529953,
+        "SHAP_when_present": 0.09191212803125381,
+        "stored_mean_abs_SHAP": 0.0355,
+        "stored_SHAP_when_present": 0.0919,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "연령구분_60세이상",
+        "n_present": 310,
+        "mean_abs_SHAP": 0.028471296653151512,
+        "SHAP_when_present": 0.1646701991558075,
+        "stored_mean_abs_SHAP": 0.0285,
+        "stored_SHAP_when_present": 0.1647,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "연령구분_미상",
+        "n_present": 713,
+        "mean_abs_SHAP": 0.04009378328919411,
+        "SHAP_when_present": -0.10598956048488617,
+        "stored_mean_abs_SHAP": 0.0401,
+        "stored_SHAP_when_present": -0.106,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "사고직전차량조작_기타",
+        "n_present": 165,
+        "mean_abs_SHAP": 0.010582391172647476,
+        "SHAP_when_present": 0.10940882563591003,
+        "stored_mean_abs_SHAP": 0.0106,
+        "stored_SHAP_when_present": 0.1094,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "사고직전차량조작_운행차로주행",
+        "n_present": 2902,
+        "mean_abs_SHAP": 0.017027845606207848,
+        "SHAP_when_present": -0.009460502304136753,
+        "stored_mean_abs_SHAP": 0.017,
+        "stored_SHAP_when_present": -0.0095,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "사고직전차량조작_차로변경",
+        "n_present": 101,
+        "mean_abs_SHAP": 0.027004223316907883,
+        "SHAP_when_present": 0.4583221971988678,
+        "stored_mean_abs_SHAP": 0.027,
+        "stored_SHAP_when_present": 0.4583,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "사고직전차량조작_핸들과대조작",
+        "n_present": 430,
+        "mean_abs_SHAP": 0.0354195311665535,
+        "SHAP_when_present": -0.1409161537885666,
+        "stored_mean_abs_SHAP": 0.0354,
+        "stored_SHAP_when_present": -0.1409,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "차종구분_SUV형",
+        "n_present": 422,
+        "mean_abs_SHAP": 0.0033838532399386168,
+        "SHAP_when_present": -0.00619386276230216,
+        "stored_mean_abs_SHAP": 0.0034,
+        "stored_SHAP_when_present": -0.0062,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "차종구분_경형",
+        "n_present": 140,
+        "mean_abs_SHAP": 0.007761665619909763,
+        "SHAP_when_present": 0.1033281683921814,
+        "stored_mean_abs_SHAP": 0.0078,
+        "stored_SHAP_when_present": 0.1033,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "차종구분_기타",
+        "n_present": 10,
+        "mean_abs_SHAP": 0.00014980725245550275,
+        "SHAP_when_present": null,
+        "stored_mean_abs_SHAP": 0.0001,
+        "stored_SHAP_when_present": null,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "차종구분_대형",
+        "n_present": 529,
+        "mean_abs_SHAP": 0.02137899212539196,
+        "SHAP_when_present": 0.07432661205530167,
+        "stored_mean_abs_SHAP": 0.0214,
+        "stored_SHAP_when_present": 0.0743,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "차종구분_미상",
+        "n_present": 326,
+        "mean_abs_SHAP": 0.007921413518488407,
+        "SHAP_when_present": -0.03982347249984741,
+        "stored_mean_abs_SHAP": 0.0079,
+        "stored_SHAP_when_present": -0.0398,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "차종구분_소형",
+        "n_present": 777,
+        "mean_abs_SHAP": 0.00860794261097908,
+        "SHAP_when_present": 0.014526152051985264,
+        "stored_mean_abs_SHAP": 0.0086,
+        "stored_SHAP_when_present": 0.0145,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "차종구분_일반화물",
+        "n_present": 137,
+        "mean_abs_SHAP": 0.006082519888877869,
+        "SHAP_when_present": -0.07313752174377441,
+        "stored_mean_abs_SHAP": 0.0061,
+        "stored_SHAP_when_present": -0.0731,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "차종구분_중형",
+        "n_present": 1192,
+        "mean_abs_SHAP": 0.013169728219509125,
+        "SHAP_when_present": -0.018213964998722076,
+        "stored_mean_abs_SHAP": 0.0132,
+        "stored_SHAP_when_present": -0.0182,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "차종구분_탑차",
+        "n_present": 65,
+        "mean_abs_SHAP": 0.0012025824980810285,
+        "SHAP_when_present": 0.035932332277297974,
+        "stored_mean_abs_SHAP": 0.0012,
+        "stored_SHAP_when_present": 0.0359,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "절성토구분_미상",
+        "n_present": 320,
+        "mean_abs_SHAP": 0.013380189426243305,
+        "SHAP_when_present": -0.07770644128322601,
+        "stored_mean_abs_SHAP": 0.0134,
+        "stored_SHAP_when_present": -0.0777,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "절성토구분_성토고 15M 이상",
+        "n_present": 422,
+        "mean_abs_SHAP": 0.005962346214801073,
+        "SHAP_when_present": 0.0193056408315897,
+        "stored_mean_abs_SHAP": 0.006,
+        "stored_SHAP_when_present": 0.0193,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "절성토구분_성토고 2M 미만",
+        "n_present": 191,
+        "mean_abs_SHAP": 0.002228671684861183,
+        "SHAP_when_present": -0.02008132077753544,
+        "stored_mean_abs_SHAP": 0.0022,
+        "stored_SHAP_when_present": -0.0201,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "절성토구분_성토고 2M 이상 5M 미만",
+        "n_present": 436,
+        "mean_abs_SHAP": 0.006001460365951061,
+        "SHAP_when_present": -0.015239459462463856,
+        "stored_mean_abs_SHAP": 0.006,
+        "stored_SHAP_when_present": -0.0152,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "절성토구분_절토부 10M 미만",
+        "n_present": 260,
+        "mean_abs_SHAP": 0.0012479594442993402,
+        "SHAP_when_present": 0.0043629128485918045,
+        "stored_mean_abs_SHAP": 0.0012,
+        "stored_SHAP_when_present": 0.0044,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "절성토구분_절토부 10M 이상",
+        "n_present": 215,
+        "mean_abs_SHAP": 0.002318525919690728,
+        "SHAP_when_present": 0.017488723620772362,
+        "stored_mean_abs_SHAP": 0.0023,
+        "stored_SHAP_when_present": 0.0175,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "절성토구분_평지",
+        "n_present": 1754,
+        "mean_abs_SHAP": 0.01742704212665558,
+        "SHAP_when_present": 0.01462077721953392,
+        "stored_mean_abs_SHAP": 0.0174,
+        "stored_SHAP_when_present": 0.0146,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "평면선형_미상",
+        "n_present": 183,
+        "mean_abs_SHAP": 0.011429091915488243,
+        "SHAP_when_present": -0.11921433359384537,
+        "stored_mean_abs_SHAP": 0.0114,
+        "stored_SHAP_when_present": -0.1192,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "평면선형_우커브",
+        "n_present": 442,
+        "mean_abs_SHAP": 0.008761081844568253,
+        "SHAP_when_present": 0.030126430094242096,
+        "stored_mean_abs_SHAP": 0.0088,
+        "stored_SHAP_when_present": 0.0301,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "평면선형_좌커브",
+        "n_present": 500,
+        "mean_abs_SHAP": 0.008867217227816582,
+        "SHAP_when_present": -0.03214394301176071,
+        "stored_mean_abs_SHAP": 0.0089,
+        "stored_SHAP_when_present": -0.0321,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      },
+      {
+        "feature": "평면선형_직선",
+        "n_present": 2473,
+        "mean_abs_SHAP": 0.007474124897271395,
+        "SHAP_when_present": -0.0012611934216693044,
+        "stored_mean_abs_SHAP": 0.0075,
+        "stored_SHAP_when_present": -0.0013,
+        "mean_abs_matches_stored_precision": true,
+        "direction_mean_matches_stored_precision": true
+      }
+    ],
+    "all86_mean_abs_and_direction_means_match_stored_precision": true,
+    "max_abs_meanabs_difference_from_rounded_csv": 4.9807252455502744e-05,
+    "max_abs_direction_difference_from_rounded_csv": 4.9137973785418065e-05
+  },
+  "direction_agreement_recomputed": {
+    "comparable": 56,
+    "agree": 46,
+    "percent": 82.14285714285714,
+    "LR_significant_comparable": 41,
+    "LR_significant_agree": 34,
+    "LR_significant_percent": 82.92682926829268,
+    "matches_expected_46of56_and34of41": true,
+    "each_saved_agreement_flag_matches": true,
+    "comparisons": [
+      {
+        "dummy": "발생지점_영업소(TG)",
+        "SHAP_mean": -0.8199052214622498,
+        "LR_coef_stored": -2.0947,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "발생지점_램프",
+        "SHAP_mean": -0.27778393030166626,
+        "LR_coef_stored": -1.204,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "교통장애요인_정차차량",
+        "SHAP_mean": 0.012683908455073833,
+        "LR_coef_stored": 1.2386,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "주사고원인_노면잡물",
+        "SHAP_mean": -1.908867359161377,
+        "LR_coef_stored": -2.3192,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "원인차차종_화물",
+        "SHAP_mean": 0.01761886663734913,
+        "LR_coef_stored": 0.5417,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "교통장애요인_정체",
+        "SHAP_mean": 0.058756276965141296,
+        "LR_coef_stored": 1.1513,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "운전자상태_기타",
+        "SHAP_mean": 0.377692848443985,
+        "LR_coef_stored": 1.103,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "원인차차종_승합",
+        "SHAP_mean": 0.1127295270562172,
+        "LR_coef_stored": 0.6385,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "주사고원인_단독차량화재",
+        "SHAP_mean": -2.251668691635132,
+        "LR_coef_stored": -3.0813,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "주사고원인_안전거리미확보",
+        "SHAP_mean": 0.5944734215736389,
+        "LR_coef_stored": 0.7282,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "주사고원인_주시태만",
+        "SHAP_mean": 0.29812636971473694,
+        "LR_coef_stored": 0.4301,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "주사고원인_졸음",
+        "SHAP_mean": 0.33312416076660156,
+        "LR_coef_stored": 0.4519,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "원인차차종_트레일러",
+        "SHAP_mean": 0.11789249628782272,
+        "LR_coef_stored": 0.9934,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "주사고원인_타이어파손",
+        "SHAP_mean": -0.2573508620262146,
+        "LR_coef_stored": -0.5528,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "사고직전차량조작_차로변경",
+        "SHAP_mean": 0.4583221971988678,
+        "LR_coef_stored": 0.4865,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "주사고원인_동물침입",
+        "SHAP_mean": -0.7154646515846252,
+        "LR_coef_stored": -1.1167,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "조명시설_없음",
+        "SHAP_mean": 0.01701849326491356,
+        "LR_coef_stored": 0.2145,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "날씨_눈",
+        "SHAP_mean": -0.2702278196811676,
+        "LR_coef_stored": -0.6669,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "사고직전차량조작_핸들과대조작",
+        "SHAP_mean": -0.1409161537885666,
+        "LR_coef_stored": -0.234,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "주사고원인_추월불량",
+        "SHAP_mean": 0.4657303988933563,
+        "LR_coef_stored": 0.4784,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "사고시도로환경_낙하물",
+        "SHAP_mean": -0.635804295539856,
+        "LR_coef_stored": -1.2153,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "조명시설_작동",
+        "SHAP_mean": 0.02766338549554348,
+        "LR_coef_stored": 0.1781,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "연령구분_50대",
+        "SHAP_mean": 0.09191212803125381,
+        "LR_coef_stored": 0.2271,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "연령구분_60세이상",
+        "SHAP_mean": 0.1646701991558075,
+        "LR_coef_stored": 0.2464,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "운전자상태_음주",
+        "SHAP_mean": -0.014034081250429153,
+        "LR_coef_stored": 0.3078,
+        "LR_p_stored": 0.0,
+        "agree": false,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "차종구분_미상",
+        "SHAP_mean": -0.03982347249984741,
+        "LR_coef_stored": -0.44,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "연령구분_40대",
+        "SHAP_mean": 0.003248522523790598,
+        "LR_coef_stored": 0.1705,
+        "LR_p_stored": 0.0,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "발생지점_휴게소",
+        "SHAP_mean": 0.004694139119237661,
+        "LR_coef_stored": -0.4093,
+        "LR_p_stored": 0.0,
+        "agree": false,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "운전자상태_피로",
+        "SHAP_mean": -0.002339292550459504,
+        "LR_coef_stored": 0.1931,
+        "LR_p_stored": 0.0001,
+        "agree": false,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "날씨_비",
+        "SHAP_mean": -0.03297028690576553,
+        "LR_coef_stored": -0.2669,
+        "LR_p_stored": 0.0002,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "발생지점_터널",
+        "SHAP_mean": 0.36494407057762146,
+        "LR_coef_stored": -0.1951,
+        "LR_p_stored": 0.0006,
+        "agree": false,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "차종구분_대형",
+        "SHAP_mean": 0.07432661205530167,
+        "LR_coef_stored": 0.128,
+        "LR_p_stored": 0.0008,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "연령구분_20대",
+        "SHAP_mean": 0.019332971423864365,
+        "LR_coef_stored": 0.1571,
+        "LR_p_stored": 0.001,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "연령구분_30대",
+        "SHAP_mean": -0.020938947796821594,
+        "LR_coef_stored": 0.1345,
+        "LR_p_stored": 0.0015,
+        "agree": false,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "차종구분_탑차",
+        "SHAP_mean": 0.035932332277297974,
+        "LR_coef_stored": 0.2857,
+        "LR_p_stored": 0.0018,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "사고직전차량조작_기타",
+        "SHAP_mean": 0.10940882563591003,
+        "LR_coef_stored": 0.1776,
+        "LR_p_stored": 0.0033,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "노면상태_습기",
+        "SHAP_mean": -0.14559921622276306,
+        "LR_coef_stored": -0.1959,
+        "LR_p_stored": 0.0035,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "사고시도로환경_기타",
+        "SHAP_mean": 0.023911988362669945,
+        "LR_coef_stored": -0.3649,
+        "LR_p_stored": 0.0102,
+        "agree": false,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "차종구분_SUV형",
+        "SHAP_mean": -0.00619386276230216,
+        "LR_coef_stored": 0.1033,
+        "LR_p_stored": 0.0159,
+        "agree": false,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "차종구분_경형",
+        "SHAP_mean": 0.1033281683921814,
+        "LR_coef_stored": 0.152,
+        "LR_p_stored": 0.0214,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "절성토구분_미상",
+        "SHAP_mean": -0.07770644128322601,
+        "LR_coef_stored": -0.121,
+        "LR_p_stored": 0.0394,
+        "agree": true,
+        "LR_p_lt_05": true
+      },
+      {
+        "dummy": "절성토구분_성토고 2M 이상 5M 미만",
+        "SHAP_mean": -0.015239459462463856,
+        "LR_coef_stored": -0.0762,
+        "LR_p_stored": 0.0548,
+        "agree": true,
+        "LR_p_lt_05": false
+      },
+      {
+        "dummy": "차종구분_일반화물",
+        "SHAP_mean": -0.07313752174377441,
+        "LR_coef_stored": -0.1278,
+        "LR_p_stored": 0.0611,
+        "agree": true,
+        "LR_p_lt_05": false
+      },
+      {
+        "dummy": "절성토구분_절토부 10M 이상",
+        "SHAP_mean": 0.017488723620772362,
+        "LR_coef_stored": 0.0874,
+        "LR_p_stored": 0.0927,
+        "agree": true,
+        "LR_p_lt_05": false
+      },
+      {
+        "dummy": "절성토구분_절토부 10M 미만",
+        "SHAP_mean": 0.0043629128485918045,
+        "LR_coef_stored": 0.0638,
+        "LR_p_stored": 0.1682,
+        "agree": true,
+        "LR_p_lt_05": false
+      },
+      {
+        "dummy": "절성토구분_성토고 2M 미만",
+        "SHAP_mean": -0.02008132077753544,
+        "LR_coef_stored": -0.0527,
+        "LR_p_stored": 0.3487,
+        "agree": true,
+        "LR_p_lt_05": false
+      },
+      {
+        "dummy": "평면선형_우커브",
+        "SHAP_mean": 0.030126430094242096,
+        "LR_coef_stored": 0.0314,
+        "LR_p_stored": 0.4016,
+        "agree": true,
+        "LR_p_lt_05": false
+      },
+      {
+        "dummy": "평면선형_미상",
+        "SHAP_mean": -0.11921433359384537,
+        "LR_coef_stored": -0.0606,
+        "LR_p_stored": 0.4265,
+        "agree": true,
+        "LR_p_lt_05": false
+      },
+      {
+        "dummy": "절성토구분_성토고 15M 이상",
+        "SHAP_mean": 0.0193056408315897,
+        "LR_coef_stored": -0.0304,
+        "LR_p_stored": 0.4317,
+        "agree": false,
+        "LR_p_lt_05": false
+      },
+      {
+        "dummy": "조명시설_미작동",
+        "SHAP_mean": 0.005604084115475416,
+        "LR_coef_stored": 0.0488,
+        "LR_p_stored": 0.4724,
+        "agree": true,
+        "LR_p_lt_05": false
+      },
+      {
+        "dummy": "연령구분_20세미만",
+        "SHAP_mean": -0.15109364688396454,
+        "LR_coef_stored": -0.0428,
+        "LR_p_stored": 0.5042,
+        "agree": true,
+        "LR_p_lt_05": false
+      },
+      {
+        "dummy": "차종구분_소형",
+        "SHAP_mean": 0.014526152051985264,
+        "LR_coef_stored": -0.018,
+        "LR_p_stored": 0.5829,
+        "agree": false,
+        "LR_p_lt_05": false
+      },
+      {
+        "dummy": "평면선형_좌커브",
+        "SHAP_mean": -0.03214394301176071,
+        "LR_coef_stored": 0.0198,
+        "LR_p_stored": 0.5914,
+        "agree": false,
+        "LR_p_lt_05": false
+      },
+      {
+        "dummy": "날씨_흐림",
+        "SHAP_mean": 0.004113928414881229,
+        "LR_coef_stored": 0.0152,
+        "LR_p_stored": 0.6718,
+        "agree": true,
+        "LR_p_lt_05": false
+      },
+      {
+        "dummy": "사고시도로환경_미끄러운노면",
+        "SHAP_mean": 0.02325172908604145,
+        "LR_coef_stored": 0.0117,
+        "LR_p_stored": 0.8236,
+        "agree": true,
+        "LR_p_lt_05": false
+      },
+      {
+        "dummy": "주사고원인_기타",
+        "SHAP_mean": 0.035728149116039276,
+        "LR_coef_stored": 0.0091,
+        "LR_p_stored": 0.847,
+        "agree": true,
+        "LR_p_lt_05": false
+      }
+    ]
+  },
+  "interaction_seconds": 81.56537370895967,
+  "interaction_candidate_recomputation": {
+    "sample_n": 2000,
+    "seed": 42,
+    "array_shape": [
+      2000,
+      86,
+      86
+    ],
+    "pairwise_different_parent_candidate_universe": 3366,
+    "A_top_count": 15,
+    "B_top_count": 15,
+    "intersection": 6,
+    "union": 24,
+    "same24_candidate_set": true,
+    "all24_aggregate_fields_match_stored_precision": true,
+    "selected_aggregate_comparisons": [
+      {
+        "features": [
+          "발생지점_영업소(TG)",
+          "원인차차종_승용"
+        ],
+        "rankA_mean_abs_unrounded": 0.024993956089019775,
+        "rankB_per_occurrence_unrounded": 0.2855711877346039,
+        "joint_signed_unrounded": 0.2855711877346039,
+        "n_co_sample": 64,
+        "in_rankA_top": true,
+        "in_rankB_top": true,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.025,
+          "rankB_per_occurrence": 0.2856,
+          "joint_signed": 0.2856,
+          "n_co_sample": 64,
+          "in_rankA_top": true,
+          "in_rankB_top": true
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "주사고원인_주시태만",
+          "원인차차종_승용"
+        ],
+        "rankA_mean_abs_unrounded": 0.021677054464817047,
+        "rankB_per_occurrence_unrounded": 0.06987878680229187,
+        "joint_signed_unrounded": -0.06987878680229187,
+        "n_co_sample": 293,
+        "in_rankA_top": true,
+        "in_rankB_top": true,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0217,
+          "rankB_per_occurrence": 0.0699,
+          "joint_signed": -0.0699,
+          "n_co_sample": 293,
+          "in_rankA_top": true,
+          "in_rankB_top": true
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "주사고원인_주시태만",
+          "발생지점_본선"
+        ],
+        "rankA_mean_abs_unrounded": 0.01916230469942093,
+        "rankB_per_occurrence_unrounded": 0.05387328192591667,
+        "joint_signed_unrounded": 0.05387328192591667,
+        "n_co_sample": 389,
+        "in_rankA_top": true,
+        "in_rankB_top": false,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0192,
+          "rankB_per_occurrence": 0.0539,
+          "joint_signed": 0.0539,
+          "n_co_sample": 389,
+          "in_rankA_top": true,
+          "in_rankB_top": false
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "주사고원인_졸음",
+          "원인차차종_승용"
+        ],
+        "rankA_mean_abs_unrounded": 0.010978931561112404,
+        "rankB_per_occurrence_unrounded": 0.059561409056186676,
+        "joint_signed_unrounded": -0.059522777795791626,
+        "n_co_sample": 154,
+        "in_rankA_top": true,
+        "in_rankB_top": true,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.011,
+          "rankB_per_occurrence": 0.0596,
+          "joint_signed": -0.0595,
+          "n_co_sample": 154,
+          "in_rankA_top": true,
+          "in_rankB_top": true
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "발생지점_본선",
+          "원인차차종_승용"
+        ],
+        "rankA_mean_abs_unrounded": 0.010274522937834263,
+        "rankB_per_occurrence_unrounded": 0.009422313421964645,
+        "joint_signed_unrounded": -0.009242849424481392,
+        "n_co_sample": 920,
+        "in_rankA_top": true,
+        "in_rankB_top": false,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0103,
+          "rankB_per_occurrence": 0.0094,
+          "joint_signed": -0.0092,
+          "n_co_sample": 920,
+          "in_rankA_top": true,
+          "in_rankB_top": false
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "사고시도로환경_정상",
+          "노면상태_습기"
+        ],
+        "rankA_mean_abs_unrounded": 0.009515962563455105,
+        "rankB_per_occurrence_unrounded": 0.00866073276847601,
+        "joint_signed_unrounded": -0.00866073276847601,
+        "n_co_sample": 196,
+        "in_rankA_top": true,
+        "in_rankB_top": false,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0095,
+          "rankB_per_occurrence": 0.0087,
+          "joint_signed": -0.0087,
+          "n_co_sample": 196,
+          "in_rankA_top": true,
+          "in_rankB_top": false
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "주사고원인_주시태만",
+          "조명시설_해당없음(주간)"
+        ],
+        "rankA_mean_abs_unrounded": 0.009082633070647717,
+        "rankB_per_occurrence_unrounded": 0.034532975405454636,
+        "joint_signed_unrounded": -0.034532975405454636,
+        "n_co_sample": 238,
+        "in_rankA_top": true,
+        "in_rankB_top": false,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0091,
+          "rankB_per_occurrence": 0.0345,
+          "joint_signed": -0.0345,
+          "n_co_sample": 238,
+          "in_rankA_top": true,
+          "in_rankB_top": false
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "주사고원인_노면잡물",
+          "발생지점_본선"
+        ],
+        "rankA_mean_abs_unrounded": 0.008796104229986668,
+        "rankB_per_occurrence_unrounded": 0.10827989876270294,
+        "joint_signed_unrounded": -0.10827989876270294,
+        "n_co_sample": 121,
+        "in_rankA_top": true,
+        "in_rankB_top": true,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0088,
+          "rankB_per_occurrence": 0.1083,
+          "joint_signed": -0.1083,
+          "n_co_sample": 121,
+          "in_rankA_top": true,
+          "in_rankB_top": true
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "발생지점_본선",
+          "노면상태_습기"
+        ],
+        "rankA_mean_abs_unrounded": 0.00873795710504055,
+        "rankB_per_occurrence_unrounded": 0.02161155827343464,
+        "joint_signed_unrounded": -0.021609511226415634,
+        "n_co_sample": 312,
+        "in_rankA_top": true,
+        "in_rankB_top": false,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0087,
+          "rankB_per_occurrence": 0.0216,
+          "joint_signed": -0.0216,
+          "n_co_sample": 312,
+          "in_rankA_top": true,
+          "in_rankB_top": false
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "주사고원인_주시태만",
+          "발생지점_영업소(TG)"
+        ],
+        "rankA_mean_abs_unrounded": 0.008506545796990395,
+        "rankB_per_occurrence_unrounded": 0.17005935311317444,
+        "joint_signed_unrounded": -0.17005935311317444,
+        "n_co_sample": 71,
+        "in_rankA_top": true,
+        "in_rankB_top": true,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0085,
+          "rankB_per_occurrence": 0.1701,
+          "joint_signed": -0.1701,
+          "n_co_sample": 71,
+          "in_rankA_top": true,
+          "in_rankB_top": true
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "주사고원인_노면잡물",
+          "사고시도로환경_정상"
+        ],
+        "rankA_mean_abs_unrounded": 0.008319525979459286,
+        "rankB_per_occurrence_unrounded": 0.09662577509880066,
+        "joint_signed_unrounded": -0.09662577509880066,
+        "n_co_sample": 100,
+        "in_rankA_top": true,
+        "in_rankB_top": true,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0083,
+          "rankB_per_occurrence": 0.0966,
+          "joint_signed": -0.0966,
+          "n_co_sample": 100,
+          "in_rankA_top": true,
+          "in_rankB_top": true
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "주사고원인_노면잡물",
+          "사고직전차량조작_운행차로주행"
+        ],
+        "rankA_mean_abs_unrounded": 0.007555134128779173,
+        "rankB_per_occurrence_unrounded": 0.047408491373062134,
+        "joint_signed_unrounded": -0.047408491373062134,
+        "n_co_sample": 126,
+        "in_rankA_top": true,
+        "in_rankB_top": false,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0076,
+          "rankB_per_occurrence": 0.0474,
+          "joint_signed": -0.0474,
+          "n_co_sample": 126,
+          "in_rankA_top": true,
+          "in_rankB_top": false
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "사고시도로환경_정상",
+          "노면상태_건조"
+        ],
+        "rankA_mean_abs_unrounded": 0.007489555981010199,
+        "rankB_per_occurrence_unrounded": 0.0055229030549526215,
+        "joint_signed_unrounded": 0.0055229030549526215,
+        "n_co_sample": 1466,
+        "in_rankA_top": true,
+        "in_rankB_top": false,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0075,
+          "rankB_per_occurrence": 0.0055,
+          "joint_signed": 0.0055,
+          "n_co_sample": 1466,
+          "in_rankA_top": true,
+          "in_rankB_top": false
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "발생지점_램프",
+          "원인차차종_승용"
+        ],
+        "rankA_mean_abs_unrounded": 0.0072769769467413425,
+        "rankB_per_occurrence_unrounded": 0.04529828950762749,
+        "joint_signed_unrounded": -0.04529828950762749,
+        "n_co_sample": 147,
+        "in_rankA_top": true,
+        "in_rankB_top": false,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0073,
+          "rankB_per_occurrence": 0.0453,
+          "joint_signed": -0.0453,
+          "n_co_sample": 147,
+          "in_rankA_top": true,
+          "in_rankB_top": false
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "주사고원인_과속",
+          "발생지점_본선"
+        ],
+        "rankA_mean_abs_unrounded": 0.006896568462252617,
+        "rankB_per_occurrence_unrounded": 0.013100888580083847,
+        "joint_signed_unrounded": -0.013100888580083847,
+        "n_co_sample": 296,
+        "in_rankA_top": true,
+        "in_rankB_top": false,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0069,
+          "rankB_per_occurrence": 0.0131,
+          "joint_signed": -0.0131,
+          "n_co_sample": 296,
+          "in_rankA_top": true,
+          "in_rankB_top": false
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "주사고원인_노면잡물",
+          "조명시설_없음"
+        ],
+        "rankA_mean_abs_unrounded": 0.00487564317882061,
+        "rankB_per_occurrence_unrounded": 0.19270342588424683,
+        "joint_signed_unrounded": 0.19270342588424683,
+        "n_co_sample": 36,
+        "in_rankA_top": false,
+        "in_rankB_top": true,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0049,
+          "rankB_per_occurrence": 0.1927,
+          "joint_signed": 0.1927,
+          "n_co_sample": 36,
+          "in_rankA_top": false,
+          "in_rankB_top": true
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "원인차차종_승합",
+          "차종구분_대형"
+        ],
+        "rankA_mean_abs_unrounded": 0.0043023731559515,
+        "rankB_per_occurrence_unrounded": 0.13797326385974884,
+        "joint_signed_unrounded": 0.13797326385974884,
+        "n_co_sample": 44,
+        "in_rankA_top": false,
+        "in_rankB_top": true,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0043,
+          "rankB_per_occurrence": 0.138,
+          "joint_signed": 0.138,
+          "n_co_sample": 44,
+          "in_rankA_top": false,
+          "in_rankB_top": true
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "발생지점_영업소(TG)",
+          "차종구분_미상"
+        ],
+        "rankA_mean_abs_unrounded": 0.003990591503679752,
+        "rankB_per_occurrence_unrounded": 0.13416710495948792,
+        "joint_signed_unrounded": -0.13416710495948792,
+        "n_co_sample": 33,
+        "in_rankA_top": false,
+        "in_rankB_top": true,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.004,
+          "rankB_per_occurrence": 0.1342,
+          "joint_signed": -0.1342,
+          "n_co_sample": 33,
+          "in_rankA_top": false,
+          "in_rankB_top": true
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "주사고원인_노면잡물",
+          "조명시설_해당없음(주간)"
+        ],
+        "rankA_mean_abs_unrounded": 0.005950827617198229,
+        "rankB_per_occurrence_unrounded": 0.1130891665816307,
+        "joint_signed_unrounded": -0.1130891665816307,
+        "n_co_sample": 65,
+        "in_rankA_top": false,
+        "in_rankB_top": true,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.006,
+          "rankB_per_occurrence": 0.1131,
+          "joint_signed": -0.1131,
+          "n_co_sample": 65,
+          "in_rankA_top": false,
+          "in_rankB_top": true
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "주사고원인_노면잡물",
+          "차종구분_소형"
+        ],
+        "rankA_mean_abs_unrounded": 0.0026316859293729067,
+        "rankB_per_occurrence_unrounded": 0.11261530965566635,
+        "joint_signed_unrounded": 0.11261530965566635,
+        "n_co_sample": 34,
+        "in_rankA_top": false,
+        "in_rankB_top": true,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0026,
+          "rankB_per_occurrence": 0.1126,
+          "joint_signed": 0.1126,
+          "n_co_sample": 34,
+          "in_rankA_top": false,
+          "in_rankB_top": true
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "주사고원인_주시태만",
+          "사고직전차량조작_핸들과대조작"
+        ],
+        "rankA_mean_abs_unrounded": 0.0052843037992715836,
+        "rankB_per_occurrence_unrounded": 0.08090407401323318,
+        "joint_signed_unrounded": -0.08090407401323318,
+        "n_co_sample": 64,
+        "in_rankA_top": false,
+        "in_rankB_top": true,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0053,
+          "rankB_per_occurrence": 0.0809,
+          "joint_signed": -0.0809,
+          "n_co_sample": 64,
+          "in_rankA_top": false,
+          "in_rankB_top": true
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "주사고원인_안전거리미확보",
+          "조명시설_해당없음(주간)"
+        ],
+        "rankA_mean_abs_unrounded": 0.0027789559680968523,
+        "rankB_per_occurrence_unrounded": 0.07413452118635178,
+        "joint_signed_unrounded": 0.07413452118635178,
+        "n_co_sample": 44,
+        "in_rankA_top": false,
+        "in_rankB_top": true,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0028,
+          "rankB_per_occurrence": 0.0741,
+          "joint_signed": 0.0741,
+          "n_co_sample": 44,
+          "in_rankA_top": false,
+          "in_rankB_top": true
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "발생지점_영업소(TG)",
+          "조명시설_작동"
+        ],
+        "rankA_mean_abs_unrounded": 0.0031189266592264175,
+        "rankB_per_occurrence_unrounded": 0.06959172338247299,
+        "joint_signed_unrounded": -0.06959172338247299,
+        "n_co_sample": 68,
+        "in_rankA_top": false,
+        "in_rankB_top": true,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0031,
+          "rankB_per_occurrence": 0.0696,
+          "joint_signed": -0.0696,
+          "n_co_sample": 68,
+          "in_rankA_top": false,
+          "in_rankB_top": true
+        },
+        "all_fields_match_stored_precision": true
+      },
+      {
+        "features": [
+          "주사고원인_안전거리미확보",
+          "원인차차종_승용"
+        ],
+        "rankA_mean_abs_unrounded": 0.003088471945375204,
+        "rankB_per_occurrence_unrounded": 0.06367605179548264,
+        "joint_signed_unrounded": -0.06367605179548264,
+        "n_co_sample": 37,
+        "in_rankA_top": false,
+        "in_rankB_top": true,
+        "exists_in_saved_profile": true,
+        "stored_values": {
+          "rankA_mean_abs": 0.0031,
+          "rankB_per_occurrence": 0.0637,
+          "joint_signed": -0.0637,
+          "n_co_sample": 37,
+          "in_rankA_top": false,
+          "in_rankB_top": true
+        },
+        "all_fields_match_stored_precision": true
+      }
+    ]
+  },
+  "input_sha256_after": {
+    "src/03_shap_analysis.py": "30aa83b7ef4467a7d64065088199163bd433d46cd73cc2a0d2d5c0089cf70ad0",
+    "src/05_interaction_deep.py": "f7d8287c18ff096f95a7d6324c250313576af312c21b3c03e1332df46c00ff23",
+    "src/07_paper_figures.py": "9d5f068b12399b37d1152b83867b80104c653484b0eb14e451adc749206fc706",
+    "data/processed/analysis_dataset.csv": "f76cec85b2e6b2f34402bf21aef9d12c86a430b545e0292b146cd364dca77b0b",
+    "outputs/model/xgb_injury_balanced.json": "3e6dce2b53dea44a66d50e9d27025724469a5f38def71c57ad317975822d2412",
+    "outputs/model/X_train_balanced.parquet": "12fca964187466c10454730b9f8046ae672755b3a2398a1a1984449a42913e6e",
+    "outputs/model/X_test_balanced.parquet": "ac7b7b762a82d5a5db650d998185bc4571db386b131d8df619889946533b8ebf",
+    "outputs/model/shap_values_test.npy": "d7900173c6bbd3c5ca0089ade74f8ccf206187551fcc922a6753fa911e103591",
+    "outputs/tables/shap_importance.csv": "1fd0c84480ddb6cfb3e035ca134ca08e4e2ee60cbcc211ac7f64e3a532d2b21f",
+    "outputs/tables/shap_lr_direction_agreement.csv": "86f685d27477e92c94e43df5e99152d232a5605653210391446b2bc63dcca72b",
+    "outputs/tables/interaction_profile.csv": "e5717b9fc47627cf4ed6f21bd472e95466f8db8fcb65fae72bdf00259fdde53d",
+    "outputs/tables/logistic_or_table.csv": "024c1672795ec75552689e08c4ad20d67d1683d8518658a379627e449721a970",
+    "outputs/figures/fig01_cramers_v_heatmap.png": "b518509bdee57d9fbe4c8d3a752e213be7524faad0ecbaff5ef6a8915f3d02f0",
+    "outputs/figures/fig02_roc_pr_curves.png": "41d9b442cf7c650e1b17fb9906991b089817a8275e17a27a07d1e137e449baab",
+    "outputs/figures/fig03_confusion_matrix.png": "a8e28908b99fc9fb6ca91d29371080e893dad482c1fc572826041da157da84ba",
+    "outputs/figures/fig04_shap_beeswarm.png": "f8220a4ab7cd0b80a62b38cffcf0a97c4a96470645b56a30af478fa009c90ecd",
+    "outputs/figures/fig05_shap_bar.png": "af77adac31e46eee70f31c209a4da4c6c9a806c600ac4ab94c8e7c22f9b7d213",
+    "outputs/figures/fig06_shap_direction.png": "8a91eb8d936c35dc672bdc3cc165ef067d1e93cbf39086646cc4f8362f3f7f9e",
+    "outputs/figures/fig07_interaction_heatmap.png": "aededc3ad27999bfeab6ca3aa4c04905f746a5e94460fae3e4b4f0218fa04d68",
+    "outputs/figures/fig08_interaction_pairs.png": "b1ad0c2a51edde1f91196a9937064006f08d6af1f1ba9932cf0ce9adeead0ec1",
+    "outputs/figures/fig09_or_forest.png": "81732e3a49a87967789d7c10ce7e4d4585e40dfd54eb146e02eab6e0b417c670",
+    "outputs/figures/fig10_interaction_rankB.png": "ddbc52b708f5f6c4ebb40f1ff9e0736917ae31fd9a201d8bb2e92c53f06fefd2",
+    "outputs/figures/fig11_tg_vehicle_casestudy.png": "126fa3447b74e073eeab94d0983b67073ca34ad613d70412860a78728047e753",
+    "outputs/figures/fig12_logistic_table.png": "869b2a3bd42b587e315aa4004b1cf03226e8aa09a1f8f42f75a0c2fe4570eeb1",
+    "outputs/figures/fig13_negbin_table.png": "842bc39d3bf2a3fa38664a465a9bf2e50fff2a4692a9ebee6f81b774c77d4a11",
+    "outputs/figures/fig14_shap_categorical_dependence.png": "ceea3051887ad46ec6953bf278eeeb55694bcd2aa0b0bee1b4f555e479628488",
+    "outputs/figures/fig15_tg_distance_gradient.png": "47dd24538368466444a4f78dcde8bdefa4dc385c3e2bd4e3ddbc5a7d92892d7f"
+  },
+  "all_watched_files_unchanged": true,
+  "ended_at_utc": "2026-11-03T05:45:05.407681+00:00",
+  "observation_level_SHAP_written": false,
+  "new_model_training_performed": false
+}

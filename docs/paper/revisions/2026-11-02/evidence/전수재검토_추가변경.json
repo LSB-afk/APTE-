@@ -1,0 +1,305 @@
+[
+  {
+    "location": "S0.P014",
+    "old": "고속도로 사고의 인명피해 심각도 역시 차량 및 주행환경 특성과 관련되며",
+    "new": "고속도로 탑승자의 상해 심각도와 교통량·속도 간의 관련성이 보고되었으며"
+  },
+  {
+    "location": "S0.P015",
+    "old": "교통사고의 인명피해는 운전자, 차량, 도로 및 환경 등 다양한 요인과 관련된다",
+    "new": "교통사고의 유형 및 인명피해 심각도와 운전자, 차량, 도로·환경 특성 간의 관련성이 보고되었다"
+  },
+  {
+    "location": "S0.P015",
+    "old": "국내 고속도로 사고의 피해 규모",
+    "new": "국내 고속도로의 사고 규모"
+  },
+  {
+    "location": "S0.P016",
+    "old": "사고 특성과 인명피해 간의 관련성",
+    "new": "사고 특성과 인명피해 심각도 간의 관련성"
+  },
+  {
+    "location": "S0.P016 citation",
+    "old": "6,9",
+    "new": "7,9"
+  },
+  {
+    "location": "S0.P017",
+    "old": "기계학습은 자료에 내재한 비선형 관계와 상호작용을 학습하는 데 활용될 수 있다",
+    "new": "XGBoost와 같은 트리 기반 부스팅 모형은 다수의 결정트리를 순차적으로 결합하여 예측함수를 학습한다"
+  },
+  {
+    "location": "S0.P019",
+    "old": "탐색-확인 분석 절차",
+    "new": "탐색 및 후속 통계 분석 절차"
+  },
+  {
+    "location": "S0.P022",
+    "old": "해당 기간의 자료를 통합하여 특정 연도의 일시적인 변동에 따른 영향을 줄이고 장기간에 걸쳐 나타나는 인명피해와 관련된 요인을 파악하고자 하였다",
+    "new": "해당 기간의 자료를 통합하여 기록된 사고 특성과 인명피해 발생 간의 관련성을 분석하였다"
+  },
+  {
+    "location": "S0.P022",
+    "old": "결측치 처리 및 변수 및 범주의 일관성 검토를 통한 자료 보정 과정을 통해",
+    "new": "결측값을 처리하고 변수 및 범주 표기의 일관성을 검토하여"
+  },
+  {
+    "location": "S0.P033",
+    "old": "종속변수와의 연관성이 낮은 변수를 추가로 제외하였다",
+    "new": "남은 변수는 종속변수와의 편향 보정 Cramér’s V가 높은 순으로 정렬하여 상위 14개를 유지하였다"
+  },
+  {
+    "location": "S0.P036",
+    "old": "격자 탐색과 조기 종료(Early stopping)를 적용하였으며",
+    "new": "검증자료를 이용한 조기 종료(Early stopping)를 적용하였으며"
+  },
+  {
+    "location": "S0.P037",
+    "old": "인명피해 사고와 대물피해 사고의 수가 불균형하므로 다수 집단을 무작위로 추출하는 언더샘플링을 적용하였다",
+    "new": "교통사고 심각도 연구에서는 집단 불균형을 고려한 분류 방법이 검토되어 왔다"
+  },
+  {
+    "location": "S0.P037",
+    "old": ". 각 시드에서 두 집단을 각각",
+    "new": ". 본 연구에서는 다수 집단을 무작위로 추출하는 언더샘플링을 적용하여 각 시드에서 두 집단을 각각"
+  },
+  {
+    "location": "S0.P037",
+    "old": "시드 42~46의 반복 홀드아웃 성능은 평균과 표준편차로 제시하였다",
+    "new": "시드 42~46의 반복 홀드아웃 성능을 평균으로 제시하고 주요 지표의 표준편차를 함께 보고하였다"
+  },
+  {
+    "location": "S0.P037",
+    "old": "대표 균형 분할의 로지스틱 회귀와 클래스 가중치를 적용한 불균형 XGBoost를 비교하였으며, 범주형 합성표본 방식인 SMOTEN을 적용한 비교 결과도 함께 제시하였다",
+    "new": "대표 균형 분할에서는 XGBoost와 L2 규제 로지스틱 회귀에 동일한 86개 더미와 분할을 적용하여 예측 성능을 비교하였다. 이 로지스틱 회귀는 전체 자료의 71개 더미와 절편으로 OR를 추정하는 비규제 모형과 구분한다. 클래스 가중치를 적용한 불균형 XGBoost도 보조적으로 평가하였다"
+  },
+  {
+    "location": "S0.P037 SMOTEN citation removed",
+    "old": "19",
+    "new": ""
+  },
+  {
+    "location": "S0.P041",
+    "old": "확인적 통계 검정",
+    "new": "후속 통계 분석"
+  },
+  {
+    "location": "S0.P043",
+    "old": "확인적 분석은",
+    "new": "후속 통계 분석은"
+  },
+  {
+    "location": "S0.P047",
+    "old": "기준범주에 비해 변화하는 정도",
+    "new": "기준범주의 몇 배인지를"
+  },
+  {
+    "location": "S0.P047",
+    "old": "몇 배인지를를 나타낸다",
+    "new": "몇 배인지를 나타낸다"
+  },
+  {
+    "location": "S0.P048",
+    "old": "로지스틱 회귀분석에서 확인된 요인의 효과가 인명피해 발생 여부뿐만 아니라 사고당 사상자 수를 대상으로 한 분석에서도 일관되게 나타나는지 검토하였다",
+    "new": "로지스틱 회귀분석에서 관찰된 관련성의 방향이 사고당 사상자 수를 대상으로 한 분석에서도 동일한지 비교하였다"
+  },
+  {
+    "location": "S0.P052",
+    "old": "여기서,",
+    "new": "여기서, 식 (2)의 μᵢ는 해당 사고의 설명변수가 주어졌을 때의 기대 사상자 수이다. "
+  },
+  {
+    "location": "S0.P052",
+    "old": "기준범주에 비해 변화하는 정도",
+    "new": "기준범주의 몇 배인지를"
+  },
+  {
+    "location": "S0.P052",
+    "old": "몇 배인지를를 나타낸다",
+    "new": "몇 배인지를 나타낸다"
+  },
+  {
+    "location": "S0.P052",
+    "old": "본 연구에서는 사상자 수의 분산이 평균을 초과하는 과산포가 확인되어 음이항 회귀모형을 적용하였다",
+    "new": "본 연구에서는 포아송 적합값에 기초한 과산포 모수 추정값이 양수로 나타나 음이항 회귀모형을 적용하였다"
+  },
+  {
+    "location": "S0.P053",
+    "old": "거짓발견률(False Discovery Rate, FDR)을 통제하기 위해 24개 후보의 Wald 검정 p값에 Benjamini–Hochberg 절차를 적용하였다",
+    "new": "선정된 24개 후보 집합 내 다중검정을 고려하여 각 Wald 검정 p값에 Benjamini–Hochberg 절차를 적용하고 보정 p값을 q값으로 표기하였다"
+  },
+  {
+    "location": "S0.P053",
+    "old": "Benjamini–Hochberg 절차",
+    "new": "Benjamini–Hochberg의 거짓발견률(False Discovery Rate, FDR) 보정 절차"
+  },
+  {
+    "location": "S0.P056",
+    "old": "두 조건이 동시에 성립할 때 나타나는 추가적인 효과",
+    "new": "두 조건이 동시에 성립할 때 주효과 모형에 추가되는 로그오즈"
+  },
+  {
+    "location": "S0.P057",
+    "old": "안정적인 추정을 위해 포아송 적합값을 이용하여",
+    "new": "포아송 적합값을 이용하여"
+  },
+  {
+    "location": "S0.P057 unsupported exact-formula citation removed",
+    "old": "20",
+    "new": ""
+  },
+  {
+    "location": "S0.P064",
+    "old": "SMOTEN을 적용한 XGBoost의 ROC-AUC와 AP는 각각 0.724와 0.706으로 언더샘플링 모형보다 낮았으며, ",
+    "new": ""
+  },
+  {
+    "location": "S0.P064",
+    "old": "불균형 처리 방식에 따른 성능을 비교한 결과",
+    "new": "보조적인 예측 성능을 검토한 결과"
+  },
+  {
+    "location": "S0.P068",
+    "old": "Fig 1.",
+    "new": "Fig. 1."
+  },
+  {
+    "location": "S0.P076",
+    "old": "모형의 McFadden’s pseudo R²는 0.148로 나타났으며",
+    "new": "절편만 포함한 모형과 적합모형의 로그우도로 계산한 McFadden’s pseudo R²는 0.148로 나타났으며"
+  },
+  {
+    "location": "S0.P080",
+    "old": "양(+)의 상호작용 계수를 보인 조합은",
+    "new": "양(+)의 상호작용 계수를 보인 주요 조합은"
+  },
+  {
+    "location": "S0.P080",
+    "old": "범주의 특성과 높은 동시 발생 빈도를 고려하여 해석을 제한하였다",
+    "new": "미상 범주의 해석 한계 등을 고려하여 이를 일반적인 인과기전으로 확대 해석하지 않았다"
+  },
+  {
+    "location": "S0.P085",
+    "old": "영업소 구간에서의 인명피해 발생률 감소 폭은",
+    "new": "영업소 구간과 영업소 외 구간 간 인명피해 발생률 차이는"
+  },
+  {
+    "location": "S0.P099",
+    "old": "탐색 결과와 확인 결과의 비교",
+    "new": "탐색 결과와 후속 회귀 결과의 비교"
+  },
+  {
+    "location": "S0.P102",
+    "old": "통계적 유의성이 확인되지 않은 조합은 탐색적 결과로 보고하였다",
+    "new": "통계적 유의성이 확인되지 않은 조합이 존재하였다. 이러한 후속 검정 결과는 유의한 조합을 포함하여 탐색적 분석의 범위에서 해석하였다"
+  },
+  {
+    "location": "S0.P107",
+    "old": "영업소에서 1km 미만인 본선의 낮은 발생률은 기술적 관측이며, 거리별 변화가 일관되지 않아 감속 효과로 단정하기 어렵다",
+    "new": "영업소에서 1km 미만인 본선의 낮은 발생률은 속도·교통노출 및 다른 공변량을 통제하지 않은 기술적 관측이므로 감속 효과의 근거로 해석하지 않았다"
+  },
+  {
+    "location": "S0.P112",
+    "old": "Education(MOE)",
+    "new": "Education (MOE)"
+  },
+  {
+    "location": "S0.P112",
+    "old": "Korea(2026",
+    "new": "Korea (2026"
+  },
+  {
+    "location": "Table2 row3 col0",
+    "old": "XGBoost (SMOTEN, 5-seed)",
+    "new": "XGBoost (balanced, representative split)"
+  },
+  {
+    "location": "Table2 row3 col1",
+    "old": "0.650",
+    "new": "0.713"
+  },
+  {
+    "location": "Table2 row3 col2",
+    "old": "0.682",
+    "new": "0.696"
+  },
+  {
+    "location": "Table2 row3 col3",
+    "old": "0.563",
+    "new": "0.759"
+  },
+  {
+    "location": "Table2 row3 col4",
+    "old": "0.617",
+    "new": "0.726"
+  },
+  {
+    "location": "Table2 row3 col5",
+    "old": "0.724",
+    "new": "0.790"
+  },
+  {
+    "location": "Table2 row3 col6",
+    "old": "0.706",
+    "new": "0.773"
+  },
+  {
+    "location": "Table3 single-vehicle fire CI",
+    "old": "0.03–0.08",
+    "new": "0.03–0.07"
+  },
+  {
+    "location": "Table4 speeding x mainline coefficient",
+    "old": "−0.256",
+    "new": "−0.255"
+  },
+  {
+    "location": "S0.P080 BH criterion",
+    "kind": "equation",
+    "old": "p",
+    "new": "q"
+  },
+  {
+    "location": "S0.P050 conditional NB2 variance",
+    "kind": "equation",
+    "old": "ln left ( mu _i right ) = beta _0 + sum from j beta _j x _ij, Var left ( Y _i right ) = mu _i + alpha mu _i ^2",
+    "new": "ln left ( mu _i right ) = beta _0 + sum from j beta _j x _ij, Var left ( Y _i vert x _i right ) = mu _i + alpha mu _i ^2"
+  },
+  {
+    "location": "S1.P038",
+    "old": "(19) Chawla, N. V., Bowyer, K. W., Hall, L. O. and Kegelmeyer, W. P., 2002, “SMOTE: Synthetic Minority Over-sampling Technique,” Journal of Artificial Intelligence Research, Vol. 16, pp. 321~357.",
+    "new": "(19) Cameron, A. C. and Trivedi, P. K., 2001, “Essentials of Count Data Regression,” in Baltagi, B. H. (ed.), A Companion to Theoretical Econometrics, Blackwell, Oxford, pp. 331~348."
+  },
+  {
+    "location": "S1.P040",
+    "old": "(20) Cameron, A. C. and Trivedi, P. K., 1986, “Econometric Models Based on Count Data: Comparisons and Applications of Some Estimators and Tests,” Journal of Applied Econometrics, Vol. 1, No. 1, pp. 29~53.",
+    "new": "(20) Benjamini, Y. and Hochberg, Y., 1995, “Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing,” Journal of the Royal Statistical Society: Series B, Vol. 57, No. 1, pp. 289~300."
+  },
+  {
+    "location": "S1.P042",
+    "old": "(21) Benjamini, Y. and Hochberg, Y., 1995, “Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing,” Journal of the Royal Statistical Society: Series B, Vol. 57, No. 1, pp. 289~300.",
+    "new": "(21) Wilson, E. B., 1927, “Probable Inference, the Law of Succession, and Statistical Inference,” Journal of the American Statistical Association, Vol. 22, No. 158, pp. 209~212."
+  },
+  {
+    "location": "S1.P044",
+    "old": "(22) McFadden, D., 1980, “Econometric Models for Probabilistic Choice Among Products,” Journal of Business, Vol. 53, No. 3, pp. S13~S29.",
+    "new": "(22) McFadden, D., 1974, “Conditional Logit Analysis of Qualitative Choice Behavior,” in Zarembka, P. (ed.), Frontiers in Econometrics, Academic Press, New York, pp. 105~142."
+  },
+  {
+    "location": "S0.P052 citation renumber",
+    "old": "20",
+    "new": "19"
+  },
+  {
+    "location": "S0.P053 citation renumber",
+    "old": "21",
+    "new": "20"
+  },
+  {
+    "location": "S0.P060",
+    "kind": "citation",
+    "new": "21",
+    "after": "Wilson 95% 신뢰구간을 산출하였다"
+  }
+]

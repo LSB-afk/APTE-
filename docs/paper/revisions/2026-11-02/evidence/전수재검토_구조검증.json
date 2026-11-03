@@ -1,0 +1,219 @@
+{
+  "output_file": "docs/paper/revisions/2026-11-02/APTE_메모내용 반영_변경내용추적.hwpx",
+  "output_sha256": "895e3c4e3b9847512115e9079f747f89581575816b756e627f7006a4648ec8ef",
+  "baseline_sha256": "ddfb68efe353ab2bcb8a03f575656c97b18c3d49d759b753e9e9147d85c0f133",
+  "original_sha256": "152c7f1c95497d62ee5eb6e731e9087b3386349a8e935de2f77323b8c1e783c7",
+  "checks": [
+    {
+      "name": "original_source_hash_unchanged",
+      "pass": true
+    },
+    {
+      "name": "package_zip_integrity",
+      "pass": true
+    },
+    {
+      "name": "all_xml_parseable",
+      "pass": true
+    },
+    {
+      "name": "zip_entry_names_order_preserved",
+      "pass": true
+    },
+    {
+      "name": "only_declared_package_parts_changed",
+      "pass": true,
+      "detail": [
+        "Contents/header.xml",
+        "Contents/section0.xml",
+        "Contents/section1.xml",
+        "Preview/PrvText.txt",
+        "Preview/PrvImage.png",
+        "Contents/content.hpf"
+      ]
+    },
+    {
+      "name": "binary_payloads_unchanged",
+      "pass": true,
+      "detail": 5
+    },
+    {
+      "name": "fontfaces_unchanged_since_font_repair",
+      "pass": true
+    },
+    {
+      "name": "charProperties_unchanged_since_font_repair",
+      "pass": true
+    },
+    {
+      "name": "track_ids_unique",
+      "pass": true
+    },
+    {
+      "name": "declared_track_count",
+      "pass": true
+    },
+    {
+      "name": "Contents/section0.xml reject_all_nonempty_paragraphs_equal_original",
+      "pass": true,
+      "detail": {
+        "original": 76,
+        "rejected": 76
+      }
+    },
+    {
+      "name": "Contents/section0.xml original_text_character_styles_preserved_since_font_repair",
+      "pass": true
+    },
+    {
+      "name": "Contents/section0.xml professor_memos_canonical_exact",
+      "pass": true,
+      "detail": 12
+    },
+    {
+      "name": "Contents/section0.xml original_equations_reject_exact",
+      "pass": true
+    },
+    {
+      "name": "Contents/section0.xml all_original_equation_controls_present_unmodified",
+      "pass": true,
+      "detail": 24
+    },
+    {
+      "name": "Contents/section0.xml picture_payload_geometry_preserved",
+      "pass": true,
+      "detail": 5
+    },
+    {
+      "name": "Contents/section0.xml all_table_grids_preserved",
+      "pass": true,
+      "detail": 6
+    },
+    {
+      "name": "Contents/section1.xml reject_all_nonempty_paragraphs_equal_original",
+      "pass": true,
+      "detail": {
+        "original": 30,
+        "rejected": 30
+      }
+    },
+    {
+      "name": "Contents/section1.xml original_text_character_styles_preserved_since_font_repair",
+      "pass": true
+    },
+    {
+      "name": "Contents/section1.xml professor_memos_canonical_exact",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "Contents/section1.xml original_equations_reject_exact",
+      "pass": true
+    },
+    {
+      "name": "Contents/section1.xml all_original_equation_controls_present_unmodified",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Contents/section1.xml picture_payload_geometry_preserved",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Contents/section1.xml all_table_grids_preserved",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "native_tracking_begin_end_paired_no_nesting",
+      "pass": true
+    },
+    {
+      "name": "all_header_track_records_used_once",
+      "pass": true,
+      "detail": {
+        "ranges": 664,
+        "kinds": {
+          "Delete": 357,
+          "Insert": 307
+        }
+      }
+    },
+    {
+      "name": "inserted_hangul_latin_no_wrong_font",
+      "pass": true,
+      "detail": {
+        "inserted_character_styles": {
+          "28": 28,
+          "33": 82,
+          "25": 310,
+          "47": 8059,
+          "68": 44,
+          "72": 25,
+          "73": 677,
+          "57": 56,
+          "26": 641,
+          "77": 279,
+          "52": 7,
+          "74": 290,
+          "46": 15,
+          "50": 174,
+          "65": 2036,
+          "70": 82
+        },
+        "violations": []
+      }
+    },
+    {
+      "name": "mandatory_last_paragraph_original_end_remains_zero",
+      "pass": true
+    },
+    {
+      "name": "hancom_native_pdf_17_pages",
+      "pass": true
+    }
+  ],
+  "sections": {
+    "Contents/section0.xml": {
+      "memos": 12,
+      "raw_equations": 26,
+      "accepted_equations": 24,
+      "rejected_equations": 24,
+      "pictures": 5,
+      "tables": 6
+    },
+    "Contents/section1.xml": {
+      "memos": 1,
+      "raw_equations": 0,
+      "accepted_equations": 0,
+      "rejected_equations": 0,
+      "pictures": 0,
+      "tables": 0
+    }
+  },
+  "limits": [
+    "Installed Hancom is subscription-restricted/read-only. Actual UI accept/reject/resave is not verified. XML rejection projection and native PDF rendering are distinct checks.",
+    "Font declarations and inserted text are checked against language-specific references. This is not a guarantee about any other machine's installed fonts."
+  ],
+  "native_tracks": 664,
+  "package_part_sha256": {
+    "Contents/header.xml": "438e3c65921ec18a47750f54de48edf743bb4f273d0f0892ad10558cbb89735c",
+    "Contents/section0.xml": "b569fd9a91b363f3c3e8ab1b9e44390e92d91493e2c9c8929eaca6e74316cf6c",
+    "Contents/section1.xml": "9f4aa1ae212e5395463d08523d0f5c7007dd0955e7c77896cf2e470310a3cd9b",
+    "Preview/PrvText.txt": "134b13f59ae5b9dbe82590755a6e057b170434bb567c66c01098e1c384c75778",
+    "Preview/PrvImage.png": "f4ac3a1d276a32c672bb1983b0fee3cd31469c99b925c08146a41d62c24e9a5e",
+    "Contents/content.hpf": "00d19e5fd792a385ca91e2f806d0e177e70db3e49a52f172ee8ec8a83c7dee93"
+  },
+  "native_pdf": {
+    "file": "rereview-final.pdf",
+    "sha256": "869ed8311e2e8f19425e9b753b074b2b631ac22963a5f813afa9f26cca597617",
+    "pages": 17,
+    "visual_spots": [
+      "Page07: one conditional NB2 equation Var(Y_i | x_i), no deleted equation duplicate; mu_i definition visible.",
+      "Page11: one q<0.05 threshold, not p; fire CI0.03–0.07 visible."
+    ],
+    "not_verified": "Actual editable-app accept/reject/resave UI is unavailable under installed subscription."
+  },
+  "status": "independent_package_checks_passed_with_declared_UI_limit"
+}

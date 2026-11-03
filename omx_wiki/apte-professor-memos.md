@@ -2,7 +2,7 @@
 title: "APTE Professor Memos"
 tags: ["APTE", "논문수정", "근거"]
 created: 2026-11-02T10:42:46.262Z
-updated: 2026-11-02T11:25:35.428Z
+updated: 2026-11-03T05:46:34Z
 sources: ["../docs/paper/revisions/2026-11-02/evidence/파일식별정보.json", "../docs/paper/revisions/2026-11-02/evidence/변경대조목록.json", "../docs/paper/revisions/2026-11-02/evidence/문서검증결과.json", "../docs/paper/revisions/2026-11-02/수정검토보고서.md", "../docs/paper/revisions/2026-11-02/evidence/원본메모.json"]
 links: ["apte-revision-hub.md", "apte-source-register.md", "apte-revision-decisions.md", "apte-memo-01.md", "apte-memo-02.md", "apte-memo-03.md", "apte-memo-04.md", "apte-memo-05.md", "apte-memo-06.md", "apte-memo-07.md", "apte-memo-08.md", "apte-memo-09.md", "apte-memo-10.md", "apte-memo-11.md", "apte-memo-12.md", "apte-memo-13.md", "apte-validation-log.md", "apte-data-evidence.md", "apte-reference-audit.md"]
 category: reference
@@ -11,6 +11,9 @@ schemaVersion: 1
 ---
 
 # 교수 검토 메모 13개
+
+> **2026-11-03 전수 재검토 우선 기록:** 현재 판정·파일·인용 매핑은 [[apte-full-rereview]]와 [최신 검토 보고서](../docs/paper/revisions/2026-11-02/전수재검토보고서.md)를 따른다. 아래 이전 날짜의592범위·SMOTEN보존·특정출전보류 기록은 당시 스냅샷이다.
+
 
 [[apte-revision-hub]] · [[apte-source-register]] · [[apte-revision-decisions]]
 

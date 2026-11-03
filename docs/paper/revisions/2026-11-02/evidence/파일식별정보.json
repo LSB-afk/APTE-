@@ -1,8 +1,8 @@
 {
-  "tracks": 592,
-  "logical_changes": 205,
+  "tracks": 664,
+  "logical_changes": 265,
   "original_sha256": "152c7f1c95497d62ee5eb6e731e9087b3386349a8e935de2f77323b8c1e783c7",
-  "output_sha256": "ddfb68efe353ab2bcb8a03f575656c97b18c3d49d759b753e9e9147d85c0f133",
+  "output_sha256": "895e3c4e3b9847512115e9079f747f89581575816b756e627f7006a4648ec8ef",
   "reference_mapping": {
     "1": 1,
     "2": 2,
@@ -22,20 +22,17 @@
     "15": 16,
     "18": 17,
     "25": 18,
-    "26": 19,
-    "28": 20,
-    "17": 21,
-    "29": 22
+    "17": 20
   },
-  "date": "2026-11-03T05:21:51Z",
+  "date": "2026-11-03T05:41:35Z",
   "preview_cache_refresh": {
     "parts": [
       "Contents/content.hpf",
       "Preview/PrvText.txt",
       "Preview/PrvImage.png"
     ],
-    "body_xml_hashes_unchanged": true,
-    "source": "Hancom native output font-corrected.pdf page 1; existing accepted-text preview retained because manuscript text is unchanged",
+    "body_xml_hashes_unchanged_by_metadata_refresh": true,
+    "source": "최종 한글 native17쪽 출력의 첫 페이지; 수용 텍스트 미리보기 갱신",
     "first_page_png_size": [
       724,
       1024
@@ -44,9 +41,22 @@
   "output": "APTE_메모내용 반영_변경내용추적.hwpx",
   "source_filename": "자동차모빌리티안전연구_논문_최종 수정본_EJ검토_마지막.hwpx",
   "track_types": {
-    "Delete": 318,
-    "Insert": 274
+    "Delete": 357,
+    "Insert": 307
   },
-  "previous_output_sha256": "1ac7621aa5ea69cc1572a24c4906021a110a77ad79cd1aa45828fb2c5754a965",
-  "font_repair_date": "2026-11-03"
+  "previous_output_sha256": "ddfb68efe353ab2bcb8a03f575656c97b18c3d49d759b753e9e9147d85c0f133",
+  "font_repair_date": "2026-11-03",
+  "logical_change_accounting": "기존 수정 기록205건 + 이번 추가수정 기록60건. 동일 위치의 반복 교정을 포함한 기록 수다.",
+  "reference_replacements": {
+    "19": "Cameron and Trivedi (2001), 신규",
+    "21": "Wilson (1927), 신규",
+    "22": "McFadden (1974), 신규"
+  },
+  "excluded_additional_original_reference_numbers": [
+    26,
+    28,
+    29
+  ],
+  "native_pdf_sha256": "869ed8311e2e8f19425e9b753b074b2b631ac22963a5f813afa9f26cca597617",
+  "native_pages": 17
 }

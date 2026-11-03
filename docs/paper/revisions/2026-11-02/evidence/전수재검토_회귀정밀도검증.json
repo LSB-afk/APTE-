@@ -1,0 +1,1236 @@
+{
+  "started_at_utc": "2026-11-03T05:41:21.082782+00:00",
+  "status": "passed",
+  "scope": "Existing 71 main-effect dummies + intercept, each of the fixed 24 candidates individually added; three previously refitted terms may be reused with identical input hashes. No XGBoost training, SHAP computation, raw row disclosure, design changes or public output modifications.",
+  "software": {
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "statsmodels": "0.14.4"
+  },
+  "input_sha256_before": {
+    "data/processed/analysis_dataset.csv": "f76cec85b2e6b2f34402bf21aef9d12c86a430b545e0292b146cd364dca77b0b",
+    "src/04_confirmatory_stats.py": "b4a2b40d6f49e78e11a4b54b77a323350b420bfc95386f90fd6cbc08c07cad63",
+    "src/05_interaction_deep.py": "f7d8287c18ff096f95a7d6324c250313576af312c21b3c03e1332df46c00ff23",
+    "outputs/tables/interaction_profile.csv": "e5717b9fc47627cf4ed6f21bd472e95466f8db8fcb65fae72bdf00259fdde53d",
+    "outputs/tables/logistic_or_table.csv": "024c1672795ec75552689e08c4ad20d67d1683d8518658a379627e449721a970",
+    "outputs/tables/table_logistic_formatted.csv": "00a7524e7775cbb097a8a70a2306f46395c930347e8cf3c9050d3fdd5ea036e3"
+  },
+  "manuscript_snapshot_sha256": "7350d8c0e1e952260c22a282d8dd72e1cd7eb9fac90166334d85b30d17421437",
+  "models": [
+    {
+      "features": [
+        "발생지점_영업소(TG)",
+        "원인차차종_승용"
+      ],
+      "coef_unrounded": 1.361101329708319,
+      "p_value_unrounded": 4.2714020506541906e-24,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 65,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 1,
+      "n_both": 3201,
+      "stored_coef_4dp": 1.3611,
+      "stored_p_4dp": 0.0,
+      "stored_q_4dp": 0.0,
+      "seconds_this_run": 0.5231638749828562,
+      "q_value_unrounded": 1.0251364921570058e-22,
+      "BH_q_lt_05": true,
+      "coef_direct_3dp": "1.361",
+      "q_direct_3dp": "<0.001",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "주사고원인_주시태만",
+        "원인차차종_승용"
+      ],
+      "coef_unrounded": -0.11099922456430221,
+      "p_value_unrounded": 0.03518705578809386,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 73,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 2,
+      "n_both": 10555,
+      "stored_coef_4dp": -0.111,
+      "stored_p_4dp": 0.0352,
+      "stored_q_4dp": 0.0603,
+      "seconds_this_run": 0.566230250056833,
+      "q_value_unrounded": 0.060320667065303764,
+      "BH_q_lt_05": false,
+      "coef_direct_3dp": "-0.111",
+      "q_direct_3dp": "0.060",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "주사고원인_주시태만",
+        "발생지점_본선"
+      ],
+      "coef_unrounded": 0.4388026887170379,
+      "p_value_unrounded": 1.2168072782635967e-09,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 76,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 3,
+      "n_both": 11105,
+      "stored_coef_4dp": 0.4388,
+      "stored_p_4dp": 0.0,
+      "stored_q_4dp": 0.0,
+      "seconds_this_run": 0.5783979579573497,
+      "q_value_unrounded": 7.30084366958158e-09,
+      "BH_q_lt_05": true,
+      "coef_direct_3dp": "0.439",
+      "q_direct_3dp": "<0.001",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "주사고원인_졸음",
+        "원인차차종_승용"
+      ],
+      "coef_unrounded": -0.05957727303271914,
+      "p_value_unrounded": 0.3043664763686732,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 67,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 4,
+      "n_both": 5950,
+      "stored_coef_4dp": -0.0596,
+      "stored_p_4dp": 0.3044,
+      "stored_q_4dp": 0.332,
+      "seconds_this_run": 0.542849832912907,
+      "q_value_unrounded": 0.3320361560385526,
+      "BH_q_lt_05": false,
+      "coef_direct_3dp": "-0.060",
+      "q_direct_3dp": "0.332",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "발생지점_본선",
+        "원인차차종_승용"
+      ],
+      "coef_unrounded": -0.08893197358313698,
+      "p_value_unrounded": 0.16704552588508725,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 81,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 5,
+      "n_both": 38819,
+      "stored_coef_4dp": -0.0889,
+      "stored_p_4dp": 0.167,
+      "stored_q_4dp": 0.1909,
+      "seconds_this_run": 0.6103137499885634,
+      "q_value_unrounded": 0.19090917244009972,
+      "BH_q_lt_05": false,
+      "coef_direct_3dp": "-0.089",
+      "q_direct_3dp": "0.191",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "사고시도로환경_정상",
+        "노면상태_습기"
+      ],
+      "coef_unrounded": -0.24971589125712912,
+      "p_value_unrounded": 0.09802600578854105,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 81,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 6,
+      "n_both": 10126,
+      "stored_coef_4dp": -0.2497,
+      "stored_p_4dp": 0.098,
+      "stored_q_4dp": 0.1238,
+      "seconds_this_run": 0.5972411250695586,
+      "q_value_unrounded": 0.12382232310131502,
+      "BH_q_lt_05": false,
+      "coef_direct_3dp": "-0.250",
+      "q_direct_3dp": "0.124",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "주사고원인_주시태만",
+        "조명시설_해당없음(주간)"
+      ],
+      "coef_unrounded": -0.0991757143642556,
+      "p_value_unrounded": 0.05755174361809517,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 74,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 7,
+      "n_both": 9285,
+      "stored_coef_4dp": -0.0992,
+      "stored_p_4dp": 0.0576,
+      "stored_q_4dp": 0.0812,
+      "seconds_this_run": 0.5650307909818366,
+      "q_value_unrounded": 0.0812495204020167,
+      "BH_q_lt_05": false,
+      "coef_direct_3dp": "-0.099",
+      "q_direct_3dp": "0.081",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "주사고원인_노면잡물",
+        "발생지점_본선"
+      ],
+      "coef_unrounded": 0.21330694195827446,
+      "p_value_unrounded": 0.691911337694666,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 88,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 8,
+      "n_both": 7540,
+      "stored_coef_4dp": 0.2133,
+      "stored_p_4dp": 0.6919,
+      "stored_q_4dp": 0.6919,
+      "seconds_this_run": 0.646236874978058,
+      "q_value_unrounded": 0.691911337694666,
+      "BH_q_lt_05": false,
+      "coef_direct_3dp": "0.213",
+      "q_direct_3dp": "0.692",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "발생지점_본선",
+        "노면상태_습기"
+      ],
+      "coef_unrounded": -0.05828022642806059,
+      "p_value_unrounded": 0.47906947785990617,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 69,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 9,
+      "n_both": 14739,
+      "stored_coef_4dp": -0.0583,
+      "stored_p_4dp": 0.4791,
+      "stored_q_4dp": 0.4999,
+      "seconds_this_run": 0.5807030419819057,
+      "q_value_unrounded": 0.49989858559294553,
+      "BH_q_lt_05": false,
+      "coef_direct_3dp": "-0.058",
+      "q_direct_3dp": "0.500",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "주사고원인_주시태만",
+        "발생지점_영업소(TG)"
+      ],
+      "coef_unrounded": -0.934500879536082,
+      "p_value_unrounded": 1.0204045747434328e-11,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 71,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 10,
+      "n_both": 4311,
+      "stored_coef_4dp": -0.9345,
+      "stored_p_4dp": 0.0,
+      "stored_q_4dp": 0.0,
+      "seconds_this_run": 0.572056083008647,
+      "q_value_unrounded": 8.163236597947463e-11,
+      "BH_q_lt_05": true,
+      "coef_direct_3dp": "-0.935",
+      "q_direct_3dp": "<0.001",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "주사고원인_노면잡물",
+        "사고시도로환경_정상"
+      ],
+      "coef_unrounded": -1.5216423374225279,
+      "p_value_unrounded": 1.9910244593037203e-08,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 66,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 11,
+      "n_both": 5987,
+      "stored_coef_4dp": -1.5216,
+      "stored_p_4dp": 0.0,
+      "stored_q_4dp": 0.0,
+      "seconds_this_run": 0.5585667500272393,
+      "q_value_unrounded": 7.964097837214881e-08,
+      "BH_q_lt_05": true,
+      "coef_direct_3dp": "-1.522",
+      "q_direct_3dp": "<0.001",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "주사고원인_노면잡물",
+        "사고직전차량조작_운행차로주행"
+      ],
+      "coef_unrounded": -1.6401012527797865,
+      "p_value_unrounded": 1.3339561966143944e-08,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 73,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 12,
+      "n_both": 8025,
+      "stored_coef_4dp": -1.6401,
+      "stored_p_4dp": 0.0,
+      "stored_q_4dp": 0.0,
+      "seconds_this_run": 0.6071332920109853,
+      "q_value_unrounded": 6.402989743749092e-08,
+      "BH_q_lt_05": true,
+      "coef_direct_3dp": "-1.640",
+      "q_direct_3dp": "<0.001",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "사고시도로환경_정상",
+        "노면상태_건조"
+      ],
+      "coef_unrounded": 0.4048858512532783,
+      "p_value_unrounded": 0.013660800662074509,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 87,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 13,
+      "n_both": 56191,
+      "stored_coef_4dp": 0.4049,
+      "stored_p_4dp": 0.0137,
+      "stored_q_4dp": 0.0252,
+      "seconds_this_run": 0.681661874987185,
+      "q_value_unrounded": 0.025219939683829865,
+      "BH_q_lt_05": true,
+      "coef_direct_3dp": "0.405",
+      "q_direct_3dp": "0.025",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "발생지점_램프",
+        "원인차차종_승용"
+      ],
+      "coef_unrounded": -0.46802294047080983,
+      "p_value_unrounded": 6.790448187618565e-07,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 68,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 14,
+      "n_both": 8090,
+      "stored_coef_4dp": -0.468,
+      "stored_p_4dp": 0.0,
+      "stored_q_4dp": 0.0,
+      "seconds_this_run": 0.5294684579130262,
+      "q_value_unrounded": 2.0371344562855695e-06,
+      "BH_q_lt_05": true,
+      "coef_direct_3dp": "-0.468",
+      "q_direct_3dp": "<0.001",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "주사고원인_과속",
+        "발생지점_본선"
+      ],
+      "coef_unrounded": -0.2554921005942122,
+      "p_value_unrounded": 0.0009957056250889525,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 68,
+      "warnings": [],
+      "cache_reused": true,
+      "index": 15,
+      "n_both": 13022,
+      "stored_coef_4dp": -0.2555,
+      "stored_p_4dp": 0.001,
+      "stored_q_4dp": 0.0022,
+      "seconds_this_run": 5.95790334045887e-06,
+      "q_value_unrounded": 0.0021724486365577145,
+      "BH_q_lt_05": true,
+      "coef_direct_3dp": "-0.255",
+      "q_direct_3dp": "0.002",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "주사고원인_노면잡물",
+        "조명시설_해당없음(주간)"
+      ],
+      "coef_unrounded": -0.363152266381144,
+      "p_value_unrounded": 0.09742828018726414,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 74,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 16,
+      "n_both": 4379,
+      "stored_coef_4dp": -0.3632,
+      "stored_p_4dp": 0.0974,
+      "stored_q_4dp": 0.1238,
+      "seconds_this_run": 0.5834740829886869,
+      "q_value_unrounded": 0.12382232310131502,
+      "BH_q_lt_05": false,
+      "coef_direct_3dp": "-0.363",
+      "q_direct_3dp": "0.124",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "주사고원인_주시태만",
+        "사고직전차량조작_핸들과대조작"
+      ],
+      "coef_unrounded": -0.3278510487828337,
+      "p_value_unrounded": 7.413720500383418e-05,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 70,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 17,
+      "n_both": 2467,
+      "stored_coef_4dp": -0.3279,
+      "stored_p_4dp": 0.0001,
+      "stored_q_4dp": 0.0002,
+      "seconds_this_run": 0.5944474160205573,
+      "q_value_unrounded": 0.00019769921334355782,
+      "BH_q_lt_05": true,
+      "coef_direct_3dp": "-0.328",
+      "q_direct_3dp": "<0.001",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "주사고원인_노면잡물",
+        "조명시설_없음"
+      ],
+      "coef_unrounded": 0.4519815811420382,
+      "p_value_unrounded": 0.047974793800162625,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 71,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 18,
+      "n_both": 1731,
+      "stored_coef_4dp": 0.452,
+      "stored_p_4dp": 0.048,
+      "stored_q_4dp": 0.072,
+      "seconds_this_run": 0.6154070410411805,
+      "q_value_unrounded": 0.07196219070024394,
+      "BH_q_lt_05": false,
+      "coef_direct_3dp": "0.452",
+      "q_direct_3dp": "0.072",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "원인차차종_승합",
+        "차종구분_대형"
+      ],
+      "coef_unrounded": 0.9638325694459463,
+      "p_value_unrounded": 2.363482329737738e-19,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 72,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 19,
+      "n_both": 987,
+      "stored_coef_4dp": 0.9638,
+      "stored_p_4dp": 0.0,
+      "stored_q_4dp": 0.0,
+      "seconds_this_run": 0.660945083014667,
+      "q_value_unrounded": 2.8361787956852858e-18,
+      "BH_q_lt_05": true,
+      "coef_direct_3dp": "0.964",
+      "q_direct_3dp": "<0.001",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "발생지점_영업소(TG)",
+        "차종구분_미상"
+      ],
+      "coef_unrounded": -1.1984228079785986,
+      "p_value_unrounded": 6.679817597360157e-08,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 68,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 20,
+      "n_both": 2056,
+      "stored_coef_4dp": -1.1984,
+      "stored_p_4dp": 0.0,
+      "stored_q_4dp": 0.0,
+      "seconds_this_run": 0.5941432079998776,
+      "q_value_unrounded": 2.290223176237768e-07,
+      "BH_q_lt_05": true,
+      "coef_direct_3dp": "-1.198",
+      "q_direct_3dp": "<0.001",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "발생지점_영업소(TG)",
+        "조명시설_작동"
+      ],
+      "coef_unrounded": -0.40450427481040035,
+      "p_value_unrounded": 0.00433383634480864,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 71,
+      "warnings": [],
+      "cache_reused": true,
+      "index": 21,
+      "n_both": 3531,
+      "stored_coef_4dp": -0.4045,
+      "stored_p_4dp": 0.0043,
+      "stored_q_4dp": 0.0087,
+      "seconds_this_run": 4.625064320862293e-06,
+      "q_value_unrounded": 0.00866767268961728,
+      "BH_q_lt_05": true,
+      "coef_direct_3dp": "-0.405",
+      "q_direct_3dp": "0.009",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "주사고원인_안전거리미확보",
+        "원인차차종_승용"
+      ],
+      "coef_unrounded": -0.4015192692569664,
+      "p_value_unrounded": 0.0006609147566897312,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 76,
+      "warnings": [],
+      "cache_reused": true,
+      "index": 22,
+      "n_both": 1084,
+      "stored_coef_4dp": -0.4015,
+      "stored_p_4dp": 0.0007,
+      "stored_q_4dp": 0.0016,
+      "seconds_this_run": 2.2919848561286926e-06,
+      "q_value_unrounded": 0.001586195416055355,
+      "BH_q_lt_05": true,
+      "coef_direct_3dp": "-0.402",
+      "q_direct_3dp": "0.002",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "주사고원인_안전거리미확보",
+        "조명시설_해당없음(주간)"
+      ],
+      "coef_unrounded": 0.23462789420600133,
+      "p_value_unrounded": 0.04569492316763945,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 68,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 23,
+      "n_both": 996,
+      "stored_coef_4dp": 0.2346,
+      "stored_p_4dp": 0.0457,
+      "stored_q_4dp": 0.072,
+      "seconds_this_run": 0.6032643340295181,
+      "q_value_unrounded": 0.07196219070024394,
+      "BH_q_lt_05": false,
+      "coef_direct_3dp": "0.235",
+      "q_direct_3dp": "0.072",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    },
+    {
+      "features": [
+        "주사고원인_노면잡물",
+        "차종구분_소형"
+      ],
+      "coef_unrounded": 0.3327802922171533,
+      "p_value_unrounded": 0.1622981020515759,
+      "converged": true,
+      "warnflag": 0,
+      "iterations": 68,
+      "warnings": [],
+      "cache_reused": false,
+      "index": 24,
+      "n_both": 1744,
+      "stored_coef_4dp": 0.3328,
+      "stored_p_4dp": 0.1623,
+      "stored_q_4dp": 0.1909,
+      "seconds_this_run": 0.5997312909457833,
+      "q_value_unrounded": 0.19090917244009972,
+      "BH_q_lt_05": false,
+      "coef_direct_3dp": "0.333",
+      "q_direct_3dp": "0.191",
+      "coefficient_matches_stored_4dp": true,
+      "q_matches_stored_4dp": true
+    }
+  ],
+  "design": {
+    "n": 83297,
+    "positive": 8993,
+    "main_effect_dummies": 71,
+    "columns_with_intercept": 72,
+    "interaction_columns_with_intercept": 73,
+    "separated_columns_dropped_rows_retained": [
+      "주사고원인_포트홀"
+    ],
+    "references_before_separation_drop": {
+      "주사고원인": "과속",
+      "교통장애요인": "장애없음",
+      "발생지점": "본선",
+      "운전자상태": "정상",
+      "사고시도로환경": "정상",
+      "원인차차종": "승용",
+      "날씨": "맑음",
+      "조명시설": "해당없음(주간)",
+      "노면상태": "건조",
+      "연령구분": "미상",
+      "사고직전차량조작": "운행차로주행",
+      "차종구분": "중형",
+      "절성토구분": "평지",
+      "평면선형": "직선"
+    }
+  },
+  "main_effect_logistic": {
+    "converged": true,
+    "warnflag": 0,
+    "iterations": 71,
+    "seconds": 0.5442994580371305,
+    "warnings": [],
+    "pseudo_r2": 0.14846387168741948,
+    "llf": -24274.891341868875,
+    "llnull": -28507.177246809762,
+    "table3_rows": [
+      {
+        "factor": "Stopped vehicle (no obstruction)",
+        "dummy": "교통장애요인_정차차량",
+        "coef_unrounded": 1.2385704029118865,
+        "values_unrounded": {
+          "OR": 3.450676859334942,
+          "CI_low": 3.077749676120123,
+          "CI_high": 3.8687911755578814
+        },
+        "direct_2dp": [
+          "3.45",
+          "3.08–3.87"
+        ],
+        "manuscript_cells": [
+          "3.45",
+          "3.08–3.87"
+        ],
+        "all_match": true
+      },
+      {
+        "factor": "Tollgate (mainline)",
+        "dummy": "발생지점_영업소(TG)",
+        "coef_unrounded": -2.094678040697439,
+        "values_unrounded": {
+          "OR": 0.1231098736430601,
+          "CI_low": 0.10734504366516985,
+          "CI_high": 0.1411899466517045
+        },
+        "direct_2dp": [
+          "0.12",
+          "0.11–0.14"
+        ],
+        "manuscript_cells": [
+          "0.12",
+          "0.11–0.14"
+        ],
+        "all_match": true
+      },
+      {
+        "factor": "Trailer (passenger car)",
+        "dummy": "원인차차종_트레일러",
+        "coef_unrounded": 0.9934499079799205,
+        "values_unrounded": {
+          "OR": 2.7005350174191,
+          "CI_low": 2.18261126280799,
+          "CI_high": 3.3413597302362827
+        },
+        "direct_2dp": [
+          "2.70",
+          "2.18–3.34"
+        ],
+        "manuscript_cells": [
+          "2.70",
+          "2.18–3.34"
+        ],
+        "all_match": true
+      },
+      {
+        "factor": "Ramp (mainline)",
+        "dummy": "발생지점_램프",
+        "coef_unrounded": -1.204048308191983,
+        "values_unrounded": {
+          "OR": 0.29997734969528944,
+          "CI_low": 0.27243411346057983,
+          "CI_high": 0.3303052220118926
+        },
+        "direct_2dp": [
+          "0.30",
+          "0.27–0.33"
+        ],
+        "manuscript_cells": [
+          "0.30",
+          "0.27–0.33"
+        ],
+        "all_match": true
+      },
+      {
+        "factor": "Insufficient safe distance (pooled reference)",
+        "dummy": "주사고원인_안전거리미확보",
+        "coef_unrounded": 0.7282231536741236,
+        "values_unrounded": {
+          "OR": 2.0713967820856696,
+          "CI_low": 1.8165942836080127,
+          "CI_high": 2.361938858638794
+        },
+        "direct_2dp": [
+          "2.07",
+          "1.82–2.36"
+        ],
+        "manuscript_cells": [
+          "2.07",
+          "1.82–2.36"
+        ],
+        "all_match": true
+      },
+      {
+        "factor": "Road debris (pooled reference)",
+        "dummy": "주사고원인_노면잡물",
+        "coef_unrounded": -2.319186987739205,
+        "values_unrounded": {
+          "OR": 0.09835351572205028,
+          "CI_low": 0.07863841008991619,
+          "CI_high": 0.12301131271381102
+        },
+        "direct_2dp": [
+          "0.10",
+          "0.08–0.12"
+        ],
+        "manuscript_cells": [
+          "0.10",
+          "0.08–0.12"
+        ],
+        "all_match": true
+      },
+      {
+        "factor": "Van/bus (passenger car)",
+        "dummy": "원인차차종_승합",
+        "coef_unrounded": 0.6385372218727594,
+        "values_unrounded": {
+          "OR": 1.8937087765359162,
+          "CI_low": 1.7157663523727271,
+          "CI_high": 2.090105640182246
+        },
+        "direct_2dp": [
+          "1.89",
+          "1.72–2.09"
+        ],
+        "manuscript_cells": [
+          "1.89",
+          "1.72–2.09"
+        ],
+        "all_match": true
+      },
+      {
+        "factor": "Single-vehicle fire (pooled reference)",
+        "dummy": "주사고원인_단독차량화재",
+        "coef_unrounded": -3.0813435904902193,
+        "values_unrounded": {
+          "OR": 0.04589754769393889,
+          "CI_low": 0.028094351854978845,
+          "CI_high": 0.07498250520928351
+        },
+        "direct_2dp": [
+          "0.05",
+          "0.03–0.07"
+        ],
+        "manuscript_cells": [
+          "0.05",
+          "0.03–0.07"
+        ],
+        "all_match": true
+      },
+      {
+        "factor": "Lane change (driving in lane)",
+        "dummy": "사고직전차량조작_차로변경",
+        "coef_unrounded": 0.4865428622116022,
+        "values_unrounded": {
+          "OR": 1.6266828211973892,
+          "CI_low": 1.4285982521886953,
+          "CI_high": 1.8522331220304402
+        },
+        "direct_2dp": [
+          "1.63",
+          "1.43–1.85"
+        ],
+        "manuscript_cells": [
+          "1.63",
+          "1.43–1.85"
+        ],
+        "all_match": true
+      },
+      {
+        "factor": "Snow (clear)",
+        "dummy": "날씨_눈",
+        "coef_unrounded": -0.6668525948081281,
+        "values_unrounded": {
+          "OR": 0.5133216692155343,
+          "CI_low": 0.41963415832722345,
+          "CI_high": 0.6279258512619709
+        },
+        "direct_2dp": [
+          "0.51",
+          "0.42–0.63"
+        ],
+        "manuscript_cells": [
+          "0.51",
+          "0.42–0.63"
+        ],
+        "all_match": true
+      },
+      {
+        "factor": "Drowsy driving (pooled reference)",
+        "dummy": "주사고원인_졸음",
+        "coef_unrounded": 0.4519261923547081,
+        "values_unrounded": {
+          "OR": 1.571335967689826,
+          "CI_low": 1.4343158150576663,
+          "CI_high": 1.7214456519511026
+        },
+        "direct_2dp": [
+          "1.57",
+          "1.43–1.72"
+        ],
+        "manuscript_cells": [
+          "1.57",
+          "1.43–1.72"
+        ],
+        "all_match": true
+      },
+      {
+        "factor": "Wet (dry)",
+        "dummy": "노면상태_습기",
+        "coef_unrounded": -0.1958567749946541,
+        "values_unrounded": {
+          "OR": 0.8221299758164291,
+          "CI_low": 0.7209509663175411,
+          "CI_high": 0.9375085528884981
+        },
+        "direct_2dp": [
+          "0.82",
+          "0.72–0.94"
+        ],
+        "manuscript_cells": [
+          "0.82",
+          "0.72–0.94"
+        ],
+        "all_match": true
+      },
+      {
+        "factor": "Inattention (pooled reference)",
+        "dummy": "주사고원인_주시태만",
+        "coef_unrounded": 0.43007233273112144,
+        "values_unrounded": {
+          "OR": 1.5373687216049776,
+          "CI_low": 1.4209815210412204,
+          "CI_high": 1.6632887558153981
+        },
+        "direct_2dp": [
+          "1.54",
+          "1.42–1.66"
+        ],
+        "manuscript_cells": [
+          "1.54",
+          "1.42–1.66"
+        ],
+        "all_match": true
+      },
+      {
+        "factor": "No lighting (daytime)",
+        "dummy": "조명시설_없음",
+        "coef_unrounded": 0.2145349904173499,
+        "values_unrounded": {
+          "OR": 1.2392854833321283,
+          "CI_low": 1.1621584768788724,
+          "CI_high": 1.3215310474027724
+        },
+        "direct_2dp": [
+          "1.24",
+          "1.16–1.32"
+        ],
+        "manuscript_cells": [
+          "1.24",
+          "1.16–1.32"
+        ],
+        "all_match": true
+      }
+    ],
+    "table3_14_OR_28_CI_all_match": true
+  },
+  "cache_input_hashes_match": true,
+  "table4": {
+    "rows": [
+      {
+        "pair": "Road debris × Driving in lane",
+        "features": [
+          "사고직전차량조작_운행차로주행",
+          "주사고원인_노면잡물"
+        ],
+        "manuscript_cells": [
+          "−1.640",
+          "<0.001",
+          "8,025"
+        ],
+        "computed_direct_cells": [
+          "-1.640",
+          "<0.001",
+          "8025"
+        ],
+        "coefficient_direct_round_match": true,
+        "q_direct_round_match": true,
+        "cooccurrence_match": true,
+        "is_significant_in_full_BH": true,
+        "all_match": true
+      },
+      {
+        "pair": "Road debris × Normal road condition",
+        "features": [
+          "사고시도로환경_정상",
+          "주사고원인_노면잡물"
+        ],
+        "manuscript_cells": [
+          "−1.522",
+          "<0.001",
+          "5,987"
+        ],
+        "computed_direct_cells": [
+          "-1.522",
+          "<0.001",
+          "5987"
+        ],
+        "coefficient_direct_round_match": true,
+        "q_direct_round_match": true,
+        "cooccurrence_match": true,
+        "is_significant_in_full_BH": true,
+        "all_match": true
+      },
+      {
+        "pair": "Tollgate × Passenger car",
+        "features": [
+          "발생지점_영업소(TG)",
+          "원인차차종_승용"
+        ],
+        "manuscript_cells": [
+          "  +1.361",
+          "<0.001",
+          "3,201"
+        ],
+        "computed_direct_cells": [
+          "1.361",
+          "<0.001",
+          "3201"
+        ],
+        "coefficient_direct_round_match": true,
+        "q_direct_round_match": true,
+        "cooccurrence_match": true,
+        "is_significant_in_full_BH": true,
+        "all_match": true
+      },
+      {
+        "pair": "Tollgate × Unknown vehicle class",
+        "features": [
+          "발생지점_영업소(TG)",
+          "차종구분_미상"
+        ],
+        "manuscript_cells": [
+          "−1.198",
+          "<0.001",
+          "2,056"
+        ],
+        "computed_direct_cells": [
+          "-1.198",
+          "<0.001",
+          "2056"
+        ],
+        "coefficient_direct_round_match": true,
+        "q_direct_round_match": true,
+        "cooccurrence_match": true,
+        "is_significant_in_full_BH": true,
+        "all_match": true
+      },
+      {
+        "pair": "Van/bus × Large vehicle class",
+        "features": [
+          "원인차차종_승합",
+          "차종구분_대형"
+        ],
+        "manuscript_cells": [
+          "+0.964",
+          "<0.001",
+          "987"
+        ],
+        "computed_direct_cells": [
+          "0.964",
+          "<0.001",
+          "987"
+        ],
+        "coefficient_direct_round_match": true,
+        "q_direct_round_match": true,
+        "cooccurrence_match": true,
+        "is_significant_in_full_BH": true,
+        "all_match": true
+      },
+      {
+        "pair": "Inattention × Tollgate",
+        "features": [
+          "발생지점_영업소(TG)",
+          "주사고원인_주시태만"
+        ],
+        "manuscript_cells": [
+          "−0.935",
+          "<0.001",
+          "4,311"
+        ],
+        "computed_direct_cells": [
+          "-0.935",
+          "<0.001",
+          "4311"
+        ],
+        "coefficient_direct_round_match": true,
+        "q_direct_round_match": true,
+        "cooccurrence_match": true,
+        "is_significant_in_full_BH": true,
+        "all_match": true
+      },
+      {
+        "pair": "Ramp × Passenger car",
+        "features": [
+          "발생지점_램프",
+          "원인차차종_승용"
+        ],
+        "manuscript_cells": [
+          "−0.468",
+          "<0.001",
+          "8,090"
+        ],
+        "computed_direct_cells": [
+          "-0.468",
+          "<0.001",
+          "8090"
+        ],
+        "coefficient_direct_round_match": true,
+        "q_direct_round_match": true,
+        "cooccurrence_match": true,
+        "is_significant_in_full_BH": true,
+        "all_match": true
+      },
+      {
+        "pair": "Inattention × Mainline",
+        "features": [
+          "발생지점_본선",
+          "주사고원인_주시태만"
+        ],
+        "manuscript_cells": [
+          "+0.439",
+          "<0.001",
+          "11,105"
+        ],
+        "computed_direct_cells": [
+          "0.439",
+          "<0.001",
+          "11105"
+        ],
+        "coefficient_direct_round_match": true,
+        "q_direct_round_match": true,
+        "cooccurrence_match": true,
+        "is_significant_in_full_BH": true,
+        "all_match": true
+      },
+      {
+        "pair": "Normal road condition × Dry surface",
+        "features": [
+          "노면상태_건조",
+          "사고시도로환경_정상"
+        ],
+        "manuscript_cells": [
+          "+0.405",
+          "0.025",
+          "56,191"
+        ],
+        "computed_direct_cells": [
+          "0.405",
+          "0.025",
+          "56191"
+        ],
+        "coefficient_direct_round_match": true,
+        "q_direct_round_match": true,
+        "cooccurrence_match": true,
+        "is_significant_in_full_BH": true,
+        "all_match": true
+      },
+      {
+        "pair": "Tollgate × Lighting on",
+        "features": [
+          "발생지점_영업소(TG)",
+          "조명시설_작동"
+        ],
+        "manuscript_cells": [
+          "−0.405",
+          "0.009",
+          "3,531"
+        ],
+        "computed_direct_cells": [
+          "-0.405",
+          "0.009",
+          "3531"
+        ],
+        "coefficient_direct_round_match": true,
+        "q_direct_round_match": true,
+        "cooccurrence_match": true,
+        "is_significant_in_full_BH": true,
+        "all_match": true
+      },
+      {
+        "pair": "Insufficient safe distance × Passenger car",
+        "features": [
+          "원인차차종_승용",
+          "주사고원인_안전거리미확보"
+        ],
+        "manuscript_cells": [
+          "−0.402",
+          "0.002",
+          "1,084"
+        ],
+        "computed_direct_cells": [
+          "-0.402",
+          "0.002",
+          "1084"
+        ],
+        "coefficient_direct_round_match": true,
+        "q_direct_round_match": true,
+        "cooccurrence_match": true,
+        "is_significant_in_full_BH": true,
+        "all_match": true
+      },
+      {
+        "pair": "Inattention × Excessive steering",
+        "features": [
+          "사고직전차량조작_핸들과대조작",
+          "주사고원인_주시태만"
+        ],
+        "manuscript_cells": [
+          "−0.328",
+          "<0.001",
+          "2,467"
+        ],
+        "computed_direct_cells": [
+          "-0.328",
+          "<0.001",
+          "2467"
+        ],
+        "coefficient_direct_round_match": true,
+        "q_direct_round_match": true,
+        "cooccurrence_match": true,
+        "is_significant_in_full_BH": true,
+        "all_match": true
+      },
+      {
+        "pair": "Speeding × Mainline",
+        "features": [
+          "발생지점_본선",
+          "주사고원인_과속"
+        ],
+        "manuscript_cells": [
+          "−0.255",
+          "0.002",
+          "13,022"
+        ],
+        "computed_direct_cells": [
+          "-0.255",
+          "0.002",
+          "13022"
+        ],
+        "coefficient_direct_round_match": true,
+        "q_direct_round_match": true,
+        "cooccurrence_match": true,
+        "is_significant_in_full_BH": true,
+        "all_match": true
+      }
+    ],
+    "all_13_row_values_match": true,
+    "all_significant_pairs_exactly_table4": true,
+    "BH_significant_count": 13,
+    "BH_nonsignificant_count": 11,
+    "positive_significant_count": 4,
+    "BH_manual_matches_statsmodels": true
+  },
+  "input_sha256_after": {
+    "data/processed/analysis_dataset.csv": "f76cec85b2e6b2f34402bf21aef9d12c86a430b545e0292b146cd364dca77b0b",
+    "src/04_confirmatory_stats.py": "b4a2b40d6f49e78e11a4b54b77a323350b420bfc95386f90fd6cbc08c07cad63",
+    "src/05_interaction_deep.py": "f7d8287c18ff096f95a7d6324c250313576af312c21b3c03e1332df46c00ff23",
+    "outputs/tables/interaction_profile.csv": "e5717b9fc47627cf4ed6f21bd472e95466f8db8fcb65fae72bdf00259fdde53d",
+    "outputs/tables/logistic_or_table.csv": "024c1672795ec75552689e08c4ad20d67d1683d8518658a379627e449721a970",
+    "outputs/tables/table_logistic_formatted.csv": "00a7524e7775cbb097a8a70a2306f46395c930347e8cf3c9050d3fdd5ea036e3"
+  },
+  "watched_files_unchanged": true,
+  "all_model_warnings": [],
+  "fresh_interactions_this_run": 21,
+  "cached_previously_refit_interactions": 3,
+  "ended_at_utc": "2026-11-03T05:41:34.311523+00:00"
+}

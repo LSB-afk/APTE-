@@ -2,15 +2,18 @@
 title: "APTE Revision Hub"
 tags: ["APTE", "논문수정", "교수메모", "검증"]
 created: 2026-11-02T10:41:46.112Z
-updated: 2026-11-03T05:21:51Z
+updated: 2026-11-03T05:46:34Z
 sources: ["../docs/paper/revisions/2026-11-02/evidence/파일식별정보.json", "../docs/paper/revisions/2026-11-02/evidence/변경대조목록.json", "../docs/paper/revisions/2026-11-02/evidence/문서검증결과.json", "../docs/paper/revisions/2026-11-02/수정검토보고서.md", "../docs/paper/revisions/2026-11-02/구조검증기록.md"]
-links: ["apte-source-register.md", "apte-professor-memos.md", "apte-data-evidence.md", "apte-methods-results-map.md", "apte-reference-audit.md", "apte-revision-decisions.md", "apte-validation-log.md", "apte-font-repair.md"]
+links: ["apte-source-register.md", "apte-professor-memos.md", "apte-data-evidence.md", "apte-methods-results-map.md", "apte-reference-audit.md", "apte-revision-decisions.md", "apte-validation-log.md", "apte-font-repair.md", "apte-full-rereview.md"]
 category: reference
 confidence: medium
 schemaVersion: 1
 ---
 
 # APTE Revision Hub
+
+> **2026-11-03 전수 재검토 우선 기록:** 현재 판정·파일·인용 매핑은 [[apte-full-rereview]]와 [최신 검토 보고서](../docs/paper/revisions/2026-11-02/전수재검토보고서.md)를 따른다. 아래 이전 날짜의592범위·SMOTEN보존·특정출전보류 기록은 당시 스냅샷이다.
+
 
 # APTE 논문 수정 위키
 
@@ -36,7 +39,7 @@ schemaVersion: 1
 - [[apte-revision-decisions]] · [수정 결정](apte-revision-decisions.md)
 - [[apte-validation-log]] · [검증 기록](apte-validation-log.md)
 
-## 현재 상태
+## 2026-11-03 전수 재검토 전의 상태
 
 2026-11-02 구축 기록: **지식 페이지 21 개+index/log**, 교수메모 13 개를 연결했다. 메모 4 는 section1 에서 추가 확인했으며 초기 12 개 기록을 정정했다. 원문·근거를 보존한 채 메모별 처리·검증·잔여 한계를 갱신했다.
 
@@ -65,4 +68,4 @@ OS 미리보기도 갱신했다. `Preview/PrvText.txt`는 수용 텍스트, `Pre
 
 ## 2026-11-03 글꼴 복구 최종본
 
-현재 파일은 [APTE_메모내용 반영_변경내용추적.hwpx](../docs/paper/revisions/2026-11-02/APTE_메모내용%20반영_변경내용추적.hwpx)이며 SHA-256은 `ddfb68efe353ab2bcb8a03f575656c97b18c3d49d759b753e9e9147d85c0f133`이다. 공백의 글꼴을 상속한 삽입문을 원래 본문 #신명조·Times New Roman으로 복구하고, 국문 참고문헌의 혼합 글꼴과 새 표 주석을 정리하였다. 문안·기존/삭제 문자 서식·메모 13개·추적 592범위를 보존하였다. 한글 17쪽을 새로 출력해 전체 지면을 검토하고 최종 파일을 재열기하였다. 상세 정책·검증·앱 편집 미시험 한계는 [[apte-font-repair]]와 [글꼴 복구 기록](../docs/paper/revisions/2026-11-02/글꼴복구검토기록.md)을 따른다. 위의 2026-11-02 해시와 픽셀 비교 기록은 이전 스냅샷이다.
+글꼴 복구 당시 파일은 [APTE_메모내용 반영_변경내용추적.hwpx](../docs/paper/revisions/2026-11-02/APTE_메모내용%20반영_변경내용추적.hwpx)이며 SHA-256은 `ddfb68efe353ab2bcb8a03f575656c97b18c3d49d759b753e9e9147d85c0f133`이다. 공백의 글꼴을 상속한 삽입문을 원래 본문 #신명조·Times New Roman으로 복구하고, 국문 참고문헌의 혼합 글꼴과 새 표 주석을 정리하였다. 문안·기존/삭제 문자 서식·메모 13개·추적 592범위를 보존하였다. 한글 17쪽을 새로 출력해 전체 지면을 검토하고 최종 파일을 재열기하였다. 상세 정책·검증·앱 편집 미시험 한계는 [[apte-font-repair]]와 [글꼴 복구 기록](../docs/paper/revisions/2026-11-02/글꼴복구검토기록.md)을 따른다. 위의 2026-11-02 해시와 픽셀 비교 기록은 이전 스냅샷이다.

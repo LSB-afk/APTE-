@@ -1,0 +1,1025 @@
+{
+  "schema_version": 1,
+  "review_round": 2,
+  "review_date": "2026-11-03",
+  "reviewer": "rereview_sentences",
+  "live_hwpx_sha256_at_report_time": "895e3c4e3b9847512115e9079f747f89581575816b756e627f7006a4648ec8ef",
+  "reviewed_paragraphs_sha256": "7350d8c0e1e952260c22a282d8dd72e1cd7eb9fac90166334d85b30d17421437",
+  "scope": "All 103 nonempty units were reread after the first revision, including all table rows, captions, equations and references. Subsequently changed P052/P053 were checked again. No manuscript or public document was edited.",
+  "summary": {
+    "nonempty_units_reviewed": 103,
+    "prior_findings_resolved": 19,
+    "second_round_findings_resolved": 2,
+    "known_unresolved_sentence_or_logic_findings": 0,
+    "academic_style": "No colloquial language, new causal overclaim or new result/conclusion inconsistency found.",
+    "status": "PASS within the sentence and internal-logic audit scope."
+  },
+  "prior_resolutions": [
+    {
+      "id": "SENT-01",
+      "status": "resolved",
+      "evidence": "P080 now uses q<0.05 and P053 defines q as adjusted p."
+    },
+    {
+      "id": "SENT-02",
+      "status": "resolved",
+      "evidence": "SMOTEN claims, six unverified metrics and isolated SMOTE reference removed; representative balanced XGBoost metrics supplied instead."
+    },
+    {
+      "id": "SENT-03",
+      "status": "resolved",
+      "evidence": "Confirmatory terminology replaced with subsequent statistical analysis/regression; overlap caveats retained."
+    },
+    {
+      "id": "SENT-04",
+      "status": "resolved",
+      "evidence": "Conditional mu_i definition and conditional variance added; new duplicated particle also corrected."
+    },
+    {
+      "id": "SENT-05",
+      "status": "resolved",
+      "evidence": "Redundant processing phrase and particles in P022 removed."
+    },
+    {
+      "id": "SENT-06",
+      "status": "resolved",
+      "evidence": "Unsupported temporal-pooling benefit claim removed."
+    },
+    {
+      "id": "SENT-07",
+      "status": "resolved",
+      "evidence": "86-dummy L2 predictive logistic model explicitly distinguished from 71-dummy unpenalized OR model."
+    },
+    {
+      "id": "SENT-08",
+      "status": "resolved",
+      "evidence": "BH scope limited to 24 selected candidates; significant results also treated as exploratory."
+    },
+    {
+      "id": "SENT-09",
+      "status": "resolved",
+      "evidence": "P048 direction comparison, P056 added log-odds and P057 estimation rationale clarified."
+    },
+    {
+      "id": "SENT-10",
+      "status": "resolved",
+      "evidence": "Positive interaction list now explicitly lists major examples rather than all four positive terms."
+    },
+    {
+      "id": "SENT-11",
+      "status": "resolved",
+      "evidence": "High co-occurrence alone no longer used as a restriction rationale; causal extrapolation limited."
+    },
+    {
+      "id": "SENT-12",
+      "status": "resolved",
+      "evidence": "Unsupported grid-search claim removed; fixed settings and early stopping retained."
+    },
+    {
+      "id": "SENT-13",
+      "status": "resolved",
+      "evidence": "Outcome-association ranking and top-14 retention stopping rule specified."
+    },
+    {
+      "id": "SENT-14",
+      "status": "resolved",
+      "evidence": "NB rationale tied to positive dispersion estimate based on Poisson fitted values."
+    },
+    {
+      "id": "SENT-15",
+      "status": "resolved",
+      "evidence": "TG comparison now uses between-section differences and attributes noncausality to unmeasured speed/exposure/covariates."
+    },
+    {
+      "id": "SENT-16",
+      "status": "resolved",
+      "evidence": "Fig. 1. caption punctuation corrected."
+    },
+    {
+      "id": "SENT-17",
+      "status": "resolved",
+      "evidence": "Means plus selected-metric SD reporting scope now matches results."
+    },
+    {
+      "id": "SENT-18",
+      "status": "resolved",
+      "evidence": "Wilson reference 21 added; parent reports original improved formula and official bibliography verified."
+    },
+    {
+      "id": "SENT-19",
+      "status": "resolved",
+      "evidence": "English acknowledgement spacing corrected."
+    }
+  ],
+  "second_round_resolutions": [
+    {
+      "id": "SECOND-01",
+      "status": "resolved",
+      "issue": "Duplicated object particle in P052 and repeated clause linkage.",
+      "final_text": "  여기서, 식 (2)의 μᵢ는 해당 사고의 설명변수가 주어졌을 때의 기대 사상자 수이다.  [수식: Y _i]는 사고 [수식: i]에서 사상자 수를 나타내는 확률변수이며, [수식: xᵢⱼ]는 사고 [수식: i]의 [수식: j]번째 더미변수이다. 회귀계수를 지수화한 [수식: exp( beta ⱼ)]는 발생률비(Incidence Rate Ratio, IRR)로, 다른 변수의 영향을 통제한 상태에서 해당 범주의 예상 사상자 수가 기준범주의 몇 배인지를 나타낸다. [수식: α]는 조건부 분산이 평균을 초과하는 정도를 나타내는 과산포 모수로, [수식: α]가 0이면 포아송 모형에 해당하며 값이 클수록 과산포의 정도가 증가한다〔인용:19〕. 본 연구에서는 포아송 적합값에 기초한 과산포 모수 추정값이 양수로 나타나 음이항 회귀모형을 적용하였다."
+    },
+    {
+      "id": "SECOND-02",
+      "status": "resolved",
+      "issue": "Initial FDR expansion disappeared during editing.",
+      "final_text": "　각 상호작용 후보에 대해 71개 주효과 더미와 절편을 포함한 로지스틱 회귀모형에 두 더미의 곱항 하나를 추가하였다. 식 (3)의 상호작용 계수에 대한 Wald 검정을 수행하고, 선정된 24개 후보 집합 내 다중검정을 고려하여 각 Wald 검정 p값에 Benjamini–Hochberg의 거짓발견률(False Discovery Rate, FDR) 보정 절차를 적용하고 보정 p값을 q값으로 표기하였다〔인용:20〕. 전체 회귀 표본에서 두 조건이 동시에 관측된 사고가 100건 미만인 후보는 제외하도록 설정하였으며, 선정된 24쌍은 모두 이 기준을 충족하였다."
+    }
+  ],
+  "citation_inventory": {
+    "cited": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "references": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "missing": [],
+    "orphaned": []
+  },
+  "table_value_checks": [
+    {
+      "location": "S0.P066",
+      "observed": "Representative balanced XGBoost Accuracy0.713/ROC-AUC0.790/AP0.773; ROC/AP agree with P064."
+    },
+    {
+      "location": "S0.P077",
+      "observed": "Single-vehicle fire CI0.03-0.07."
+    },
+    {
+      "location": "S0.P083",
+      "observed": "Speeding x mainline coefficient -0.255."
+    }
+  ],
+  "coverage": [
+    {
+      "location": "S0.P000",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "objects_sha256": "003cd1554548e58b2a8a9a3d5015d42d71af3c77199484b618cfb7cf703d7ff1",
+      "preview": "table / table"
+    },
+    {
+      "location": "S0.P001",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "4cd2422da9b7b37763c04b0782e2a2199ed0090fdf49354a69051a1d01eb7db3",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "고속도로 사고의 인명피해 관련 요인과 상호작용 분석"
+    },
+    {
+      "location": "S0.P003",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "e862b46381ca483fadeb718f68b2ec59bb35aac6577afd4fd0696b5264ea22ea",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "이승보〔인용:*〕·이성재〔인용:*〕·박지영〔인용:**〕·김수지〔인용:***〕·심지섭〔인용:****〕·고은정〔인용:**** 〕"
+    },
+    {
+      "location": "S0.P005",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "34698d045fce48de30db07e8bf4ad267ca41cc98f69f68b80c5851b525846453",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "Factors and Interactions Associated with Casualty Occurrence in Expressway Crashes"
+    },
+    {
+      "location": "S0.P007",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "a4feca17fe62db326a10ac8e55e3493de526ebc5cbcad7eefbaa87a1c6d1fc73",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "Seungbo Lee〔인용:*〕·Seongjae Lee〔인용:*〕·Jiyoung Park〔인용:**〕·Suji Kim〔인용:***〕·Jisup Shim〔인용:****〕·Eunjeo"
+    },
+    {
+      "location": "S0.P009",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "d75192eca233fdc2b03193cb32348fa5c5340411d7bcd665a04b26a8bb5a9a92",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "ABSTRACT This study examined factors associated with casualty occurrence in expressway crashes and t"
+    },
+    {
+      "location": "S0.P011",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "f15494805538c37b20063fce77c3e02f12dd02e3bc17cab961661b76f62f9708",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "Key Words :  Expressway crash(고속도로 교통사고), Casualty(인명피해), XGBoost-SHAP(XGBoost-SHAP), Risk factor(위험"
+    },
+    {
+      "location": "S0.P013",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "e4b2d6334ab2654359bfbedaa8761348007b502608223aa2d1171ac68993fcc0",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "1. 서 론"
+    },
+    {
+      "location": "S0.P014",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "dd25bbd57d15f1c2f3d331757ae9cc4b6ac47a3496f1a1dd5cf4b80bb35d15df",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "교통량과 사고 발생 건수 간의 관계는 도로 유형과 사고 특성에 따라 상이하게 나타나는 것으로 보고되었다〔인용:1〕. 고속도로 탑승자의 상해 심각도와 교통량·속도 간의 관련성이 보고"
+    },
+    {
+      "location": "S0.P015",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "59b8501b80f25172c8e5a1da12ad6d5935742bdd82d80516eddb9619610e92d5",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "교통사고의 유형 및 인명피해 심각도와 운전자, 차량, 도로·환경 특성 간의 관련성이 보고되었다〔인용:6,7〕. 국내 고속도로의 사고 규모를 구조방정식모형으로 분석한 연구에서도 복합"
+    },
+    {
+      "location": "S0.P016",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "5b9d7aa3462c6e0d4b1e43356fc00d7d76793ef8b018b926c78b97029dc031da",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "로지스틱 회귀를 비롯한 통계모형은 사고 특성과 인명피해 심각도 간의 관련성을 추정하는 데 활용되어 왔다〔인용:7,9〕. 이항 로지스틱 회귀에서는 오즈비(Odds Ratio, OR)"
+    },
+    {
+      "location": "S0.P017",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "0430814083ca0cb821478f371101f5e7f96a5d424a33e3432c1c5eafb4add988",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "XGBoost와 같은 트리 기반 부스팅 모형은 다수의 결정트리를 순차적으로 결합하여 예측함수를 학습한다〔인용:10〕. 교통사고 심각도 연구에서는 XGBoost와 Random For"
+    },
+    {
+      "location": "S0.P018",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "5636f4bde2d3c0d819158a3dadd3f3d229ad4353dd557e1f1f25ba911b7a6415",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "Ko와 Jang은 순서형 로지스틱 회귀모형과 랜덤 포레스트를 병행하여 고속도로 사고 심각도를 분석하였다〔인용:16〕. 본 연구는 2011~2019년의 고속도로 사고자료를 대상으로 "
+    },
+    {
+      "location": "S0.P019",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "4df46ea12a8112ddf861d1336a18bf44d3f97f09dad0826bc6431b2579563000",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "본 논문의 구성은 다음과 같다. 2장에서는 연구 범위와 분석자료를 설명하고, 3장에서는 변수 선정과 탐색 및 후속 통계 분석 절차를 제시한다. 다음으로, 4장에서는 주요 영향요인과"
+    },
+    {
+      "location": "S0.P021",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "0c7256462190ca24f60410a7405bf2515aed49d3a635a2f8cedf939ec2c83694",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "2. 연구 범위 및 분석자료 설명"
+    },
+    {
+      "location": "S0.P022",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "6e00d48d05cc007b35b9dc15379f0861f252f2215828fbf3064df8f468ce3b96",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "본 연구는 국내 고속도로에서 발생한 교통사고를 대상으로 사고 및 교통환경 특성과 인명피해 발생 간의 관계를 분석하고 주요 위험요인을 파악하였다. 이를 위해 사고 발생 위치를 확인할"
+    },
+    {
+      "location": "S0.P023",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "75e7940f08e72768316cce6783daf74c5afc739af9ef3e5fa718101d0170db44",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "이와 같이 구축된 분석자료를 바탕으로 사고별 인명피해 발생 여부를 구분하고 이를 종속변수(Dependent variable)로 설정하였다. 구체적으로, 사고 1건당 사망자, 중상자"
+    },
+    {
+      "location": "S0.P024",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "objects_sha256": "80d2cc46e3a1229548f3839c3b1bac14300d7207ec73a63e006bfc9d1d738f9e",
+      "preview": "table / Table 1. Variable definitions and descriptive statistics"
+    },
+    {
+      "location": "S0.P025",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "90192b376a6eaa9b8ef1990c3123e74e6e833ebad9223beb45e689eccc240394",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "주: 성토고 5m 이상 범주는 원자료의 5m 이상 15m 미만 8,164건과 15m 이상 1,292건을 통합한 9,456건이다. 미상·기타 범주는 각 변수의 마지막에 배치하였다."
+    },
+    {
+      "location": "S0.P027",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "b0ad7a6a6a8250fe840c7b59222bcf7b10bcf7c35c929529c325f84860ee1ed9",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "3. 연구방법론"
+    },
+    {
+      "location": "S0.P028",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "be8c6ce1b9c986709375ef15b8e0b6cb50772fe2c3246b5e3bb4dd5f9c356062",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "3.1. 분석 절차 및 개요"
+    },
+    {
+      "location": "S0.P029",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "df358b6ac51f1c261abb88e42d75630b99a1debfce7bd96c7281b1995f4dcd5e",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "본 연구는 기록된 고속도로 사고에서 인명피해 발생 여부와 관련된 범주 및 상호작용을 분석하기 위해 탐색과 통계적 검토를 순차적으로 수행하였다. 탐색 단계에서는 XGBoost와 SH"
+    },
+    {
+      "location": "S0.P031",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "3db4dd4a1a81d7f3dfb461b2443b6bb1d74fcd43176b8a8c715a9cc88b3cefef",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "3.2. 변수 선별"
+    },
+    {
+      "location": "S0.P032",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "4b2f713f9a546fcb83c9b9afc09786b32515a872dfcb23dec41447da9a223652",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "기록된 사고 특성과 도로·주행 환경 변수 중 분석에 활용할 변수를 선정하기 위해, 후보 변수 간 연관성과 종속변수와의 연관성을 검토하였다. 후보 변수 간 높은 연관성은 정보의 중복"
+    },
+    {
+      "location": "S0.P033",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "58ff376cc77e17d4199ae32d1c3530455faaedf4db67027354c125ed05606a0b",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "후보 변수 간 편향 보정 Cramér’s V가 0.6 이상인 경우 종속변수와의 연관성이 상대적으로 낮은 변수를 제외하고, 남은 변수는 종속변수와의 편향 보정 Cramér’s V가 "
+    },
+    {
+      "location": "S0.P035",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "ba979c384752c030e0d34620c91319ff7008c9eefe299f07d20cc384b9644800",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "3.3. XGBoost-SHAP 기반 위험요인 탐색"
+    },
+    {
+      "location": "S0.P036",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "5229a696b4d35c1a0eba2ef344a0ba7be08f96f2ed0c8dc8d6cb856af2e58014",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "XGBoost는 결정트리를 순차적으로 결합하는 그래디언트 부스팅 알고리즘으로, 정규화와 희소자료 처리 기능을 제공한다〔인용:10〕. 본 연구에서는 검증자료를 이용한 조기 종료(Ea"
+    },
+    {
+      "location": "S0.P037",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "aebb15a193307ed0000fa73aed3fe36d374be1c729ea613424c92b63fd2f0b9c",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "교통사고 심각도 연구에서는 집단 불균형을 고려한 분류 방법이 검토되어 왔다〔인용:18〕. 본 연구에서는 다수 집단을 무작위로 추출하는 언더샘플링을 적용하여 각 시드에서 두 집단을 "
+    },
+    {
+      "location": "S0.P038",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "a02c702b7470c52c0b8c2f05afba359ae73ad0a1a895be287ebd9eb01d95a109",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "SHAP은 개별 예측값과 기준 예측값의 차이를 변수별 기여도로 분해한다〔인용:13〕. 일반 SHAP 분포 그림은 대표 시드 42의 균형자료 17,986건에서 산출하였으며, 이 자료"
+    },
+    {
+      "location": "S0.P039",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "117992fe7f04f1c5e73937362b9f4c794e5d388326eefc2031177d59ca56ca16",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "상호작용 후보는 대표 균형 평가자료에서 무작위로 추출한 2,000건을 이용하여 선정하였다. 기준 A는 전체 추출 표본에서 SHAP 상호작용 절댓값의 평균을, 기준 B는 두 범주가 "
+    },
+    {
+      "location": "S0.P041",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "d1283c5e1d34f065d32fba52f659d1a5e63c6b064f99c0f1680969707cdd99ed",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "3.4. 후속 통계 분석"
+    },
+    {
+      "location": "S0.P042",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "e1e68f27939872c9a9e4f62e19f2db56eea10c78195e92ed6d38abcc5533998f",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "SHAP 상호작용 값은 예측모형의 변수 쌍별 기여도를 나타내며, 로지스틱 회귀의 상호작용항은 다른 주효과를 통제한 추가적인 로그오즈를 나타낸다. 두 지표는 정의와 비교 기준이 다르"
+    },
+    {
+      "location": "S0.P043",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "4892c4c92ddd61a25981b6b5b297ce161d8f4a37619bf620630b4a85df48f2ef",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "후속 통계 분석은 변수 수준과 범주 수준으로 구분하여 수행하였다. 먼저 변수 수준에서는 카이제곱 검정을 통해 14개 독립변수와 인명피해 발생 여부 간 연관성의 통계적 유의성을 검정"
+    },
+    {
+      "location": "S0.P045",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "7f6d5c47799e49e1fe793cef680d0351e1dbf0026a19bcb1c00fa0082b5a1cc1",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "[수식: \"logit\" left ( P(Y=1) right ) = beta _0 + sum from j beta _j x _j]\t\t\t(1)"
+    },
+    {
+      "location": "S0.P047",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "0f04399522f2a403d245b59d13d9ed298e5ff0d0a35e822737c1fa955ae99b46",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "여기서, [수식: Y]는 인명피해 발생 여부를 나타내는 이항 종속변수로, 인명피해가 발생한 경우 1, 발생하지 않은 경우 0의 값을 갖는다. [수식: xⱼ]는 14개 독립변수에서 "
+    },
+    {
+      "location": "S0.P048",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "676d074a3cfebc88229c0bf318fcd22a1883ebe032f80b1efc46d829a849f16e",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "아울러 로지스틱 회귀분석에서 관찰된 관련성의 방향이 사고당 사상자 수를 대상으로 한 분석에서도 동일한지 비교하였다. 이를 위해 사고 1건당 사상자 수를 종속변수로 하는 음이항 회귀"
+    },
+    {
+      "location": "S0.P050",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "40e28a13e73e8b4f134f8de6703a21698179817aa071ed5c241d4968537e6fdb",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "[수식: ln left ( mu _i right ) = beta _0 + sum from j beta _j x _ij, Var left ( Y _i vert x _i right )"
+    },
+    {
+      "location": "S0.P052",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "102825e14d1ec489773227072ecf01537a0a63c20efc3e4978faa655c9db9bed",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "여기서, 식 (2)의 μᵢ는 해당 사고의 설명변수가 주어졌을 때의 기대 사상자 수이다.  [수식: Y _i]는 사고 [수식: i]에서 사상자 수를 나타내는 확률변수이며, [수식: "
+    },
+    {
+      "location": "S0.P053",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "60138de4d4fb4ff675e26890e8018b4b8d014bc03de42353a15b3f7282cc484e",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "각 상호작용 후보에 대해 71개 주효과 더미와 절편을 포함한 로지스틱 회귀모형에 두 더미의 곱항 하나를 추가하였다. 식 (3)의 상호작용 계수에 대한 Wald 검정을 수행하고, 선"
+    },
+    {
+      "location": "S0.P054",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "5a86f9ea844e902d5c87868ea3b466a42d665706a780692949fa89dd21d9e119",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "[수식: \"logit\" left ( P(Y=1) right ) = beta _0 + sum from j beta _j x _j + gamma left ( x _A times x _"
+    },
+    {
+      "location": "S0.P056",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "fa3e4d66e85f97a313a7de4a848cceb42aea78b19e6059c500db66598e36ff1e",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "여기서 [수식: x_A]와 [수식: x_B]는 상호작용을 검정할 두 더미변수이며, [수식: γ]는 두 조건이 동시에 성립할 때 주효과 모형에 추가되는 로그오즈를 나타내는 상호작용 "
+    },
+    {
+      "location": "S0.P057",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "6b7cab9f586cf1f7fd0f14285cf8296ab40d8f6c285741c76c920e97064dbc45",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "분석방법 간 방향 비교는 SHAP 방향을 산출할 수 있는 비기준 범주에서 SHAP–로지스틱 부호 일치율을, 두 회귀모형에서 공통으로 유의한 범주에서 로지스틱–음이항 부호 일치율을 "
+    },
+    {
+      "location": "S0.P059",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "f9d4cbd78108680bbff967aac85798dfeee265fc90eb3164a82a7dabc2e8c92f",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "3.5. 영업소 인접 본선의 거리별 발생률 보조 분석"
+    },
+    {
+      "location": "S0.P060",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "fe91ac838079fee052f9580f6a2834d54c349d76e9152925cf1b459f718c37bc",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "영업소 범주와 인명피해 발생의 관련성이 인접 본선에서도 관측되는지 살펴보기 위해 거리별 발생률을 보조적으로 분석하였다. 이정이 있는 영업소 사고를 노선명 그룹별로 정렬하고 인접 이"
+    },
+    {
+      "location": "S0.P061",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "f97277863f80711d5f738c52eeb1bc4800f666fa0cdccd34261b335edc388c6a",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "4. 분석 결과"
+    },
+    {
+      "location": "S0.P062",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "ce940c78e8328f65b18de45c65a0d617b83260e9d71948a7857ab1980bd2f3ff",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "4.1. 변수 선별 및 예측 성능"
+    },
+    {
+      "location": "S0.P063",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "bc0f7bec964e9020fe8fb8e4a45d8165c1de51f52675ab587d10dae3b794d343",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "본 절에서는 변수 선별 결과와 탐색 단계에 적용한 모형의 예측 성능을 제시한다. 먼저, 전체 후보 변수에 대해 편향 보정 Cramér’s V를 이용하여 후보 변수 간 연관성과 종속"
+    },
+    {
+      "location": "S0.P064",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "d877ee8140cc7697af2e57751d9ae1d772abc55abf4bdfe3cac7d667a99a4487",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "다음으로, 인명피해 사고와 대물피해 사고의 수를 동일하게 구성한 언더샘플링 자료를 이용하여 XGBoost 모형을 5회 반복 평가한 결과, 평균 Accuracy는 0.709, Pre"
+    },
+    {
+      "location": "S0.P066",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "objects_sha256": "da67777bb2c388be73e9ed2aa1657596497900eaaca9fd72f225d165e5592a45",
+      "preview": "table / Table 2. Predictive performance by model configuration"
+    },
+    {
+      "location": "S0.P068",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "objects_sha256": "0428f1a38f021b12be4ee482eca070872ef5147114ac07e27bc377ca976cf3c2",
+      "preview": "Fig. 1. ROC and precision-recall curves for the balanced evaluation set"
+    },
+    {
+      "location": "S0.P070",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "c8a64df2a7f694b40009664b012302acb7cae019bd1dde24d40ff16c22f86435",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "4.2. SHAP 기반 주요 위험요인 및 상호작용 분석"
+    },
+    {
+      "location": "S0.P071",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "3eaaa7f2c27ea9d2611bba8c3490894f3f1dc6bda7e7334b055dd7fba68fac1f",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "<Fig. 2>의 일반 SHAP 분포에서는 주사고원인과 발생지점의 범주에 따라 예측 기여도의 차이가 나타났다. 단독차량화재와 노면잡물은 인명피해 발생 예측값을 낮추는 방향으로, 주"
+    },
+    {
+      "location": "S0.P072",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "9008c71964a434bcafd892eca49df965a87b21f00be16f1c59c8eebe0f4ad63d",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "일반 SHAP 분포와 별도로 산출한 상호작용 지표를 이용하여 후보 쌍을 선정하였다. 3.3절에서 정의한 기준 A와 B의 각 상위 15쌍 가운데 6쌍이 중복되어 총 24쌍을 후속 검"
+    },
+    {
+      "location": "S0.P074",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "objects_sha256": "6824c43c3360f6d3d1eb17726bff0b1838b3d5c21c6d325c7badc38233171cd2",
+      "preview": "Fig. 2. Category-specific SHAP distributions in the representative balanced sample (n=17,986): (a) p"
+    },
+    {
+      "location": "S0.P075",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "b6d3acdbe86ca6bdfba43ead7e9b188baae1dd2fc585a64ad48c474def081045",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "4.3. 통계적 검정"
+    },
+    {
+      "location": "S0.P076",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "727ddd04dc88ac30a006fe14e1c21f15c572f359ab086a063638653fa7d45468",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "변수 수준의 카이제곱 검정 결과, 분석에 포함된 14개 독립변수 모두 인명피해 발생 여부와 통계적으로 유의한 연관성을 보였다([수식: p]<0.001). 이러한 연관성이 다른 변수"
+    },
+    {
+      "location": "S0.P077",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "objects_sha256": "36e8ee36f8c4a02b90d3ac391fea1340e8ba64a311172aa804c0381999091105",
+      "preview": "table / Table 3. Odds ratios of factors associated with casualty occurrence "
+    },
+    {
+      "location": "S0.P078",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "e29a01d008a0bf1673d072a608d2d651ab25f5eae527af03cbda180ca078449a",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "Note: For primary cause, the reference coding combines speeding and pothole observations because the"
+    },
+    {
+      "location": "S0.P079",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "21805e455514f8a91f28ab0d2d528eb7f2b4c4f8fa610905fc944cb7ae4d4e09",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "정차차량(OR=3.45), 트레일러(2.70), 안전거리 미확보(2.07), 승합(1.89), 화물(1.72), 차로변경(1.63), 졸음(1.57), 주시태만(1.54)은 기준범"
+    },
+    {
+      "location": "S0.P080",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "1cb202af36cde93448172f41e7b9f13e4faffd9d2f66a27b15abdf946e86185c",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "개별 요인의 영향에 이어 요인 간 결합효과를 검토하기 위해 SHAP 분석에서 도출한 24개 상호작용 후보에 대한 통계적 검정을 수행하였다. 각 후보의 상호작용항을 14개 독립변수의"
+    },
+    {
+      "location": "S0.P081",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "objects_sha256": "fdc07e06cc651ee0aefa4a5d717e9e30dd61a80a50116eb49b043e3d4ad43154",
+      "preview": "Fig. 3. Adjusted odds ratios and 95% confidence intervals for the 20 categories shown in the forest "
+    },
+    {
+      "location": "S0.P083",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "objects_sha256": "275ef9783bf4dc4ad924fa2a4b20a71eec40406780a23ec42be3cdb44b565e61",
+      "preview": "table / Table 4.  Significant interaction effects after BH-FDR correction"
+    },
+    {
+      "location": "S0.P085",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "c766b8684d937df91f0ba5b557308d7110a4515323a66bea1542bd4dadd5f581",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "주요 상호작용 조합의 인명피해 발생 특성을 살펴보면, 원인차 차종이 승합이고 차종구분이 대형인 사고 987건의 인명피해 발생률은 28.3%로, 전체 사고의 평균 발생률인 10.8%"
+    },
+    {
+      "location": "S0.P086",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "objects_sha256": "daf628d8e8a533420cafc25f6d99e7a1c36a09745cde3133ad9608881aa321c7",
+      "preview": "Fig. 4.  Casualty occurrence rate by vehicle type at tollgate and non-tollgate sections "
+    },
+    {
+      "location": "S0.P088",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "9b8bd55b03ccaafc00dc969ff89661ce61f9f0008c8bb11779eda5a4506cde94",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "4.4. 영업소(TG) 인접 구간의 인명피해 발생률 비교"
+    },
+    {
+      "location": "S0.P089",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "b92c6ca1d5bf946070facd5f77cd1f6071b4bdac8a30e3ea43113030f97be7a5",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "영업소 범주의 관련성을 보완적으로 살펴보기 위해 3.5절의 방법에 따라 인접 본선의 거리별 인명피해 발생률을 비교하였다. 46개 노선명 그룹에서 추정한 331개 영업소 위치를 이용"
+    },
+    {
+      "location": "S0.P090",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "51cd55c718e6e02ab485677f7c03717ee04761493ff45e11e4cc17b5cf4067dd",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "영업소에서 1km 미만인 본선 사고의 인명피해 발생률은 11.9~12.0%로, 거리 분석 표본의 평균인 13.3%보다 낮았다. 1~2km 구간에서는 14.1%로 가장 높았으며, 해"
+    },
+    {
+      "location": "S0.P097",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "objects_sha256": "9df73d5ec0e74c40460cac0a8b11dfd0f794262d66d5885ee139fdc5349bed26",
+      "preview": "Fig. 5. Mainline casualty occurrence rates and crash counts by distance to the nearest estimated tol"
+    },
+    {
+      "location": "S0.P099",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "a3f171f1db076ed9ad01469ef2cdcbbb81fa62f968c4d882d5e98c76577141d7",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "4.5. 탐색 결과와 후속 회귀 결과의 비교"
+    },
+    {
+      "location": "S0.P100",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "df254efdfb44b3c73e737ddc895ee822f2554eebd5364f9617e742f9f5635285",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "평가자료에서 평균 SHAP 방향을 산출할 수 있는 비기준 범주 56개 중 46개(82.1%)는 로지스틱 회귀계수와 부호가 일치하였다. 로지스틱 회귀에서 유의한 41개 범주에서는 3"
+    },
+    {
+      "location": "S0.P101",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "b2d9fa2beaacefcbb7bd288ba8af519dd7ab501f6760b1b8e09d44757342e9de",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "로지스틱 회귀와 음이항 회귀에서는 각각 71개 더미 중 51개와 54개가 유의하였다. 음이항 회귀의 주요 발생률비는 정차차량 2.93(95% CI: 2.60~3.30), 트레일러 "
+    },
+    {
+      "location": "S0.P102",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "0a473051bf1c3c3d3809b8e10bda872fa86712646a419ee73f39da720c76cc67",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "상호작용 분석에서는 24개 후보 쌍 중 11개가 다중검정 보정 후 통계적으로 유의하지 않았다. 여기에는 기준 A에서 2위인 주시태만과 승용(q=0.060), 4위인 졸음과 승용(q"
+    },
+    {
+      "location": "S0.P104",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "a9daf64d542f3e4cb7cf0718db9801222af78dc4ab27cf8322a5f6c039e26572",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "5. 결 론"
+    },
+    {
+      "location": "S0.P105",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "3e60a69e27ef5856a1bc3e15ed1f529cb5ee62f35022891965e3d13fef572918",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "본 연구는 2011~2019년 고속도로 사고 83,297건에서 인명피해 발생 관련 요인과 상호작용을 분석하였다. XGBoost와 SHAP으로 후보를 탐색한 후 로지스틱 회귀와 다중"
+    },
+    {
+      "location": "S0.P106",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "4fac844508d101137e8d4ee9c9fe912a5e47203731a9bf6affcf33e35dccb6e2",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "정차차량, 트레일러와 승합, 안전거리 미확보·졸음·주시태만은 기준범주 대비 높은 인명피해 발생 오즈를 보였으며, 영업소와 램프는 본선보다 낮은 오즈를 보였다. 주사고원인의 기준효과"
+    },
+    {
+      "location": "S0.P107",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "0c6bd6cbb5e8ad3721856da5a3cc8c826a062865f799cf923308b68331b8ffe3",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "이러한 결과는 교통안전 관리에서 개별 범주의 관련성과 결합 특성을 함께 검토할 필요성을 시사한다. 정차차량의 높은 오즈와 주시태만–본선의 양(+)의 상호작용은 사고 감지 및 운전자"
+    },
+    {
+      "location": "S0.P108",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "0207178bd18bd4778bb4b3baf0a369e53eb461bb38de98fc79905149b9817346",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "본 연구는 설명가능 기계학습의 예측 기여도와 회귀모형의 통계적 유의성을 구분하여 검토하였다. SHAP 상호작용 기여도가 높은 후보 중에서도 회귀 검정에서 유의하지 않은 조합이 확인"
+    },
+    {
+      "location": "S0.P109",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "31762d117a1c315b9e9eb14a65166e014f674de456b7eea87f4eb517bf927ab3",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "본 연구는 균형자료의 예측 성능을 실제 인명피해 비율이 10.8%인 자료와 구분하여 해석해야 한다. 사망·중상·경상을 통합한 이항 결과는 심각도 차이를 충분히 반영하지 못하며, 교"
+    },
+    {
+      "location": "S0.P110",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "cb34b68c3642ff0689590d10bc7022b0607d6c9fcb2b3c5b04b06c801b19ec1f",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "사사"
+    },
+    {
+      "location": "S0.P112",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "5ca4f40b1c21003241fca3f1cbc860e10501ca096a3c771fa631c62936e504ec",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "This research was supported by the ANCHOR program through the Daejeon ANCHOR Center, funded by the M"
+    },
+    {
+      "location": "S1.P000",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "b9a63d61ac006f91bfaac4f168c8317c5e55d48174c2f21470a8828cfbef184e",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "참고문헌"
+    },
+    {
+      "location": "S1.P002",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "ad39b3f2902ccc7daab50025d1c23f2781669d2545d788d2fea0ba71917df84c",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(1) \tHøye, A. K. and Hesjevoll, I. S., 2020, “Traffic Volume and Crashes and How Crash and Road Char"
+    },
+    {
+      "location": "S1.P004",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "d63406d9ce7e16066ee63a3d8eb474aced36fef4f905ebd0cfe60882dda0f10a",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(2) \tChristoforou, Z., Cohen, S. and Karlaftis, M. G., 2010, “Vehicle Occupant Injury Severity on Hi"
+    },
+    {
+      "location": "S1.P006",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "6408e71797e808d9ca5d57069e57aa2dc1d78ea855833af1fae6c4a66893c9d1",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(3) \tGabauer, D. J., 2010, “Secondary Collisions Following a Traffic Barrier Impact: Frequency, Fact"
+    },
+    {
+      "location": "S1.P008",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "6ddabf943456e27364e6483d770244bad3c92f2068ee96ef8ec3d0847bccd6d3",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(4) \tHuang, H., Ding, X., Yuan, C., Liu, X. and Tang, J., 2023, “Jointly Analyzing Freeway Primary a"
+    },
+    {
+      "location": "S1.P010",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "36dc3063ff9b13c39697743c3e119f8a9fedb38ffdca08fc178231701649659f",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(5) \tRiuttanen, A., Karjalainen, E., Jokihaara, J., Huttunen, T. T. and Mattila, V. M., 2024, “Cumul"
+    },
+    {
+      "location": "S1.P012",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "625001cddbab7a98e16fb22a056da831fbfd205e760d4f156f6fd55ebe1a2a82",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(6) \tEboli, L., Forciniti, C. and Mazzulla, G., 2020, “Factors Influencing Accident Severity: An Ana"
+    },
+    {
+      "location": "S1.P014",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "e5f72d50de855717bf36f986c3cdf853def28c904e27ab549ef709c4b9534885",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(7) \tWang, J., Lu, H., Sun, Z. and Wang, T., 2020, “Exploring Factors Influencing Injury Severity of"
+    },
+    {
+      "location": "S1.P016",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "80347c599a3c8f6b12c8c45d0a73ece274a5a70f959db013a4fa920884a4593a",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(8) Lee, J. Y., Chung, J. H. and Son, B., 2008, “Analysis of Traffic Accident Size for Korean Highwa"
+    },
+    {
+      "location": "S1.P018",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "4e4db6a3837436c5bcafc2d8dc9d240e10f9f43c2870ec3fd5fc9ad0e2c7f250",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(9) Milton, J. C., Shankar, V. N. and Mannering, F. L., 2008, “Highway Accident Severities and the M"
+    },
+    {
+      "location": "S1.P020",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "3b19c18a654f62498928d501107da90f80dd9ee0f219df0eac48ff52e92e80e4",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(10) \tChen, T. and Guestrin, C., 2016, “XGBoost: A Scalable Tree Boosting System,” Proceedings of th"
+    },
+    {
+      "location": "S1.P022",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "35a11da3124cbde096b0198ac017d60347608ec5b81eede0f1c6601e351c59b3",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(11) \tKwon, C. W. and Chang, H. H., 2021, “Comparative Analysis of Traffic Accident Severity of Two-"
+    },
+    {
+      "location": "S1.P024",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "ddcb3a2c937a4c1216cf7b1fa88ebea367f0952e05eee3d566cc550275ea6dc4",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(12) \tLee, S. M., Yoon, B. J. and Lwin, W. Y., 2024, “Studying the Comparative Analysis of Highway T"
+    },
+    {
+      "location": "S1.P026",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "90b95cfe65e1ce198e435107727ae2417a9601001c79c9d8048d31e99856c06c",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(13) \tLundberg, S. M. and Lee, S. I., 2017, “A Unified Approach to Interpreting Model Predictions,” "
+    },
+    {
+      "location": "S1.P028",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "20fbaca516ce6ffcc0a26cb796a6122daa27ce59a6c898d7d799465f564b04fb",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(14) Lundberg, S. M., Erion, G., Chen, H., DeGrave, A., Prutkin, J. M., Nair, B., Katz, R., Himmelfa"
+    },
+    {
+      "location": "S1.P030",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "3834892a43588220cd947f3076db1e768c7f3bfcac5e360abeeeb0e38971dc9c",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(15) Moon, J., Jang, J. and Lee, S., 2025, “서울시 고령운전자의 중상 및 사망사고와 도로환경의 연관성 분석: 기계학습을 활용한 비선형성과 상호작용"
+    },
+    {
+      "location": "S1.P032",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "772f8e2b8f6137897dd718de13e5e1ffdf0cc39ce8e72c6e1deb995ce3474782",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(16) Ko, E. J. and Jang, K. T., 2025, “Integrated Statistical and Machine Learning Approach for Free"
+    },
+    {
+      "location": "S1.P034",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "41354f5846a11cdb0e208b93b7d67945bb0b9aeee4d02d986eae59ded1124a73",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(17) Bergsma, W., 2013, “A Bias-Correction for Cramér's V and Tschuprow's T,” Journal of the Korean "
+    },
+    {
+      "location": "S1.P036",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "0ddca5649ecf968b4726a6486f246e4df9ee5c422685a337a7e5a57f88376881",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(18) Jeong, H., Jang, Y., Bowman, P. J. and Masoud, N., 2018, “Classification of Motor Vehicle Crash"
+    },
+    {
+      "location": "S1.P038",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "4a58a129b0a963b9f4a054ab7d0b847c30062fa0d511f473929958c43d7ae9c9",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(19) Cameron, A. C. and Trivedi, P. K., 2001, “Essentials of Count Data Regression,” in Baltagi, B. "
+    },
+    {
+      "location": "S1.P040",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "fdb2e5a125a3602e4d862fc03ac032f13c6c11b4abb92ee088e786200545604d",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(20) Benjamini, Y. and Hochberg, Y., 1995, “Controlling the False Discovery Rate: A Practical and Po"
+    },
+    {
+      "location": "S1.P042",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "d30508074a26f9d309f61b111a56746b19a2ba2c8986352e450602d7a0fe6aad",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(21) Wilson, E. B., 1927, “Probable Inference, the Law of Succession, and Statistical Inference,” Jo"
+    },
+    {
+      "location": "S1.P044",
+      "reviewed": true,
+      "status": "pass_within_sentence_audit_scope",
+      "text_sha256": "a8439444a76fc9c70d33fdab3af987d5aafa29942391b26bfbd77a1a18a2d4c0",
+      "objects_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "preview": "(22) McFadden, D., 1974, “Conditional Logit Analysis of Qualitative Choice Behavior,” in Zarembka, P"
+    }
+  ],
+  "limits": [
+    "Statistical recomputation was not rerun by this reviewer; parent/data-audit evidence applies.",
+    "Substantive source-paper verification and native HWPX rendering/tracked changes belong to their respective audits.",
+    "Parent reports Wilson original-source verification. This reviewer checked the final citation linkage and numbering directly."
+  ]
+}

@@ -1,111 +1,73 @@
 {
-  "zip_xml_valid": true,
-  "changed_parts": [
-    "Contents/header.xml",
-    "Contents/section0.xml",
-    "Contents/section1.xml",
-    "Preview/PrvText.txt",
-    "Preview/PrvImage.png",
-    "Contents/content.hpf"
-  ],
-  "original_sha256_unchanged": true,
+  "date": "2026-11-03T05:41:35Z",
+  "output_sha256": "895e3c4e3b9847512115e9079f747f89581575816b756e627f7006a4648ec8ef",
+  "native_track_ranges": 664,
+  "track_types": {
+    "Delete": 357,
+    "Insert": 307
+  },
+  "checks_passed": 29,
   "sections": {
     "Contents/section0.xml": {
-      "reject_restores_all_nonempty_paragraphs": true,
-      "memos_preserved": 12,
-      "equations_preserved": 24,
-      "pictures_preserved": 5,
-      "table_grids_preserved": 6
+      "memos": 12,
+      "raw_equations": 26,
+      "accepted_equations": 24,
+      "rejected_equations": 24,
+      "pictures": 5,
+      "tables": 6
     },
     "Contents/section1.xml": {
-      "reject_restores_all_nonempty_paragraphs": true,
-      "memos_preserved": 1,
-      "equations_preserved": 0,
-      "pictures_preserved": 0,
-      "table_grids_preserved": 0
+      "memos": 1,
+      "raw_equations": 0,
+      "accepted_equations": 0,
+      "rejected_equations": 0,
+      "pictures": 0,
+      "tables": 0
     }
   },
-  "native_track_ranges": 592,
-  "citations": {
-    "first_appearance_order": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21,
-      22
-    ],
-    "undefined": [],
-    "uncited_references": [],
-    "reference_count": 22
-  },
+  "accepted_reference_count": 22,
+  "first_appearance_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "undefined_citations": [],
+  "uncited_references": [],
   "table1": {
     "rows": 88,
     "numeric_cells_preserved": 176,
-    "group_totals_verified": 15,
-    "ordering_verified": true
+    "group_totals": 15
   },
-  "status": "structural_and_font_checks_passed; native_open_and_17_page_render_verified; native_accept_reject_and_resave_not_tested",
-  "output_sha256": "ddfb68efe353ab2bcb8a03f575656c97b18c3d49d759b753e9e9147d85c0f133",
-  "previous_output_sha256": "1ac7621aa5ea69cc1572a24c4906021a110a77ad79cd1aa45828fb2c5754a965",
-  "validation_date": "2026-11-03",
-  "native_application": {
-    "name": "Hancom Hangeul for macOS",
-    "open_verified": true,
+  "native_pdf": {
+    "file": "rereview-final.pdf",
+    "sha256": "869ed8311e2e8f19425e9b753b074b2b631ac22963a5f813afa9f26cca597617",
     "pages": 17,
-    "reviewed_all_pages": true,
-    "accept_reject_resave_tested": false,
-    "limitation": "Installed application opens documents read-only because editing requires a paid subscription.",
-    "local_verification_pdf_sha256": "4fb17869a5b71c510aa2f7a3f198fa5e52ea8aea4fd3f3858523ed35b51f650a",
-    "verification_pdf_distributed": false,
-    "font_repair_render_verified": true,
-    "final_file_reopened": true
-  },
-  "native_track_types": {
-    "Delete": 318,
-    "Insert": 274
-  },
-  "preview_cache": {
-    "parts": [
-      "Contents/content.hpf",
-      "Preview/PrvText.txt",
-      "Preview/PrvImage.png"
+    "visual_spots": [
+      "Page07: one conditional NB2 equation Var(Y_i | x_i), no deleted equation duplicate; mu_i definition visible.",
+      "Page11: one q<0.05 threshold, not p; fire CI0.03–0.07 visible."
     ],
-    "body_xml_hashes_unchanged": true,
-    "source": "Hancom native output font-corrected.pdf page 1; existing accepted-text preview retained because manuscript text is unchanged",
-    "first_page_png_size": [
-      724,
-      1024
-    ]
+    "not_verified": "Actual editable-app accept/reject/resave UI is unavailable under installed subscription."
   },
-  "format_reference": {
-    "url": "https://github.com/hancom-io/hwpx-owpml-model",
-    "commit": "1453388472c703a4b299a0834f425cdac16644b9",
-    "formal_xsd_validation_performed": false
-  },
-  "package_part_sha256": {
-    "Contents/header.xml": "5f7f77523739b3c3be975a5a02a31c21e923db7d34011ee5ced72edf5ee53780",
-    "Contents/section0.xml": "0a5110fab101e49ab6324e39a5b98586ce64e9d96b06004956d574bf94960085",
-    "Contents/section1.xml": "7e15d2936b3ab2d4c8f1ff9a237824ccaf4678d05b970ae3f233aed993ace961",
-    "Preview/PrvText.txt": "ccadb7cc4d4ad3f2871df94e620615ca57a7aee0db1304eade7f671d85fb9631",
-    "Preview/PrvImage.png": "f86dac535e44b234a369d85fa346cfb61a91c24364c4c8132324a7582bbdff7e",
-    "Contents/content.hpf": "28aa75e800c62ea2815cdc55087b17517b71996b63e0da86e5f459a7ade02bf5"
-  },
-  "font_repair_evidence": "글꼴복구검증결과.json"
+  "status": "검토 범위 내 교정 및 독립 재검토 완료; 명시된 자료출처·전체재계산·앱편집 검증 한계 유지",
+  "original_sha256": "152c7f1c95497d62ee5eb6e731e9087b3386349a8e935de2f77323b8c1e783c7",
+  "original_sha256_unchanged": true
 }
