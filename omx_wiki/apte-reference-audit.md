@@ -2,15 +2,18 @@
 title: "APTE Reference Audit"
 tags: ["APTE", "논문수정", "근거"]
 created: 2026-11-02T10:42:46.586Z
-updated: 2026-11-03T05:46:34Z
+updated: 2026-11-03T17:07:07Z
 sources: ["../docs/paper/revisions/2026-11-02/참고문헌검증표.md", "../docs/paper/revisions/2026-11-02/수정검토보고서.md"]
-links: ["apte-revision-hub.md", "apte-professor-memos.md", "apte-source-register.md", "apte-memo-03.md", "apte-memo-04.md", "apte-data-evidence.md"]
+links: ["apte-intro-restoration.md", "apte-revision-hub.md", "apte-professor-memos.md", "apte-source-register.md", "apte-memo-03.md", "apte-memo-04.md", "apte-data-evidence.md"]
 category: reference
 confidence: medium
 schemaVersion: 1
 ---
 
 # APTE Reference Audit
+
+> **2026-11-04 서론 원문 복원 우선 기록:** 서론6문단과 현재24편 인용번호·파일 식별은 [[apte-intro-restoration]] 및 [복원 기록](../docs/paper/revisions/2026-11-02/서론원문복원_인용조정기록.md)을 따른다. 아래22편·664범위·17쪽은 직전본 기록이다. 서론 밖 분석 결과는 유지하였다.
+
 
 [[apte-revision-hub]] · [[apte-professor-memos]] · [[apte-source-register]]
 

@@ -1,62 +1,86 @@
 {
-  "tracks": 664,
-  "logical_changes": 265,
-  "original_sha256": "152c7f1c95497d62ee5eb6e731e9087b3386349a8e935de2f77323b8c1e783c7",
-  "output_sha256": "895e3c4e3b9847512115e9079f747f89581575816b756e627f7006a4648ec8ef",
-  "reference_mapping": {
-    "1": 1,
-    "2": 2,
-    "3": 3,
-    "4": 4,
-    "5": 5,
-    "6": 6,
-    "7": 7,
-    "9": 8,
-    "8": 9,
-    "10": 10,
-    "11": 11,
-    "12": 12,
-    "13": 13,
-    "16": 14,
-    "14": 15,
-    "15": 16,
-    "18": 17,
-    "25": 18,
-    "17": 20
-  },
-  "date": "2026-11-03T05:41:35Z",
-  "preview_cache_refresh": {
-    "parts": [
-      "Contents/content.hpf",
-      "Preview/PrvText.txt",
-      "Preview/PrvImage.png"
-    ],
-    "body_xml_hashes_unchanged_by_metadata_refresh": true,
-    "source": "최종 한글 native17쪽 출력의 첫 페이지; 수용 텍스트 미리보기 갱신",
-    "first_page_png_size": [
-      724,
-      1024
-    ]
-  },
+  "date": "2026-11-03T17:07:07Z",
+  "revision_date_local": "2026-11-04",
   "output": "APTE_메모내용 반영_변경내용추적.hwpx",
-  "source_filename": "자동차모빌리티안전연구_논문_최종 수정본_EJ검토_마지막.hwpx",
+  "output_sha256": "e1b3293cd141fa35548fa89e6d694d14e11af24208f74807f0b181fd01dac324",
+  "previous_output_sha256": "895e3c4e3b9847512115e9079f747f89581575816b756e627f7006a4648ec8ef",
+  "original_sha256": "152c7f1c95497d62ee5eb6e731e9087b3386349a8e935de2f77323b8c1e783c7",
+  "tracks": 632,
   "track_types": {
-    "Delete": 357,
-    "Insert": 307
+    "Delete": 327,
+    "Insert": 305
   },
-  "previous_output_sha256": "ddfb68efe353ab2bcb8a03f575656c97b18c3d49d759b753e9e9147d85c0f133",
-  "font_repair_date": "2026-11-03",
-  "logical_change_accounting": "기존 수정 기록205건 + 이번 추가수정 기록60건. 동일 위치의 반복 교정을 포함한 기록 수다.",
-  "reference_replacements": {
-    "19": "Cameron and Trivedi (2001), 신규",
-    "21": "Wilson (1927), 신규",
-    "22": "McFadden (1974), 신규"
-  },
-  "excluded_additional_original_reference_numbers": [
-    26,
-    28,
-    29
+  "scope": "서론6문단 원문 복원 및 인용만 조정. 서론 밖 본문은 인용번호만 변경.",
+  "restored_intro_paragraphs": [
+    "S0.P014",
+    "S0.P015",
+    "S0.P016",
+    "S0.P017",
+    "S0.P018",
+    "S0.P019"
   ],
-  "native_pdf_sha256": "869ed8311e2e8f19425e9b753b074b2b631ac22963a5f813afa9f26cca597617",
-  "native_pages": 17
+  "intro_noncitation_text_and_character_styles_match_original": true,
+  "outside_intro_noncitation_text_and_character_styles_match_previous": true,
+  "reference_count": 24,
+  "previous_reference_number_to_current": {
+    "1": 2,
+    "2": 3,
+    "3": 5,
+    "4": 6,
+    "5": 7,
+    "6": 8,
+    "7": 9,
+    "8": 10,
+    "14": 11,
+    "15": 12,
+    "9": 13,
+    "10": 14,
+    "13": 15,
+    "16": 16,
+    "11": 17,
+    "12": 18,
+    "19": 19,
+    "17": 20,
+    "18": 21,
+    "20": 22,
+    "21": 23,
+    "22": 24
+  },
+  "new_sources": {
+    "MOLIT2025": 1,
+    "GRSP_IFRC2023": 4
+  },
+  "original_reference_number_to_current": {
+    "1": 2,
+    "2": 3,
+    "3": 5,
+    "4": 6,
+    "5": 7,
+    "6": 8,
+    "7": 9,
+    "9": 10,
+    "8": 13,
+    "10": 14,
+    "11": 17,
+    "12": 18,
+    "13": 15,
+    "16": 11,
+    "14": 12,
+    "15": 16,
+    "18": 20,
+    "25": 21,
+    "17": 22
+  },
+  "preview_cache": {
+    "text": "updated_to_current_accepted_text",
+    "image": "unchanged_previous_2026-11-03_native_first_page_cache; not_current_restored_intro",
+    "native_pdf": "not_generated; CUA kernel assets write error; no connected document-control session"
+  },
+  "historical_pdf": {
+    "file": "APTE_전수재검토_검토용.pdf",
+    "sha256": "869ed8311e2e8f19425e9b753b074b2b631ac22963a5f813afa9f26cca597617",
+    "source_hwpx_sha256": "895e3c4e3b9847512115e9079f747f89581575816b756e627f7006a4648ec8ef",
+    "pages": 17,
+    "current_restored_intro_included": false
+  }
 }

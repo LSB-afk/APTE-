@@ -252,3 +252,10 @@
 ## [2026-11-03T05:46:48.219Z] lint
 - **Pages:** none
 - **Summary:** Lint: 0 issues (0 orphan, 0 stale, 0 broken, 0 contradictions)
+## [2026-11-03T17:07:15.189Z] add
+- **Pages:** apte-data-evidence.md, apte-font-repair.md, apte-full-rereview.md, apte-intro-restoration.md, apte-memo-01.md, apte-memo-02.md, apte-memo-03.md, apte-memo-04.md, apte-memo-05.md, apte-memo-06.md, apte-memo-07.md, apte-memo-08.md, apte-memo-09.md, apte-memo-10.md, apte-memo-11.md, apte-memo-12.md, apte-memo-13.md, apte-methods-results-map.md, apte-professor-memos.md, apte-reference-audit.md, apte-revision-decisions.md, apte-revision-hub.md, apte-source-register.md, apte-validation-log.md
+- **Summary:** Refreshed wiki index and derived metadata surfaces
+
+## [2026-11-03T17:07:19.835Z] lint
+- **Pages:** none
+- **Summary:** Lint: 0 issues (0 orphan, 0 stale, 0 broken, 0 contradictions)

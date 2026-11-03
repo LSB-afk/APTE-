@@ -1,0 +1,1018 @@
+{
+  "date": "2026-11-03T17:02:57Z",
+  "source_sha256": "152c7f1c95497d62ee5eb6e731e9087b3386349a8e935de2f77323b8c1e783c7",
+  "before_sha256": "895e3c4e3b9847512115e9079f747f89581575816b756e627f7006a4648ec8ef",
+  "output_sha256": "e1b3293cd141fa35548fa89e6d694d14e11af24208f74807f0b181fd01dac324",
+  "restored_paragraphs": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "intro_non_citation_exact": true,
+  "removed_previous_intro_ranges": [
+    "166",
+    "167",
+    "168",
+    "169",
+    "170",
+    "171",
+    "172",
+    "173",
+    "174",
+    "175",
+    "176",
+    "177",
+    "178",
+    "179",
+    "180",
+    "181",
+    "182",
+    "183",
+    "184",
+    "185",
+    "186",
+    "187",
+    "188",
+    "189",
+    "190",
+    "191",
+    "192",
+    "193",
+    "194",
+    "195",
+    "196",
+    "197",
+    "198",
+    "199",
+    "200",
+    "201",
+    "202",
+    "203",
+    "204",
+    "205",
+    "206",
+    "207",
+    "208",
+    "209",
+    "210",
+    "211",
+    "212",
+    "213",
+    "214",
+    "215",
+    "216",
+    "217",
+    "218",
+    "219",
+    "220",
+    "221",
+    "222",
+    "223",
+    "593",
+    "594"
+  ],
+  "pruned_track_records": [
+    "166",
+    "167",
+    "168",
+    "169",
+    "170",
+    "171",
+    "172",
+    "173",
+    "174",
+    "175",
+    "176",
+    "177",
+    "178",
+    "179",
+    "180",
+    "181",
+    "182",
+    "183",
+    "184",
+    "185",
+    "186",
+    "187",
+    "188",
+    "189",
+    "190",
+    "191",
+    "192",
+    "193",
+    "194",
+    "195",
+    "196",
+    "197",
+    "198",
+    "199",
+    "200",
+    "201",
+    "202",
+    "203",
+    "204",
+    "205",
+    "206",
+    "207",
+    "208",
+    "209",
+    "210",
+    "211",
+    "212",
+    "213",
+    "214",
+    "215",
+    "216",
+    "217",
+    "218",
+    "219",
+    "220",
+    "221",
+    "222",
+    "223",
+    "529",
+    "530",
+    "531",
+    "532",
+    "533",
+    "534",
+    "535",
+    "536",
+    "537",
+    "538",
+    "539",
+    "540",
+    "541",
+    "542",
+    "543",
+    "544",
+    "545",
+    "546",
+    "547",
+    "548",
+    "549",
+    "550",
+    "551",
+    "552",
+    "553",
+    "554",
+    "555",
+    "556",
+    "557",
+    "558",
+    "559",
+    "560",
+    "561",
+    "562",
+    "563",
+    "564",
+    "565",
+    "566",
+    "567",
+    "568",
+    "569",
+    "570",
+    "571",
+    "572",
+    "573",
+    "574",
+    "575",
+    "576",
+    "577",
+    "578",
+    "579",
+    "580",
+    "581",
+    "582",
+    "583",
+    "584",
+    "585",
+    "586",
+    "587",
+    "588",
+    "589",
+    "593",
+    "594"
+  ],
+  "native_tracks": 632,
+  "track_types": {
+    "Delete": 327,
+    "Insert": 305
+  },
+  "source_identity_to_new_number": {
+    "MOLIT": 1,
+    "C1": 2,
+    "C2": 3,
+    "SPEED": 4,
+    "C3": 5,
+    "C4": 6,
+    "C5": 7,
+    "C6": 8,
+    "C7": 9,
+    "C8": 10,
+    "C14": 11,
+    "C15": 12,
+    "C9": 13,
+    "C10": 14,
+    "C13": 15,
+    "C16": 16,
+    "C11": 17,
+    "C12": 18,
+    "C19": 19,
+    "C17": 20,
+    "C18": 21,
+    "C20": 22,
+    "C21": 23,
+    "C22": 24
+  },
+  "references": [
+    {
+      "number": 1,
+      "key": "MOLIT",
+      "text": "(1) Ministry of Land, Infrastructure and Transport, 2025, “「2024년 도로 교통량 조사」 결과 발표,” Press Release, May 1.",
+      "paragraph_index": 2,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(1) Ministry of Land, Infrastructure and Transport, 2025, “"
+        },
+        {
+          "style": "70",
+          "text": "「2024년 도로 교통량 조사」 결과 발표"
+        },
+        {
+          "style": "65",
+          "text": ",” Press Release, May 1."
+        }
+      ],
+      "url": "https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?id=95090912"
+    },
+    {
+      "number": 2,
+      "key": "C1",
+      "text": "(2) \tHøye, A. K. and Hesjevoll, I. S., 2020, “Traffic Volume and Crashes and How Crash and Road Characteristics Affect Their Relationship: A Meta-Analysis,” Accident Analysis and Prevention, Vol. 145, 105668.",
+      "paragraph_index": 4,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(2) \tHøye, A. K. and Hesjevoll, I. S., 2020, “Traffic Volume and Crashes and How Crash and Road Characteristics Affect Their Relationship: A Meta-Analysis,” Accident Analysis and Prevention, Vol. 145, 105668."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 3,
+      "key": "C2",
+      "text": "(3) \tChristoforou, Z., Cohen, S. and Karlaftis, M. G., 2010, “Vehicle Occupant Injury Severity on Highways: An Empirical Investigation,” Accident Analysis and Prevention, Vol. 42, No. 6, pp. 1606~1620.",
+      "paragraph_index": 6,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(3) \tChristoforou, Z., Cohen, S. and Karlaftis, M. G., 2010, “Vehicle Occupant Injury Severity on Highways: An Empirical Investigation,” Accident Analysis and Prevention, Vol. 42, No. 6, pp. 1606~1620."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 4,
+      "key": "SPEED",
+      "text": "(4) Global Road Safety Partnership and International Federation of Red Cross and Red Crescent Societies, 2023, Speed Management: A Road Safety Manual for Decision-Makers and Practitioners, 2nd ed., Geneva.",
+      "paragraph_index": 8,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(4) Global Road Safety Partnership and International Federation of Red Cross and Red Crescent Societies, 2023, Speed Management: A Road Safety Manual for Decision-Makers and Practitioners, 2nd ed., Geneva."
+        }
+      ],
+      "url": "https://www.who.int/publications/m/item/speed-management--a-road-safety-manual-for-decision-makers-and-practitioners.-2nd-edition"
+    },
+    {
+      "number": 5,
+      "key": "C3",
+      "text": "(5) \tGabauer, D. J., 2010, “Secondary Collisions Following a Traffic Barrier Impact: Frequency, Factors, and Occupant Risk,” Annals of Advances in Automotive Medicine, Vol. 54, pp. 223~232.",
+      "paragraph_index": 10,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(5) \tGabauer, D. J., 2010, “Secondary Collisions Following a Traffic Barrier Impact: Frequency, Factors, and Occupant Risk,” Annals of Advances in Automotive Medicine, Vol. 54, pp. 223~232."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 6,
+      "key": "C4",
+      "text": "(6) \tHuang, H., Ding, X., Yuan, C., Liu, X. and Tang, J., 2023, “Jointly Analyzing Freeway Primary and Secondary Crash Severity Using a Copula-Based Approach,” Accident Analysis and Prevention, Vol. 180, 106911.",
+      "paragraph_index": 12,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(6) \tHuang, H., Ding, X., Yuan, C., Liu, X. and Tang, J., 2023, “Jointly Analyzing Freeway Primary and Secondary Crash Severity Using a Copula-Based Approach,” Accident Analysis and Prevention, Vol. 180, 106911."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 7,
+      "key": "C5",
+      "text": "(7) \tRiuttanen, A., Karjalainen, E., Jokihaara, J., Huttunen, T. T. and Mattila, V. M., 2024, “Cumulative Costs of Severe Traffic Injuries in Finland: A 2-Year Retrospective Observational Study of 252 Patients,” Scientific Reports, Vol. 14, No. 1, 11078.",
+      "paragraph_index": 14,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(7) \tRiuttanen, A., Karjalainen, E., Jokihaara, J., Huttunen, T. T. and Mattila, V. M., 2024, “Cumulative Costs of Severe Traffic Injuries in Finland: A 2-Year Retrospective Observational Study of 252 Patients,” Scientific Reports, Vol. 14, No. 1, 11078."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 8,
+      "key": "C6",
+      "text": "(8) \tEboli, L., Forciniti, C. and Mazzulla, G., 2020, “Factors Influencing Accident Severity: An Analysis by Road Accident Type,” Transportation Research Procedia, Vol. 47, pp. 449~456.",
+      "paragraph_index": 16,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(8) \tEboli, L., Forciniti, C. and Mazzulla, G., 2020, “Factors Influencing Accident Severity: An Analysis by Road Accident Type,” Transportation Research Procedia, Vol. 47, pp. 449~456."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 9,
+      "key": "C7",
+      "text": "(9) \tWang, J., Lu, H., Sun, Z. and Wang, T., 2020, “Exploring Factors Influencing Injury Severity of Vehicle At-Fault Accidents: A Comparative Analysis of Passenger and Freight Vehicles,” International Journal of Environmental Research and Public Health, Vol. 17, No. 4, 1146.",
+      "paragraph_index": 18,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(9) \tWang, J., Lu, H., Sun, Z. and Wang, T., 2020, “Exploring Factors Influencing Injury Severity of Vehicle At-Fault Accidents: A Comparative Analysis of Passenger and Freight Vehicles,” International Journal of Environmental Research and Public Health, Vol. 17, No. 4, 1146."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 10,
+      "key": "C8",
+      "text": "(10) Lee, J. Y., Chung, J. H. and Son, B., 2008, “Analysis of Traffic Accident Size for Korean Highway Using Structural Equation Models,” Accident Analysis and Prevention, Vol. 40, No. 6, pp. 1955~1963.",
+      "paragraph_index": 20,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(10) Lee, J. Y., Chung, J. H. and Son, B., 2008, “Analysis of Traffic Accident Size for Korean Highway Using Structural Equation Models,” Accident Analysis and Prevention, Vol. 40, No. 6, pp. 1955~1963."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 11,
+      "key": "C14",
+      "text": "(11) Lundberg, S. M., Erion, G., Chen, H., DeGrave, A., Prutkin, J. M., Nair, B., Katz, R., Himmelfarb, J., Bansal, N. and Lee, S. I., 2020, “From Local Explanations to Global Understanding with Explainable AI for Trees,” Nature Machine Intelligence, Vol. 2, No. 1, pp. 56~67.",
+      "paragraph_index": 22,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(11) Lundberg, S. M., Erion, G., Chen, H., DeGrave, A., Prutkin, J. M., Nair, B., Katz, R., Himmelfarb, J., Bansal, N. and Lee, S. I., 2020, “From Local Explanations to Global Understanding with Explainable AI for Trees,” Nature Machine Intelligence, Vol. 2, No. 1, pp. 56~67."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 12,
+      "key": "C15",
+      "text": "(12) Moon, J., Jang, J. and Lee, S., 2025, “서울시 고령운전자의 중상 및 사망사고와 도로환경의 연관성 분석: 기계학습을 활용한 비선형성과 상호작용효과를 중심으로,” 대한교통학회지, Vol. 43, No. 2, pp. 161~180.",
+      "paragraph_index": 24,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(12) Moon, J., Jang, J. and Lee, S., 2025, "
+        },
+        {
+          "style": "70",
+          "text": "“서울시 고령운전자의 중상 및 사망사고와 도로환경의 연관성 분석: 기계학습을 활용한 비선형성과 상호작용효과를 중심으로,” 대한교통학회지,"
+        },
+        {
+          "style": "65",
+          "text": " Vol. 43, No. 2, pp. 161~180."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 13,
+      "key": "C9",
+      "text": "(13) Milton, J. C., Shankar, V. N. and Mannering, F. L., 2008, “Highway Accident Severities and the Mixed Logit Model: An Exploratory Empirical Analysis,” Accident Analysis and Prevention, Vol. 40, No. 1, pp. 260~266.",
+      "paragraph_index": 26,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(13) Milton, J. C., Shankar, V. N. and Mannering, F. L., 2008, “Highway Accident Severities and the Mixed Logit Model: An Exploratory Empirical Analysis,” Accident Analysis and Prevention, Vol. 40, No. 1, pp. 260~266."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 14,
+      "key": "C10",
+      "text": "(14) \tChen, T. and Guestrin, C., 2016, “XGBoost: A Scalable Tree Boosting System,” Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, pp. 785~794.",
+      "paragraph_index": 28,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(14) \tChen, T. and Guestrin, C., 2016, “XGBoost: A Scalable Tree Boosting System,” Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, pp. 785~794."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 15,
+      "key": "C13",
+      "text": "(15) \tLundberg, S. M. and Lee, S. I., 2017, “A Unified Approach to Interpreting Model Predictions,” Advances in Neural Information Processing Systems, Vol. 30, pp. 4765~4774.",
+      "paragraph_index": 30,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(15) \tLundberg, S. M. and Lee, S. I., 2017, “A Unified Approach to Interpreting Model Predictions,” Advances in Neural Information Processing Systems, Vol. 30, pp. 4765~4774."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 16,
+      "key": "C16",
+      "text": "(16) Ko, E. J. and Jang, K. T., 2025, “Integrated Statistical and Machine Learning Approach for Freeway Accident Severity Prediction,” 안전문화연구, No. 49, pp. 351~367.",
+      "paragraph_index": 32,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(16) Ko, E. J. and Jang, K. T., 2025, “Integrated Statistical and Machine Learning Approach for Freeway Accident Severity Prediction,” "
+        },
+        {
+          "style": "70",
+          "text": "안전문화연구"
+        },
+        {
+          "style": "65",
+          "text": ", No. 49, pp. 351~367."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 17,
+      "key": "C11",
+      "text": "(17) \tKwon, C. W. and Chang, H. H., 2021, “Comparative Analysis of Traffic Accident Severity of Two-Wheeled Vehicles Using XGBoost,” 한국ITS학회논문지, Vol. 20, No. 4, pp. 1~12.",
+      "paragraph_index": 34,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(17) \tKwon, C. W. and Chang, H. H., 2021, “Comparative Analysis of Traffic Accident Severity of Two-Wheeled Vehicles Using XGBoost,” "
+        },
+        {
+          "style": "70",
+          "text": "한국ITS학회논문지"
+        },
+        {
+          "style": "65",
+          "text": ", Vol. 20, No. 4, pp. 1~12."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 18,
+      "key": "C12",
+      "text": "(18) \tLee, S. M., Yoon, B. J. and Lwin, W. Y., 2024, “Studying the Comparative Analysis of Highway Traffic Accident Severity Using the Random Forest Method,” 한국재난정보학회논문집, Vol. 20, No. 1, pp. 156~168.",
+      "paragraph_index": 36,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(18) \tLee, S. M., Yoon, B. J. and Lwin, W. Y., 2024, “Studying the Comparative Analysis of Highway Traffic Accident Severity Using the Random Forest Method,” "
+        },
+        {
+          "style": "70",
+          "text": "한국재난정보학회논문집"
+        },
+        {
+          "style": "65",
+          "text": ", Vol. 20, No. 1, pp. 156~168."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 19,
+      "key": "C19",
+      "text": "(19) Cameron, A. C. and Trivedi, P. K., 2001, “Essentials of Count Data Regression,” in Baltagi, B. H. (ed.), A Companion to Theoretical Econometrics, Blackwell, Oxford, pp. 331~348.",
+      "paragraph_index": 38,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(19) Cameron, A. C. and Trivedi, P. K., 2001, “Essentials of Count Data Regression,” in Baltagi, B. H. (ed.), A Companion to Theoretical Econometrics, Blackwell, Oxford, pp. 331~348."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 20,
+      "key": "C17",
+      "text": "(20) Bergsma, W., 2013, “A Bias-Correction for Cramér's V and Tschuprow's T,” Journal of the Korean Statistical Society, Vol. 42, No. 3, pp. 323~328.",
+      "paragraph_index": 40,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(20) Bergsma, W., 2013, “A Bias-Correction for Cramér's V and Tschuprow's T,” Journal of the Korean Statistical Society, Vol. 42, No. 3, pp. 323~328."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 21,
+      "key": "C18",
+      "text": "(21) Jeong, H., Jang, Y., Bowman, P. J. and Masoud, N., 2018, “Classification of Motor Vehicle Crash Injury Severity: A Hybrid Approach for Imbalanced Data,” Accident Analysis and Prevention, Vol. 120, pp. 250~261.",
+      "paragraph_index": 42,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(21) Jeong, H., Jang, Y., Bowman, P. J. and Masoud, N., 2018, “Classification of Motor Vehicle Crash Injury Severity: A Hybrid Approach for Imbalanced Data,” Accident Analysis and Prevention, Vol. 120, pp. 250~261."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 22,
+      "key": "C20",
+      "text": "(22) Benjamini, Y. and Hochberg, Y., 1995, “Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing,” Journal of the Royal Statistical Society: Series B, Vol. 57, No. 1, pp. 289~300.",
+      "paragraph_index": 44,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(22) Benjamini, Y. and Hochberg, Y., 1995, “Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing,” Journal of the Royal Statistical Society: Series B, Vol. 57, No. 1, pp. 289~300."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 23,
+      "key": "C21",
+      "text": "(23) Wilson, E. B., 1927, “Probable Inference, the Law of Succession, and Statistical Inference,” Journal of the American Statistical Association, Vol. 22, No. 158, pp. 209~212.",
+      "paragraph_index": 46,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(23) Wilson, E. B., 1927, “Probable Inference, the Law of Succession, and Statistical Inference,” Journal of the American Statistical Association, Vol. 22, No. 158, pp. 209~212."
+        }
+      ],
+      "url": null
+    },
+    {
+      "number": 24,
+      "key": "C22",
+      "text": "(24) McFadden, D., 1974, “Conditional Logit Analysis of Qualitative Choice Behavior,” in Zarembka, P. (ed.), Frontiers in Econometrics, Academic Press, New York, pp. 105~142.",
+      "paragraph_index": 48,
+      "font_spans": [
+        {
+          "style": "65",
+          "text": "(24) McFadden, D., 1974, “Conditional Logit Analysis of Qualitative Choice Behavior,” in Zarembka, P. (ed.), Frontiers in Econometrics, Academic Press, New York, pp. 105~142."
+        }
+      ],
+      "url": null
+    }
+  ],
+  "citation_placements": [
+    {
+      "paragraph": 14,
+      "numbers": [
+        1,
+        2
+      ],
+      "source_keys": [
+        "MOLIT",
+        "C1"
+      ]
+    },
+    {
+      "paragraph": 14,
+      "numbers": [
+        1,
+        3,
+        4
+      ],
+      "source_keys": [
+        "MOLIT",
+        "C2",
+        "SPEED"
+      ]
+    },
+    {
+      "paragraph": 14,
+      "numbers": [
+        4,
+        5,
+        6
+      ],
+      "source_keys": [
+        "SPEED",
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "paragraph": 14,
+      "numbers": [
+        7
+      ],
+      "source_keys": [
+        "C5"
+      ]
+    },
+    {
+      "paragraph": 15,
+      "numbers": [
+        8,
+        9,
+        10
+      ],
+      "source_keys": [
+        "C6",
+        "C7",
+        "C8"
+      ]
+    },
+    {
+      "paragraph": 15,
+      "numbers": [
+        11,
+        12
+      ],
+      "source_keys": [
+        "C14",
+        "C15"
+      ]
+    },
+    {
+      "paragraph": 16,
+      "numbers": [
+        13
+      ],
+      "source_keys": [
+        "C9"
+      ]
+    },
+    {
+      "paragraph": 16,
+      "numbers": [
+        9
+      ],
+      "source_keys": [
+        "C7"
+      ]
+    },
+    {
+      "paragraph": 16,
+      "numbers": [
+        11,
+        12
+      ],
+      "source_keys": [
+        "C14",
+        "C15"
+      ]
+    },
+    {
+      "paragraph": 17,
+      "numbers": [
+        11,
+        12,
+        14
+      ],
+      "source_keys": [
+        "C10",
+        "C14",
+        "C15"
+      ]
+    },
+    {
+      "paragraph": 17,
+      "numbers": [
+        11,
+        15,
+        16
+      ],
+      "source_keys": [
+        "C13",
+        "C14",
+        "C16"
+      ]
+    },
+    {
+      "paragraph": 17,
+      "numbers": [
+        15,
+        17,
+        18
+      ],
+      "source_keys": [
+        "C11",
+        "C12",
+        "C13"
+      ]
+    },
+    {
+      "paragraph": 17,
+      "numbers": [
+        11,
+        12
+      ],
+      "source_keys": [
+        "C14",
+        "C15"
+      ]
+    },
+    {
+      "paragraph": 18,
+      "numbers": [
+        16
+      ],
+      "source_keys": [
+        "C16"
+      ]
+    },
+    {
+      "paragraph": 18,
+      "numbers": [
+        11,
+        14,
+        15
+      ],
+      "source_keys": [
+        "C10",
+        "C13",
+        "C14"
+      ]
+    },
+    {
+      "paragraph": 18,
+      "numbers": [
+        9
+      ],
+      "source_keys": [
+        "C7"
+      ]
+    },
+    {
+      "paragraph": 18,
+      "numbers": [
+        19
+      ],
+      "source_keys": [
+        "C19"
+      ]
+    },
+    {
+      "paragraph": 32,
+      "numbers": [
+        20
+      ],
+      "source_keys": [
+        "C17"
+      ]
+    },
+    {
+      "paragraph": 36,
+      "numbers": [
+        14
+      ],
+      "source_keys": [
+        "C10"
+      ]
+    },
+    {
+      "paragraph": 37,
+      "numbers": [
+        21
+      ],
+      "source_keys": [
+        "C18"
+      ]
+    },
+    {
+      "paragraph": 38,
+      "numbers": [
+        15
+      ],
+      "source_keys": [
+        "C13"
+      ]
+    },
+    {
+      "paragraph": 52,
+      "numbers": [
+        19
+      ],
+      "source_keys": [
+        "C19"
+      ]
+    },
+    {
+      "paragraph": 53,
+      "numbers": [
+        22
+      ],
+      "source_keys": [
+        "C20"
+      ]
+    },
+    {
+      "paragraph": 60,
+      "numbers": [
+        23
+      ],
+      "source_keys": [
+        "C21"
+      ]
+    },
+    {
+      "paragraph": 76,
+      "numbers": [
+        24
+      ],
+      "source_keys": [
+        "C22"
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "location": "S0.P015",
+      "kind": "citation_addition",
+      "after": "요인 간 상호작용을 함께 고려할 필요가 있다",
+      "source_keys": [
+        "C14",
+        "C15"
+      ]
+    },
+    {
+      "location": "S0.P016",
+      "kind": "citation_addition",
+      "after": "통계적으로 검정하는 데 유용하다",
+      "source_keys": [
+        "C9"
+      ]
+    },
+    {
+      "location": "S0.P016",
+      "kind": "citation_addition",
+      "after": "복잡한 관계를 탐색하는 데에는 한계가 있다",
+      "source_keys": [
+        "C14",
+        "C15"
+      ]
+    },
+    {
+      "location": "S0.P017",
+      "kind": "citation_addition",
+      "after": "각 요인의 기여 크기와 방향을 함께 해석하는 연구가 이루어지고 있으나",
+      "source_keys": [
+        "C11",
+        "C12",
+        "C13"
+      ]
+    },
+    {
+      "location": "S0.P017",
+      "kind": "citation_addition",
+      "after": "이에 대한 통계적 유의성을 확인하기 어렵다",
+      "source_keys": [
+        "C14",
+        "C15"
+      ]
+    },
+    {
+      "location": "S0.P018",
+      "kind": "citation_addition",
+      "after": "주요 영향 요인의 효과에 대한 일관성을 검토하였다",
+      "source_keys": [
+        "C19"
+      ]
+    },
+    {
+      "location": "S0.P014",
+      "kind": "citation",
+      "old": "1",
+      "new": "1,2"
+    },
+    {
+      "location": "S0.P014",
+      "kind": "citation",
+      "old": "2",
+      "new": "1,3,4"
+    },
+    {
+      "location": "S0.P014",
+      "kind": "citation",
+      "old": "3,4",
+      "new": "4,5,6"
+    },
+    {
+      "location": "S0.P014",
+      "kind": "citation",
+      "old": "5",
+      "new": "7"
+    },
+    {
+      "location": "S0.P015",
+      "kind": "citation",
+      "old": "6,7",
+      "new": "8,9,10"
+    },
+    {
+      "location": "S0.P016",
+      "kind": "citation",
+      "old": "8,9",
+      "new": "9"
+    },
+    {
+      "location": "S0.P017",
+      "kind": "citation",
+      "old": "10",
+      "new": "11,12,14"
+    },
+    {
+      "location": "S0.P017",
+      "kind": "citation",
+      "old": "11,12",
+      "new": "11,15,16"
+    },
+    {
+      "location": "S0.P018",
+      "kind": "citation",
+      "old": "15",
+      "new": "16"
+    },
+    {
+      "location": "S0.P018",
+      "kind": "citation",
+      "old": "10,16",
+      "new": "11,14,15"
+    },
+    {
+      "location": "S0.P018",
+      "kind": "citation",
+      "old": "17",
+      "new": "9"
+    },
+    {
+      "location": "S0.P032",
+      "kind": "citation",
+      "old": "17",
+      "new": "20"
+    },
+    {
+      "location": "S0.P036",
+      "kind": "citation",
+      "old": "10",
+      "new": "14"
+    },
+    {
+      "location": "S0.P037",
+      "kind": "citation",
+      "old": "18",
+      "new": "21"
+    },
+    {
+      "location": "S0.P038",
+      "kind": "citation",
+      "old": "13",
+      "new": "15"
+    },
+    {
+      "location": "S0.P053",
+      "kind": "citation",
+      "old": "20",
+      "new": "22"
+    },
+    {
+      "location": "S0.P060",
+      "kind": "citation",
+      "old": "21",
+      "new": "23"
+    },
+    {
+      "location": "S0.P076",
+      "kind": "citation",
+      "old": "22",
+      "new": "24"
+    }
+  ],
+  "status": "content_and_native_structure_verified; native_render_unavailable",
+  "modified_date": "2026-11-03T17:05:37Z",
+  "preview_status": {
+    "text": "updated_to_current_accepted_text",
+    "image": "unchanged_previous_2026-11-03_native_first_page_cache; not_current_restored_intro",
+    "native_pdf": "not_generated; CUA kernel assets write error; no connected document-control session"
+  }
+}

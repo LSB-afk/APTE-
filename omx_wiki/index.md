@@ -1,6 +1,6 @@
 # Wiki Index
 
-> 23 pages | Last updated: 2026-11-03T05:46:34.244Z
+> 24 pages | Last updated: 2026-11-03T17:07:15.188Z
 
 ## debugging
 
@@ -8,6 +8,7 @@
 
 ## decision
 
+- [APTE Introduction Restoration](apte-intro-restoration.md) — # APTE Introduction Restoration
 - [APTE Revision Decisions](apte-revision-decisions.md) — # APTE Revision Decisions
 
 ## reference

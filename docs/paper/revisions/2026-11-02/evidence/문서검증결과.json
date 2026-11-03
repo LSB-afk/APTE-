@@ -1,12 +1,17 @@
 {
-  "date": "2026-11-03T05:41:35Z",
-  "output_sha256": "895e3c4e3b9847512115e9079f747f89581575816b756e627f7006a4648ec8ef",
-  "native_track_ranges": 664,
+  "date": "2026-11-03T17:07:07Z",
+  "revision_date_local": "2026-11-04",
+  "output_sha256": "e1b3293cd141fa35548fa89e6d694d14e11af24208f74807f0b181fd01dac324",
+  "original_sha256": "152c7f1c95497d62ee5eb6e731e9087b3386349a8e935de2f77323b8c1e783c7",
+  "original_sha256_unchanged": true,
+  "status": "요청 범위의 원문 복원·인용번호·구조검증 완료; 새 native 출력은 미확인",
+  "checks_passed": 159,
+  "scope_proof": "서론원문복원_구조검증.json",
+  "native_track_ranges": 632,
   "track_types": {
-    "Delete": 357,
-    "Insert": 307
+    "Delete": 327,
+    "Insert": 305
   },
-  "checks_passed": 29,
   "sections": {
     "Contents/section0.xml": {
       "memos": 12,
@@ -25,7 +30,7 @@
       "tables": 0
     }
   },
-  "accepted_reference_count": 22,
+  "accepted_reference_count": 24,
   "first_appearance_order": [
     1,
     2,
@@ -48,26 +53,38 @@
     19,
     20,
     21,
-    22
+    22,
+    23,
+    24
   ],
   "undefined_citations": [],
   "uncited_references": [],
+  "citation_mark_count": 25,
+  "source_connection_count": 43,
+  "outside_intro_source_identity_unchanged": true,
   "table1": {
     "rows": 88,
     "numeric_cells_preserved": 176,
-    "group_totals": 15
+    "group_totals": 15,
+    "verification_basis": "직전 검증값; 이번에 표의 문자·숫자·서식·격자 불변을 대조"
   },
   "native_pdf": {
-    "file": "rereview-final.pdf",
-    "sha256": "869ed8311e2e8f19425e9b753b074b2b631ac22963a5f813afa9f26cca597617",
-    "pages": 17,
-    "visual_spots": [
-      "Page07: one conditional NB2 equation Var(Y_i | x_i), no deleted equation duplicate; mu_i definition visible.",
-      "Page11: one q<0.05 threshold, not p; fire CI0.03–0.07 visible."
-    ],
-    "not_verified": "Actual editable-app accept/reject/resave UI is unavailable under installed subscription."
+    "status": "not_generated_for_current_revision",
+    "reason": "CUA kernel assets write error; no connected document-control session",
+    "pages": null,
+    "visual_review_complete": false,
+    "historical_pdf": {
+      "file": "APTE_전수재검토_검토용.pdf",
+      "sha256": "869ed8311e2e8f19425e9b753b074b2b631ac22963a5f813afa9f26cca597617",
+      "source_hwpx_sha256": "895e3c4e3b9847512115e9079f747f89581575816b756e627f7006a4648ec8ef",
+      "pages": 17,
+      "current_restored_intro_included": false
+    }
   },
-  "status": "검토 범위 내 교정 및 독립 재검토 완료; 명시된 자료출처·전체재계산·앱편집 검증 한계 유지",
-  "original_sha256": "152c7f1c95497d62ee5eb6e731e9087b3386349a8e935de2f77323b8c1e783c7",
-  "original_sha256_unchanged": true
+  "preview_cache": {
+    "text": "updated_to_current_accepted_text",
+    "image": "unchanged_previous_2026-11-03_native_first_page_cache; not_current_restored_intro",
+    "native_pdf": "not_generated; CUA kernel assets write error; no connected document-control session"
+  },
+  "remaining_content_limits": "서론 문장을 보존하였으므로, 인용만으로 해소되지 않는 일반화와 자료 범위는 서론원문복원_인용조정기록.md에 별도 기록"
 }

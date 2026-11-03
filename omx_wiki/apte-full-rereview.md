@@ -2,15 +2,18 @@
 title: "APTE Full Rereview"
 tags: ["APTE", "논문수정", "인용검증", "전수검토"]
 created: 2026-11-03T05:41:35Z
-updated: 2026-11-03T05:46:34Z
+updated: 2026-11-03T17:07:07Z
 sources: ["../docs/paper/revisions/2026-11-02/전수재검토보고서.md", "../docs/paper/revisions/2026-11-02/참고문헌검증표.md", "../docs/paper/revisions/2026-11-02/evidence/전수재검토_구조검증.json"]
-links: ["apte-revision-hub.md", "apte-reference-audit.md", "apte-data-evidence.md", "apte-validation-log.md", "apte-font-repair.md"]
+links: ["apte-intro-restoration.md", "apte-revision-hub.md", "apte-reference-audit.md", "apte-data-evidence.md", "apte-validation-log.md", "apte-font-repair.md"]
 category: session-log
 confidence: high
 schemaVersion: 1
 ---
 
 # APTE Full Rereview
+
+> **2026-11-04 서론 원문 복원 우선 기록:** 서론6문단과 현재24편 인용번호·파일 식별은 [[apte-intro-restoration]] 및 [복원 기록](../docs/paper/revisions/2026-11-02/서론원문복원_인용조정기록.md)을 따른다. 아래22편·664범위·17쪽은 직전본 기록이다. 서론 밖 분석 결과는 유지하였다.
+
 
 2026-11-03 글꼴복구본을 기준으로 메모13개·비공백103단위·최종22편 인용을 다시 읽고 교정과 독립 재검토를 반복하였다. 현재 HWPX SHA-256은 `895e3c4e3b9847512115e9079f747f89581575816b756e627f7006a4648ec8ef`이다. 한글 native17쪽, 추적664범위(삭제357/삽입307), 원본메모13/수용수식24/원본그림5/표격자6개 보존을 확인하였다.
 

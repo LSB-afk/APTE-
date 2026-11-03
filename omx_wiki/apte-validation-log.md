@@ -2,15 +2,18 @@
 title: "APTE Validation Log"
 tags: ["검증이력", "상태기록"]
 created: 2026-11-02T10:42:46.802Z
-updated: 2026-11-03T05:46:34Z
+updated: 2026-11-03T17:07:07Z
 sources: ["../docs/paper/revisions/2026-11-02/evidence/파일식별정보.json", "../docs/paper/revisions/2026-11-02/evidence/변경대조목록.json", "../docs/paper/revisions/2026-11-02/evidence/문서검증결과.json", "../docs/paper/revisions/2026-11-02/수정검토보고서.md", "../docs/paper/revisions/2026-11-02/구조검증기록.md"]
-links: ["apte-revision-hub.md", "apte-revision-decisions.md", "apte-data-evidence.md", "apte-professor-memos.md", "apte-reference-audit.md", "apte-methods-results-map.md", "apte-memo-12.md", "apte-font-repair.md"]
+links: ["apte-intro-restoration.md", "apte-revision-hub.md", "apte-revision-decisions.md", "apte-data-evidence.md", "apte-professor-memos.md", "apte-reference-audit.md", "apte-methods-results-map.md", "apte-memo-12.md", "apte-font-repair.md"]
 category: session-log
 confidence: medium
 schemaVersion: 1
 ---
 
 # APTE Validation Log
+
+> **2026-11-04 서론 원문 복원 우선 기록:** 서론6문단과 현재24편 인용번호·파일 식별은 [[apte-intro-restoration]] 및 [복원 기록](../docs/paper/revisions/2026-11-02/서론원문복원_인용조정기록.md)을 따른다. 아래22편·664범위·17쪽은 직전본 기록이다. 서론 밖 분석 결과는 유지하였다.
+
 
 > **2026-11-03 전수 재검토 우선 기록:** 현재 판정·파일·인용 매핑은 [[apte-full-rereview]]와 [최신 검토 보고서](../docs/paper/revisions/2026-11-02/전수재검토보고서.md)를 따른다. 아래 이전 날짜의592범위·SMOTEN보존·특정출전보류 기록은 당시 스냅샷이다.
 

@@ -1,0 +1,836 @@
+{
+  "before_sha256": "895e3c4e3b9847512115e9079f747f89581575816b756e627f7006a4648ec8ef",
+  "after_sha256": "e1b3293cd141fa35548fa89e6d694d14e11af24208f74807f0b181fd01dac324",
+  "original_sha256": "152c7f1c95497d62ee5eb6e731e9087b3386349a8e935de2f77323b8c1e783c7",
+  "checks": [
+    {
+      "name": "source_file_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "package_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "package_entry_names_and_order_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all_xml_parseable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only_declared_package_parts_changed",
+      "pass": true,
+      "detail": [
+        "Contents/header.xml",
+        "Contents/section0.xml",
+        "Contents/section1.xml",
+        "Preview/PrvText.txt",
+        "Contents/content.hpf"
+      ]
+    },
+    {
+      "name": "binary_payloads_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fontfaces_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "charProperties_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "track_ids_unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "declared_track_count_correct",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "section0_top_level_count_unchanged",
+      "pass": true,
+      "detail": {
+        "before": 117,
+        "after": 117,
+        "original": 115
+      }
+    },
+    {
+      "name": "original_intro_P014_noncitation_characters_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P014_noncitation_styles_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P014_paragraph_properties_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P015_noncitation_characters_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P015_noncitation_styles_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P015_paragraph_properties_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P016_noncitation_characters_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P016_noncitation_styles_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P016_paragraph_properties_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P017_noncitation_characters_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P017_noncitation_styles_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P017_paragraph_properties_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P018_noncitation_characters_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P018_noncitation_styles_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P018_paragraph_properties_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P019_noncitation_characters_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P019_noncitation_styles_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original_intro_P019_paragraph_properties_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P000_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P001_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P002_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P003_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P004_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P005_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P006_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P007_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P008_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P009_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P010_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P011_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P012_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P013_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P020_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P021_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P022_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P023_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P024_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P025_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P026_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P027_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P028_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P029_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P030_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P031_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P032_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P033_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P034_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P035_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P036_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P037_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P038_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P039_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P040_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P041_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P042_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P043_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P044_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P045_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P046_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P047_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P048_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P049_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P050_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P051_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P052_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P053_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P054_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P055_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P056_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P057_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P058_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P059_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P060_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P061_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P062_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P063_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P064_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P065_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P066_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P067_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P068_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P069_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P070_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P071_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P072_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P073_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P074_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P075_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P076_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P077_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P078_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P079_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P080_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P081_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P082_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P083_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P084_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P085_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P086_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P087_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P088_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P089_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P090_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P091_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P092_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P093_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P094_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P095_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P096_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P097_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P098_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P099_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P100_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P101_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P102_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P103_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P104_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P105_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P106_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P107_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P108_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P109_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P110_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P111_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P112_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P113_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P114_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P115_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outside_intro_P116_noncitation_text_and_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Contents/section0.xml_rejection_restores_original_nonempty_paragraphs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Contents/section0.xml_professor_memos_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Contents/section0.xml_accepted_equations_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Contents/section0.xml_rejected_equations_restore_original",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Contents/section0.xml_picture_geometry_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Contents/section0.xml_table_grids_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bibliography_nonduplicate_bodies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bibliography_labels_sequential",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all_prior_bibliographic_bodies_retained_exactly",
+      "pass": true,
+      "detail": {
+        "before": 22,
+        "after": 24
+      }
+    },
+    {
+      "name": "all_prior_bibliographic_body_character_styles_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Contents/section1.xml_rejection_restores_original_nonempty_paragraphs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Contents/section1.xml_professor_memos_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Contents/section1.xml_accepted_equations_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Contents/section1.xml_rejected_equations_restore_original",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Contents/section1.xml_picture_geometry_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Contents/section1.xml_table_grids_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all_native_range_ids_used_once_and_paired",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "inserted_hangul_and_latin_avoid_wrong_malgun_hamchorom_fonts",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "last_required_paragraph_deleteEnd_paraend_zero",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "bibliography": {
+    "before_count": 22,
+    "after_count": 24,
+    "added_bodies": [
+      "Global Road Safety Partnership and International Federation of Red Cross and Red Crescent Societies, 2023, Speed Management: A Road Safety Manual for Decision-Makers and Practitioners, 2nd ed., Geneva.",
+      "Ministry of Land, Infrastructure and Transport, 2025, “「2024년 도로 교통량 조사」 결과 발표,” Press Release, May 1."
+    ]
+  },
+  "tracks": 632,
+  "track_types": {
+    "Delete": 327,
+    "Insert": 305
+  },
+  "changed_parts": [
+    "Contents/header.xml",
+    "Contents/section0.xml",
+    "Contents/section1.xml",
+    "Preview/PrvText.txt",
+    "Contents/content.hpf"
+  ],
+  "status": "passed"
+}
