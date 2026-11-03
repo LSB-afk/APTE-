@@ -2,9 +2,9 @@
 title: "APTE Validation Log"
 tags: ["검증이력", "상태기록"]
 created: 2026-11-02T10:42:46.802Z
-updated: 2026-11-02T11:25:35.428Z
+updated: 2026-11-03T05:21:51Z
 sources: ["../docs/paper/revisions/2026-11-02/evidence/파일식별정보.json", "../docs/paper/revisions/2026-11-02/evidence/변경대조목록.json", "../docs/paper/revisions/2026-11-02/evidence/문서검증결과.json", "../docs/paper/revisions/2026-11-02/수정검토보고서.md", "../docs/paper/revisions/2026-11-02/구조검증기록.md"]
-links: ["apte-revision-hub.md", "apte-revision-decisions.md", "apte-data-evidence.md", "apte-professor-memos.md", "apte-reference-audit.md", "apte-methods-results-map.md", "apte-memo-12.md"]
+links: ["apte-revision-hub.md", "apte-revision-decisions.md", "apte-data-evidence.md", "apte-professor-memos.md", "apte-reference-audit.md", "apte-methods-results-map.md", "apte-memo-12.md", "apte-font-repair.md"]
 category: session-log
 confidence: medium
 schemaVersion: 1
@@ -59,9 +59,9 @@ schemaVersion: 1
 
 리더가 P33에서 VIF의 72개 더미(포트홀 포함)와 회귀의 71개 더미+상수를 구분해 추적 수정했다. 이 수정은 기존 변경 범위 안에서 이루어져 592개 범위/205개 논리 변경은 유지된다.
 
-## 최종 패키지와 실제 앱 검증
+## 2026-11-02 패키지와 실제 앱 검증
 
-최종 HWPX SHA-256: `1ac7621aa5ea69cc1572a24c4906021a110a77ad79cd1aa45828fb2c5754a965`.
+2026-11-02 HWPX SHA-256: `1ac7621aa5ea69cc1572a24c4906021a110a77ad79cd1aa45828fb2c5754a965`.
 
 리더는 P83/P106 변경 후 12·13·15쪽, VIF 설명 변경 후 5쪽 하단을 다시 검토해 통과했다. VIF 수정 전후 나머지 16쪽은 픽셀 동일하다. 최종 출력은 17쪽이며 실제 한글 재열기에서 1/17쪽 표시를 확인했다.
 
@@ -74,3 +74,8 @@ OS 미리보기도 갱신했다. `Preview/PrvText.txt`는 수용 텍스트, `Pre
 [수정검토보고서](../docs/paper/revisions/2026-11-02/수정검토보고서.md), [데이터·분석 추가 확인사항](../docs/paper/revisions/2026-11-02/데이터_분석_추가확인사항.md), [참고문헌 검증표](../docs/paper/revisions/2026-11-02/참고문헌검증표.md), [구조검증기록](../docs/paper/revisions/2026-11-02/구조검증기록.md)의 작성 완료를 확인했다. 제목 3안 우선순위는 보고서 2절에, 본문에서 제외한 여섯 SHAP 값은 추가 확인사항 3절에 보관했다. 후보 24쌍 전체는 `interaction_profile.csv`에 연결한다. 위키 `sources`를 공개 영속 산출물로 교체해 GitHub 복제본이 로컬 `.git` 감사 파일에 의존하지 않도록 했다. 교수 메모 13개의 원문·연결 본문·원본 출처 설명은 보존했다.
 
 공개 파일 연결 후 위키 21페이지의 lint는 오류 0건이다. `paraend`, `제1순위`, `72개`, `SMOTEN` 쿼리에서 각각 호환성 결정·제목 메모·방법 대응·분석 한계 페이지가 검색됨을 확인했다.
+
+
+## 2026-11-03 글꼴 복구 최종본
+
+현재 파일은 [APTE_메모내용 반영_변경내용추적.hwpx](../docs/paper/revisions/2026-11-02/APTE_메모내용%20반영_변경내용추적.hwpx)이며 SHA-256은 `ddfb68efe353ab2bcb8a03f575656c97b18c3d49d759b753e9e9147d85c0f133`이다. 공백의 글꼴을 상속한 삽입문을 원래 본문 #신명조·Times New Roman으로 복구하고, 국문 참고문헌의 혼합 글꼴과 새 표 주석을 정리하였다. 문안·기존/삭제 문자 서식·메모 13개·추적 592범위를 보존하였다. 한글 17쪽을 새로 출력해 전체 지면을 검토하고 최종 파일을 재열기하였다. 상세 정책·검증·앱 편집 미시험 한계는 [[apte-font-repair]]와 [글꼴 복구 기록](../docs/paper/revisions/2026-11-02/글꼴복구검토기록.md)을 따른다. 위의 2026-11-02 해시와 픽셀 비교 기록은 이전 스냅샷이다.

@@ -2,7 +2,7 @@
   "tracks": 592,
   "logical_changes": 205,
   "original_sha256": "152c7f1c95497d62ee5eb6e731e9087b3386349a8e935de2f77323b8c1e783c7",
-  "output_sha256": "1ac7621aa5ea69cc1572a24c4906021a110a77ad79cd1aa45828fb2c5754a965",
+  "output_sha256": "ddfb68efe353ab2bcb8a03f575656c97b18c3d49d759b753e9e9147d85c0f133",
   "reference_mapping": {
     "1": 1,
     "2": 2,
@@ -27,7 +27,7 @@
     "17": 21,
     "29": 22
   },
-  "date": "2026-11-02T11:18:36Z",
+  "date": "2026-11-03T05:21:51Z",
   "preview_cache_refresh": {
     "parts": [
       "Contents/content.hpf",
@@ -35,16 +35,18 @@
       "Preview/PrvImage.png"
     ],
     "body_xml_hashes_unchanged": true,
-    "source": "Hancom native output revised-vif-verified.pdf, page 1; accepted-text projection",
+    "source": "Hancom native output font-corrected.pdf page 1; existing accepted-text preview retained because manuscript text is unchanged",
     "first_page_png_size": [
       724,
       1024
     ]
   },
-  "output": "APTE_교수메모반영_변경내용추적.hwpx",
+  "output": "APTE_메모내용 반영_변경내용추적.hwpx",
   "source_filename": "자동차모빌리티안전연구_논문_최종 수정본_EJ검토_마지막.hwpx",
   "track_types": {
     "Delete": 318,
     "Insert": 274
-  }
+  },
+  "previous_output_sha256": "1ac7621aa5ea69cc1572a24c4906021a110a77ad79cd1aa45828fb2c5754a965",
+  "font_repair_date": "2026-11-03"
 }

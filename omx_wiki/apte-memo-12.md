@@ -2,9 +2,9 @@
 title: "APTE Memo 12"
 tags: ["APTE", "논문수정", "근거"]
 created: 2026-11-02T10:43:43.276Z
-updated: 2026-11-02T11:25:35.428Z
+updated: 2026-11-03T05:21:51Z
 sources: ["../docs/paper/revisions/2026-11-02/evidence/파일식별정보.json", "../docs/paper/revisions/2026-11-02/evidence/변경대조목록.json", "../docs/paper/revisions/2026-11-02/evidence/문서검증결과.json", "../docs/paper/revisions/2026-11-02/수정검토보고서.md", "../docs/paper/revisions/2026-11-02/evidence/원본메모.json", "../docs/paper/revisions/2026-11-02/구조검증기록.md"]
-links: ["apte-professor-memos.md", "apte-source-register.md", "apte-revision-decisions.md", "apte-validation-log.md", "apte-data-evidence.md", "apte-methods-results-map.md"]
+links: ["apte-professor-memos.md", "apte-source-register.md", "apte-revision-decisions.md", "apte-validation-log.md", "apte-data-evidence.md", "apte-methods-results-map.md", "apte-font-repair.md"]
 category: reference
 confidence: medium
 schemaVersion: 1
@@ -41,3 +41,8 @@ schemaVersion: 1
 ### 최종 앱·패키지 확인
 
 최신 592개 범위/205개 논리 변경 파일의 17쪽 시각 검토를 통과했다. OS 미리보기 텍스트·첫 페이지 이미지(724×1024)·문서 메타를 갱신해 오래된 미리보기 문제를 해소했고, 최종 한글 재열기에서 1/17쪽 표시를 확인했다. 캐시 갱신 전후 header/section0/section1의 SHA는 동일하며 원본 대비 총 6개 패키지 부품이 달라졌다. 최종 SHA는 [[apte-source-register]]에 등록했다. native 수용·거부 UI는 여전히 미시험이다.
+
+
+## 2026-11-03 글꼴 복구
+
+추적 삽입문 56개 범위의 글꼴을 교정하면서 기존 592개 추적 범위와 마커를 보존하였다. 기존·삭제 글자의 문자별 서식도 유지하였다. 현재 파일·해시와 교차 run 검증은 [[apte-font-repair]]를 따른다. 실제 앱의 수용·거부·재저장은 계속 미시험이다.

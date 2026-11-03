@@ -61,8 +61,10 @@
     "group_totals_verified": 15,
     "ordering_verified": true
   },
-  "status": "structural_checks_passed; native_open_and_17_page_render_verified; native_accept_reject_and_resave_not_tested",
-  "output_sha256": "1ac7621aa5ea69cc1572a24c4906021a110a77ad79cd1aa45828fb2c5754a965",
+  "status": "structural_and_font_checks_passed; native_open_and_17_page_render_verified; native_accept_reject_and_resave_not_tested",
+  "output_sha256": "ddfb68efe353ab2bcb8a03f575656c97b18c3d49d759b753e9e9147d85c0f133",
+  "previous_output_sha256": "1ac7621aa5ea69cc1572a24c4906021a110a77ad79cd1aa45828fb2c5754a965",
+  "validation_date": "2026-11-03",
   "native_application": {
     "name": "Hancom Hangeul for macOS",
     "open_verified": true,
@@ -70,8 +72,10 @@
     "reviewed_all_pages": true,
     "accept_reject_resave_tested": false,
     "limitation": "Installed application opens documents read-only because editing requires a paid subscription.",
-    "local_verification_pdf_sha256": "e71c31c6522898fe93b75087168ab832d0675878648f89d237167d844de08286",
-    "verification_pdf_distributed": false
+    "local_verification_pdf_sha256": "4fb17869a5b71c510aa2f7a3f198fa5e52ea8aea4fd3f3858523ed35b51f650a",
+    "verification_pdf_distributed": false,
+    "font_repair_render_verified": true,
+    "final_file_reopened": true
   },
   "native_track_types": {
     "Delete": 318,
@@ -84,23 +88,24 @@
       "Preview/PrvImage.png"
     ],
     "body_xml_hashes_unchanged": true,
-    "source": "Hancom native output revised-vif-verified.pdf, page 1; accepted-text projection",
+    "source": "Hancom native output font-corrected.pdf page 1; existing accepted-text preview retained because manuscript text is unchanged",
     "first_page_png_size": [
       724,
       1024
     ]
   },
-  "package_part_sha256": {
-    "Contents/header.xml": "bd9a5e22ee11dc0f651e66ffc886f18f4adddccf1d2d6e5cb6bd4c2115c78e18",
-    "Contents/section0.xml": "3ba304936f66840cdc432f1fb37d7d8f975a60cb49766e7a7ab01894393afa3b",
-    "Contents/section1.xml": "a068435eece0cba654e709f3ff49b0e2f7ca22897913783630b1b02f6f880271",
-    "Preview/PrvText.txt": "ccadb7cc4d4ad3f2871df94e620615ca57a7aee0db1304eade7f671d85fb9631",
-    "Preview/PrvImage.png": "8b0049d689dd03101bd68b43211f4de90886a5a6cda703227694fa95260494e2",
-    "Contents/content.hpf": "7fb6fe452c6e48c3d491071d731e8f8dbc29e4e3b8908779b64841e1f665de8a"
-  },
   "format_reference": {
     "url": "https://github.com/hancom-io/hwpx-owpml-model",
     "commit": "1453388472c703a4b299a0834f425cdac16644b9",
     "formal_xsd_validation_performed": false
-  }
+  },
+  "package_part_sha256": {
+    "Contents/header.xml": "5f7f77523739b3c3be975a5a02a31c21e923db7d34011ee5ced72edf5ee53780",
+    "Contents/section0.xml": "0a5110fab101e49ab6324e39a5b98586ce64e9d96b06004956d574bf94960085",
+    "Contents/section1.xml": "7e15d2936b3ab2d4c8f1ff9a237824ccaf4678d05b970ae3f233aed993ace961",
+    "Preview/PrvText.txt": "ccadb7cc4d4ad3f2871df94e620615ca57a7aee0db1304eade7f671d85fb9631",
+    "Preview/PrvImage.png": "f86dac535e44b234a369d85fa346cfb61a91c24364c4c8132324a7582bbdff7e",
+    "Contents/content.hpf": "28aa75e800c62ea2815cdc55087b17517b71996b63e0da86e5f459a7ade02bf5"
+  },
+  "font_repair_evidence": "글꼴복구검증결과.json"
 }

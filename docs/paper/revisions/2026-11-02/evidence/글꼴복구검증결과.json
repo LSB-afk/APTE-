@@ -1,0 +1,579 @@
+{
+  "date": "2026-11-03",
+  "before_sha256": "1ac7621aa5ea69cc1572a24c4906021a110a77ad79cd1aa45828fb2c5754a965",
+  "after_sha256": "ddfb68efe353ab2bcb8a03f575656c97b18c3d49d759b753e9e9147d85c0f133",
+  "zip_xml_valid": true,
+  "original_font_face_table_preserved": true,
+  "original_77_character_styles_preserved": true,
+  "new_table_character_style": {
+    "id": "77",
+    "base": "46",
+    "fontRef_from_original_style": "47",
+    "size_colour_spacing_unchanged": true
+  },
+  "native_track_ranges": 592,
+  "native_track_types": {
+    "Delete": 318,
+    "Insert": 274
+  },
+  "inserted_korean_and_latin_font_designations_free_of_malgun_and_hamchorom": true,
+  "sections": {
+    "Contents/section0.xml": {
+      "accepted_text_unchanged": true,
+      "rejected_text_unchanged": true,
+      "existing_and_deleted_character_fonts_unchanged": true,
+      "only_run_boundaries_and_insertion_fonts_changed": true,
+      "native_track_markers_attributes_order_unchanged": true
+    },
+    "Contents/section1.xml": {
+      "accepted_text_unchanged": true,
+      "rejected_text_unchanged": true,
+      "existing_and_deleted_character_fonts_unchanged": true,
+      "only_run_boundaries_and_insertion_fonts_changed": true,
+      "native_track_markers_attributes_order_unchanged": true
+    }
+  },
+  "insertion_charPr_character_counts": {
+    "28": 28,
+    "33": 82,
+    "25": 310,
+    "47": 7370,
+    "68": 46,
+    "73": 677,
+    "26": 528,
+    "57": 29,
+    "77": 209,
+    "74": 290,
+    "50": 174,
+    "65": 2039,
+    "70": 82
+  },
+  "modified_parts": [
+    "Contents/header.xml",
+    "Contents/section0.xml",
+    "Contents/section1.xml",
+    "Preview/PrvImage.png",
+    "Contents/content.hpf"
+  ],
+  "output_file": "APTE_메모내용 반영_변경내용추적.hwpx",
+  "font_repair": {
+    "modified_runs": 54,
+    "modified_insertion_ranges": 56,
+    "changes": [
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "175"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "177"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "179"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "181"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "183"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "187"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "189"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "191"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "195"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "197"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "203"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "205"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "207"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "209"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "211"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "213"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "221"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "223"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "0",
+        "track_ids": [
+          "224"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "227"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "230"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "0",
+        "track_ids": [
+          "234"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "0",
+        "track_ids": [
+          "236"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "242"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "244"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "246"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "250"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "252"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "254"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "256"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "80",
+          "81",
+          "82"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "508"
+        ],
+        "old_charPr": "46",
+        "new_charPr": "77"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "510"
+        ],
+        "old_charPr": "46",
+        "new_charPr": "77"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "512"
+        ],
+        "old_charPr": "46",
+        "new_charPr": "77"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "514"
+        ],
+        "old_charPr": "46",
+        "new_charPr": "77"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "263"
+        ],
+        "old_charPr": "53",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "0",
+        "track_ids": [
+          "270"
+        ],
+        "old_charPr": "53",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "516"
+        ],
+        "old_charPr": "46",
+        "new_charPr": "77"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "518"
+        ],
+        "old_charPr": "46",
+        "new_charPr": "77"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "520"
+        ],
+        "old_charPr": "46",
+        "new_charPr": "77"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "522"
+        ],
+        "old_charPr": "46",
+        "new_charPr": "77"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "524"
+        ],
+        "old_charPr": "46",
+        "new_charPr": "77"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "274"
+        ],
+        "old_charPr": "63",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "0",
+        "track_ids": [
+          "279"
+        ],
+        "old_charPr": "62",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "526"
+        ],
+        "old_charPr": "46",
+        "new_charPr": "77"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "288"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "0",
+        "track_ids": [
+          "291"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "294"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "297"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "300"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "303"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section0.xml",
+        "paragraph_id": "2147483648",
+        "track_ids": [
+          "306"
+        ],
+        "old_charPr": "72",
+        "new_charPr": "47"
+      },
+      {
+        "part": "Contents/section1.xml",
+        "paragraph_id": "0",
+        "track_ids": [
+          "540"
+        ],
+        "old_charPr": "65",
+        "new_charPr": "65 / 70 / 65",
+        "restored_korean_text": "“서울시 고령운전자의 중상 및 사망사고와 도로환경의 연관성 분석: 기계학습을 활용한 비선형성과 상호작용효과를 중심으로,” 대한교통학회지,"
+      },
+      {
+        "part": "Contents/section1.xml",
+        "paragraph_id": "0",
+        "track_ids": [
+          "542"
+        ],
+        "old_charPr": "65",
+        "new_charPr": "65 / 70 / 65",
+        "restored_korean_text": "안전문화연구"
+      }
+    ]
+  },
+  "native_application": {
+    "open_verified": true,
+    "final_file_reopened": true,
+    "pages": 17,
+    "all_pages_visually_reviewed": true,
+    "review_scope": {
+      "primary": "pages 1-7",
+      "independent": "pages 8-17"
+    },
+    "verification_pdf_sha256": "4fb17869a5b71c510aa2f7a3f198fa5e52ea8aea4fd3f3858523ed35b51f650a",
+    "accept_reject_resave_tested": false,
+    "font_edit_and_resave_ui_tested": false,
+    "limitation": "Installed Hancom app is read-only because editing requires a paid subscription."
+  },
+  "independent_audit": {
+    "text_and_character_format_validation": "passed",
+    "track_and_object_preservation": "passed",
+    "korean_reference_540_542_boundaries": "passed",
+    "formal_xsd_validation_performed": false,
+    "checks_passed": 42,
+    "final_sha256_verified": "ddfb68efe353ab2bcb8a03f575656c97b18c3d49d759b753e9e9147d85c0f133",
+    "cached_preview_connection_verified": true,
+    "body_xml_unchanged_after_preview_refresh": true
+  }
+}

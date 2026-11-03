@@ -1,6 +1,10 @@
 # Wiki Index
 
-> 21 pages | Last updated: 2026-11-02T11:26:51.537Z
+> 22 pages | Last updated: 2026-11-03T05:23:48.444Z
+
+## debugging
+
+- [APTE Font Repair](apte-font-repair.md) — # APTE Font Repair
 
 ## decision
 

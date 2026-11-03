@@ -2,9 +2,9 @@
 title: "APTE Source Register"
 tags: ["APTE", "논문수정", "근거"]
 created: 2026-11-02T10:42:46.151Z
-updated: 2026-11-02T11:25:35.428Z
+updated: 2026-11-03T05:21:51Z
 sources: ["../docs/paper/revisions/2026-11-02/evidence/파일식별정보.json", "../docs/paper/revisions/2026-11-02/evidence/변경대조목록.json", "../docs/paper/revisions/2026-11-02/evidence/문서검증결과.json", "../docs/paper/revisions/2026-11-02/수정검토보고서.md", "../docs/paper/revisions/2026-11-02/evidence/원본메모.json", "../docs/paper/revisions/2026-11-02/참고문헌검증표.md", "../docs/paper/revisions/2026-11-02/구조검증기록.md"]
-links: ["apte-revision-hub.md", "apte-professor-memos.md", "apte-data-evidence.md", "apte-validation-log.md"]
+links: ["apte-revision-hub.md", "apte-professor-memos.md", "apte-data-evidence.md", "apte-validation-log.md", "apte-font-repair.md"]
 category: reference
 confidence: medium
 schemaVersion: 1
@@ -53,7 +53,7 @@ HWPX 의 section0(본문)와 section1(참고문헌)을 모두 확인한다. hp:t
 
 ## 수정 산출물과 최신 검증 근거
 
-- 수정 HWPX: [docs/paper/revisions/2026-11-02/APTE_교수메모반영_변경내용추적.hwpx](../docs/paper/revisions/2026-11-02/APTE_교수메모반영_변경내용추적.hwpx)
+- 수정 HWPX: [docs/paper/revisions/2026-11-02/APTE_메모내용 반영_변경내용추적.hwpx](../docs/paper/revisions/2026-11-02/APTE_메모내용%20반영_변경내용추적.hwpx)
 - 수정검토보고서: [docs/paper/revisions/2026-11-02/수정검토보고서.md](../docs/paper/revisions/2026-11-02/수정검토보고서.md) — 작성 완료. 제목 3안·13개 메모 처리표·분석 근거·최종 검증 범위를 포함한다.
 - 공개 검토 자료: [데이터·분석 추가 확인사항](../docs/paper/revisions/2026-11-02/데이터_분석_추가확인사항.md), [참고문헌 검증표](../docs/paper/revisions/2026-11-02/참고문헌검증표.md), [구조검증기록](../docs/paper/revisions/2026-11-02/구조검증기록.md).
 - 공개 집계 증거: [파일식별정보](../docs/paper/revisions/2026-11-02/evidence/파일식별정보.json), [변경대조목록](../docs/paper/revisions/2026-11-02/evidence/변경대조목록.json), [문서검증결과](../docs/paper/revisions/2026-11-02/evidence/문서검증결과.json), [회귀재검증결과](../docs/paper/revisions/2026-11-02/evidence/회귀재검증결과.json), [표1집계대조](../docs/paper/revisions/2026-11-02/evidence/표1집계대조.json), [원본메모](../docs/paper/revisions/2026-11-02/evidence/원본메모.json).
@@ -63,12 +63,17 @@ HWPX 의 section0(본문)와 section1(참고문헌)을 모두 확인한다. hp:t
 
 원본 SHA-256 보존은 최신구조검사에서도 확인되었다. native 한글열기·17 쪽 PDF 출력성공은 리더실행증거에근거하며, 현재 최종 페이지 검토 통과와 native 수용·거부 UI 미시험은 [[apte-validation-log]]에서 구분한다.
 
-## 최종 패키지와 실제 앱 검증
+## 2026-11-02 패키지와 실제 앱 검증
 
-최종 HWPX SHA-256: `1ac7621aa5ea69cc1572a24c4906021a110a77ad79cd1aa45828fb2c5754a965`.
+2026-11-02 HWPX SHA-256: `1ac7621aa5ea69cc1572a24c4906021a110a77ad79cd1aa45828fb2c5754a965`.
 
 리더는 P83/P106 변경 후 12·13·15쪽, VIF 설명 변경 후 5쪽 하단을 다시 검토해 통과했다. VIF 수정 전후 나머지 16쪽은 픽셀 동일하다. 최종 출력은 17쪽이며 실제 한글 재열기에서 1/17쪽 표시를 확인했다.
 
 OS 미리보기도 갱신했다. `Preview/PrvText.txt`는 수용 텍스트, `Preview/PrvImage.png`는 최종 한글 출력 첫 페이지의 724×1024 이미지이며 `Contents/content.hpf`의 제목·수정일을 갱신했다. 본문 header/section0/section1의 SHA는 캐시 갱신 전후 동일하다. 원본과 달라진 패키지 부품은 본문·추적 XML 3개와 캐시·메타 3개, 총 6개다. 오래된 미리보기 문제는 해소되었다.
 
 위키 담당자도 최종 파일의 SHA, 원본 SHA 보존, 변경 부품 6개, 미리보기 크기, PDF 17쪽을 읽기 전용으로 재확인했다. native 수용·거부 UI 미시험과 분석·문헌의 보류 사항은 이 검증으로 해소된 것으로 처리하지 않는다.
+
+
+## 2026-11-03 글꼴 복구 최종본
+
+현재 파일은 [APTE_메모내용 반영_변경내용추적.hwpx](../docs/paper/revisions/2026-11-02/APTE_메모내용%20반영_변경내용추적.hwpx)이며 SHA-256은 `ddfb68efe353ab2bcb8a03f575656c97b18c3d49d759b753e9e9147d85c0f133`이다. 공백의 글꼴을 상속한 삽입문을 원래 본문 #신명조·Times New Roman으로 복구하고, 국문 참고문헌의 혼합 글꼴과 새 표 주석을 정리하였다. 문안·기존/삭제 문자 서식·메모 13개·추적 592범위를 보존하였다. 한글 17쪽을 새로 출력해 전체 지면을 검토하고 최종 파일을 재열기하였다. 상세 정책·검증·앱 편집 미시험 한계는 [[apte-font-repair]]와 [글꼴 복구 기록](../docs/paper/revisions/2026-11-02/글꼴복구검토기록.md)을 따른다. 위의 2026-11-02 해시와 픽셀 비교 기록은 이전 스냅샷이다.
